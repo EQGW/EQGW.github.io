@@ -50,7 +50,7 @@ Save your changes using the  Update  button in the right column of the browser p
 
 ## Posting files to be linked to from the web page ##
 
-***After here in this section, not changed yet to reflect access of these folder by link, which is necessary because of two-factor authentication craziness making it impossible to let you all log in to the
+***After here in this section, not changed yet to reflect access of these folders by link, which is necessary because of two-factor authentication craziness making it impossible to let you all log in to the
 Google account of the Workshop***
 
 Files such as lecture projections (PPT or PDF), or supplementary documents, or R exercises, or audio recordings, are not to be posted on the workshop blog.  Instead, open the Google Drive for the  fhleqg  account, which is not a gmail account but a  uw.edu  account.  It has the password we mentioned above.
@@ -65,7 +65,7 @@ Then you should be able to tow the file from your system onto that Drive screen 
 
 But there is still the matter of getting the address of the file, and posting a link to it on the appropriate lecture or exercise web page.
 
-***After here in this section, not changed yet to reflect access of these folder by link, which is necessary because of two-factor authentication craziness making it impossible to let you all log in to the
+***After here in this section, not changed yet to reflect access of these folders by link, which is necessary because of two-factor authentication craziness making it impossible to let you all log in to the
 Google account of the Workshop***
 
  Open a window with the Google Drive page, with you logged in appropriately.
