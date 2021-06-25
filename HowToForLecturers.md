@@ -37,7 +37,7 @@ You will also want to go to the Schedule page and create a new line for the new 
 
 Once there is a web page for a lecture or exercise for this year, you may want to edit it further.  Here is how:
 
-*** After here in this section, not changed yet to reflect Github***
+***After here in this section, not changed yet to reflect Github***
 
 Make sure you have logged in to the blog’s WordPress site (for example, using the Login page of the blog).  In the upper-right corner of the page, you should see “Howdy, fhleqg”
 Find the blog page by using the Schedule and clicking on the lecture or exercise link for that page.
