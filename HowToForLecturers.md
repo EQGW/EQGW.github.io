@@ -17,9 +17,9 @@ I will create pages for all the lectures, and as we add computer labs, I will tr
 These instructions show how to do it if I did not make such a page.  If I did make one, simply find the page in this year's folder on the EQGW Github site
 and skip this section and go to the one below, about how to edit an existing page.
 
-This can be done using the  +New  tab in the top area of the Dashboard, or the  Add New menu item in the left column of the Dashboard.   Some things to do:
-
 ***After here in this section, not changed yet to reflect Github***
+
+This can be done using the  +New  tab in the top area of the Dashboard, or the  Add New menu item in the left column of the Dashboard.   Some things to do:
 
 In the box at the top, type in the name of the web page.  It must start with the year, followed by a blank space.  Thus if it is a page for Exercise 3.4, it will look like this:  “2019 Exercise 3.4”.  This is important — the year must be there to allow us to retain pages from previous years, and not overwrite them.
 You want to have a link to the next page in sequence (the next one in the Schedule).  This is a small link in the upper-right part of the page.  You can make this by figuring out the name of the next page, and then going into Text mode and inserting as the first line in the page a line like the following:
