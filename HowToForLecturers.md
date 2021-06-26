@@ -19,7 +19,27 @@ and skip this section and go to the one below, about how to edit an existing pag
 
 ***After here in this section, not changed yet to reflect Github***
 
-This can be done using the  +New  tab in the top area of the Dashboard, or the  Add New menu item in the left column of the Dashboard.   Some things to do:
+If we do not already have a page for the lecture, figure out what its name will be.  You can figure 
+out what it is by noting which day of the workshop it is on, and which lecture.  If it is the 2nd 
+lecture on the 3rd day of the workshop, its name will be \ lecture3-2.md  \ It will be in the 
+folder for that year, so in the 2021 Workshop it will be file  2021/lecture3-2.md   \ If you do not 
+see the folder for the year, you might see a link named "Code" which will make it visible.
+
+1.  Look in the year folder, and verify that there is no file of that name.  If there is such a file,
+skip this section of these instructions and go to the next one, which tells how to edit the file.
+1.  If there is no file for the lecture, choose the "Add New File" button and from the drop-down 
+menu that appears, choose "Add File".  This should open the file for editing.  You will see a 
+line number (1) on the first line, at the left side of the editing area.
+1. There will also be, just above that, a display of the file name, including its path.  The name 
+will start with \ EQGW.github.io \ and follow this with the year number and a blank area in which 
+you should type the name of the file, such as \ lecture3-2.md\   Don't forget to include the \ .md
+1.  From the Schedule page at the workshop site, figure out the name of files for the previous lecture and 
+the next lecture.  For example, the lecture preceding this one might have a file  \ lecture3-1.md \ 
+and the lecture following it might have the file \ lecture3-3.md
+1.  On the first line of the file, we want to have links to the previous and next lectures.
+
+***After here in this section, instructions have not yet been updated to Github Pages***
+
 
 In the box at the top, type in the name of the web page.  It must start with the year, followed by a blank space.  Thus if it is a page for Exercise 3.4, it will look like this:  “2019 Exercise 3.4”.  This is important — the year must be there to allow us to retain pages from previous years, and not overwrite them.
 You want to have a link to the next page in sequence (the next one in the Schedule).  This is a small link in the upper-right part of the page.  You can make this by figuring out the name of the next page, and then going into Text mode and inserting as the first line in the page a line like the following:
