@@ -1,1 +1,1 @@
-Previous lecture| | Next lecture
+Previous lecture | | Next lecture
