@@ -1,7 +1,7 @@
 
-|        |        |        |
-|--------|---------------------------------------------|--------------------|
-| [2021 Workshop (Online)](/index.html) | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [SCHEDULE](/2021/schedule.html) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [Resources](https://blogs.uw.edu/fhleqg/tutorial-resources) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [PREVIOUS YEARS](https://blogs.uw.edu/fhleqg/previous-years)
+|        |        |        |    |
+|--------|---------------------------------------------|--------------------|------------------------------------------|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2021 Workshop (Online)](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](/2021/schedule.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](https://blogs.uw.edu/fhleqg/tutorial-resources) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](https://blogs.uw.edu/fhleqg/previous-years) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 
 <div align="left">
@@ -12,8 +12,8 @@
 
 | time | topic  |  speaker(s) |
 |------|--------|-------------|
-| **Monday, July 12**  |   |    |   
 | | | |
+| **Monday, July 12**  |   |    |   
 | time | Introduction | Steve Arnold, Joe Felsenstein |
 | time | Introductions of participants | themselves |
 | time | [Inheritance and response to selection](lecture1-2.html) | Adam Jones |
