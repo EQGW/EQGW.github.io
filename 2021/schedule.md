@@ -1,3 +1,7 @@
+-----
+title-heading: false
+-----
+
 # Evolutionary Quantitative Genetics Workshop #
 
 |        |        |        |    |
