@@ -21,13 +21,11 @@
 | time | [Evolution on adaptive landscapes](lecture1-4.html) | Steve Arnold |
 |  |  |  |
 | **Tuesday, 13 July** | | |
-| | | |
 | time | [Estimation of inheritance with fixed and random effects](lecture2-1.html) | Patrick Carter |
 | time | [Stability and evolution of the G-matrix](lecture2-2.html)  | Adam Jones |
 | time | [Evolution in the short term and the long term ](lecture2-3.html) | Josef Uyeda |
 | | | |
 | **Wednesday, 14 July** | | |
-| | | |
 | time | [Phylogenetic natural history](lecture3-1.html) | Josef Uyeda | 
 | time |   |   |
 | | |  |
