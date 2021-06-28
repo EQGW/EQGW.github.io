@@ -1,4 +1,6 @@
 
+|        |        |        |
+|--------|---------------------------------------------|--------------------|
 | [2021 Workshop (Online)](/index.html) | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [SCHEDULE](/2021/schedule.html) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [Resources](https://blogs.uw.edu/fhleqg/tutorial-resources) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [PREVIOUS YEARS](https://blogs.uw.edu/fhleqg/previous-years)
 
 
@@ -8,6 +10,8 @@
 
 # Schedule for 2021 Workshop #
 
+| time | topic  |  speaker(s) |
+|------|--------|-------------|
 | **Monday, July 12**  |   |    |   
 | | | |
 | time | Introduction | Steve Arnold, Joe Felsenstein |
