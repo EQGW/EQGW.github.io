@@ -1,5 +1,6 @@
 
-[2021 Workshop (Online)](/index.html) | [SCHEDULE](/2021/schedule.html) | [Resources](https://blogs.uw.edu/fhleqg/tutorial-resources) | [PREVIOUS YEARS](https://blogs.uw.edu/fhleqg/previous-years)
+[2021 Workshop (Online)](/index.html) | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [SCHEDULE](/2021/schedule.html) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [Resources](https://blogs.uw.edu/fhleqg/tutorial-resources) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp [PREVIOUS YEARS](https://blogs.uw.edu/fhleqg/previous-years)
+
 
 <div align="left">
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
