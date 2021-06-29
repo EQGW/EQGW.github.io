@@ -11,6 +11,8 @@
 </div>
 
 \<- [Previous lecture](lecture1-1.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture1-3.html)-\>
+--- | ---------------------------------------- |   
+  
 
 ## Lecture 1-2: Introduction to quantitative genetics ##
 
