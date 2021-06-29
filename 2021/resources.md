@@ -39,4 +39,4 @@ Matrix Algebra Tutorials
 
 ## For lecturers ##
 
-[Editing lecture or exercise web pages, adding new ones, posting files (a brief guide)](/HowToForLecturers.md)
+[Editing lecture or exercise web pages, adding new ones, posting files (a brief guide)](/HowToForLecturers.html)
