@@ -33,6 +33,7 @@
 Matrix Algebra Tutorials
 
     Wikipedia page for “Matrix_(mathematics)” which is [here.](https://en.wikipedia.org/wiki/Matrix_(mathematics))
+    
     Matrix algebra tutorial for Exercise 1.2 which is [here.](http://blogs.uw.edu/fhleqg/2019/05/23/2019-exercise-1-2/)
 
  
