@@ -29,26 +29,26 @@ and skip this section and go to the one below, about how to edit an existing pag
 
 If we do not already have a page for the lecture, figure out what its name will be.  You can figure 
 out what it is by noting which day of the workshop it is on, and which lecture.  If it is the 2nd 
-lecture on the 3rd day of the workshop, its name will be \ lecture3-2.md  \ It will be in the 
-folder for that year, so in the 2021 Workshop it will be file  2021/lecture3-2.md
+lecture on the 3rd day of the workshop, its name will be &nbsp; lecture3-2.md  &nbsp; It will be in the 
+folder for that year, so in the 2021 Workshop it will be file &nbsp; 2021/lecture3-2.md
 
 The ".md" indicates
 a page in the Github Markdown language, an allegedly simple system for entering text and links, and
 doing highlighting such as making italic text, bold text, links, or simple tables.  _However:_ fancier
-formatting will plunge you into the depths of despair, otherwise known as HTML style sheets.
+formatting will plunge you into the Depths Of Despair, otherwise known as HTML style sheets.
 
 When the webpages at the site are served up, the ".md" pages are processed and ".html" pages are
 made, and it is these that the user sees.  So links to other webpages at the site should be to
-the ".html" version of the name.  So you may edit the page lecture3-2.md but the final product 
-will be called lecture3-2.html
+the ".html" version of the name.  So you may edit the page &nbsp; lecture3-2.md &nbsp; but the final product 
+will be called &nbsp; lecture3-2.html
 
 If when you go to find the pages, you do not 
-see the folder for the year, you might see a link named "Code" which will make it visible.
+see the folder for the year, you might see a link called "Code" which will make it visible.
 
 1.  Look in the year folder, and verify that there is no file of that name.  If there is such a file,
 skip this section of these instructions and go to the next section, which tells how to edit the file.
 2.  If there is no file for the lecture, start out by clicking on the filename of some other lecture ".md" file
-3.  It will be brought up in edit mode.  Copy all the contents of that file.  Do not change anything or a fellow lecturer, whose lecture that is, will get upset with you.
+3.  It will be brought up in edit mode.  Copy all the contents of that file.  Do not change anything in that file or a fellow lecturer, whose lecture that is, will get upset with you.
 4.  Now go to the filename above in the page and click on the year.  The list of existing pages will appear, in their ".md" forms.
 5.  Above them and to the right you will also see a button that says "Add new file".  Choose it.  
 6.  From the drop-down menu that appears, choose "Create new file".  This should open the file for editing.  You will see a 
