@@ -14,9 +14,9 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 1-2: Introduction to quantitative genetics ##
+## Lecture 1-2: Inheritance and response to selection ##
 
-### lecturer here ###
+### Stevan Arnold ###
   
 #### Lecture projection: ####
   
