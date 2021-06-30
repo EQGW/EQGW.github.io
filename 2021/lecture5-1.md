@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 5-1: title here ##
+## Lecture 5-1: Morphometrics on phylogenies ##
 
-### lecturer name here ###
+### Joe Felsenstein and Michelle Lawing ###
   
 #### Lecture projection: ####
