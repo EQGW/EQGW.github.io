@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 2-3: title here ##
+## Lecture 2-3: Evolution in the short term and the long term ##
 
-### lecturer name here ###
+### Josef Uyeda ###
   
 #### Lecture projection: ####
