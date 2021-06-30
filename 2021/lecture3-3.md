@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 3-3: title here ##
+## Lecture 3-3: OU models on phylogenies ##
 
-### lecturer name here ###
+### Brian O'Meara and Michelle Lawing ###
   
 #### Lecture projection: ####
