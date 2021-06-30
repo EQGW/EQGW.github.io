@@ -14,9 +14,9 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 1-4: Evolution on adaptive landscapes ##
+## Lecture 2-1: Estimation of inheritance with fixed and random effects ##
 
-### Stevan Arnold ###
+### Patrick Carter ###
   
 #### Lecture projection: ####
 
