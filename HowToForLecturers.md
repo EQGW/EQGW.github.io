@@ -74,7 +74,7 @@ Once there is a web page for a lecture or exercise for this year, you may want t
 4. That file will be brought up in edit mode.
 5. Some of it is different from what you want, so set to work editing it.  Make sure to note the markdown code that makes the links to the previous and the next lectures, and correct those.  Also, of course, correct the heading that announces the number of the lecture.   One subtle point of Markdown syntax is that if you are highlighting text, or changing headers, _make sure you understand whether there should be a blank before or after the text being highlighted_. (Generally, yes for headers, no for text). 
 6. To figure out Markdown syntax, open a new window on your desktop and in it search for "Github Markdown" and look at some set of easy instructions.
-7. You can see roughly what the page will look like by clicking on the eyeball which is to the right of Edit, at the top of the editing area.
+7. You can see roughly what the page will look like by clicking on the eyeball named "Preview" which is to the right of "Edit file", at the top of the editing area.
 8. **_But_** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to "Commit changes", and press that confidently enough that it changes color, showing that you weren't too timid.  Otherwise, of course, you will lose everything you changed when you leave.
 9. Github will show you what the page will look like based on what you committed.  If that has problems, find the small pencil icon above this preview, and to the right, and use it to reopen editing.  Any further changes you make of course need to be saved using Commit.
 
