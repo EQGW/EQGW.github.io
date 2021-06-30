@@ -14,9 +14,9 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 2-2: title here ##
+## Lecture 2-2: Stability and evolution of the G-matrix ##
 
-### lecturer name here ###
+### Adam Jones ###
   
 #### Lecture projection: ####
 
