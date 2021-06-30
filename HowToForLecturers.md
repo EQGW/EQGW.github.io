@@ -10,7 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-WARNING: Joe is still editing this page, so do not trust its instructions (yet)
+_WARNING: Joe is still editing this page, so do not trust its instructions (yet).  I've tried to indicate which parts are iffy._
 
 
 # For workshop lecturers: editing lecture and exercise pages and posting files #
@@ -40,7 +40,7 @@ formatting will plunge you into the Depths Of Despair, otherwise known as HTML s
 When the webpages at the site are served up, the ".md" pages are processed and ".html" pages are
 made, and it is these that the user sees.  So links to other webpages at the site should be to
 the ".html" version of the name.  So you may edit the page &nbsp; lecture3-2.md &nbsp; but the final product 
-will be called &nbsp; lecture3-2.html
+that the user sees will be called &nbsp; lecture3-2.html
 
 If when you go to find the pages, you do not 
 see the folder for the year, you might see a link called "Code" which will make it visible.
@@ -50,14 +50,14 @@ skip this section of these instructions and go to the next section, which tells 
 2.  If there is no file for the lecture, start out by clicking on the filename of some other lecture ".md" file
 3.  It will be brought up in edit mode.  Copy all the contents of that file.  Do not change anything in that file or a fellow lecturer, whose lecture that is, will get upset with you.
 4.  Now go to the filename above in the page and click on the year.  The list of existing pages will appear, in their ".md" forms.
-5.  Above them and to the right you will also see a button that says "Add new file".  Choose it.  
+5.  Above them and to the right you will also see a button that says "Add file".  Choose it.  
 6.  From the drop-down menu that appears, choose "Create new file".  This should open the file for editing.  You will see a 
 line number (1) on the first line, at the left side of the editing area.  Above that area you will see that there is a path for the name of the file, but with the final part of the name empty, represented by a box.  Type the filename into that box.  For example, if the lecture is  lecture3-2, type in "lecture3-2.md" (without the quotes).
 7. Go to the text immediately after line 1, put your cursor there and paste in all the contents of that other webpage.
 8. Of course some of it is different from what you want, so set to work editing it.  Make sure to note the markdown code that makes the links to the previous and the next lectures, and correct those.  Also, of course, correct the heading that announces the number of the lecture.   One subtle point of Markdown syntax is that if you are highlighting text, or changing headers, _make sure you understand whether there should be a blank before or after the text being highlighted_. (Generally, yes for headers, no for text). 
 9. To figure out Markdown syntax, open a new window on your desktop and in it search for "Github Markdown" and look at some set of easy instructions.
-10. You can see roughly what the page will look like by clicking on the eyeball which is to the right of Edit, at the top of the editing area.
-11. **__But__** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to Commit your content, and press that so that it changes color.  Otherwise, of course, you will lose everything you did when you leave.
+10. You can see roughly what the page will look like by clicking on the eyeball named "Preview" which is to the right of "Edit file", at the top of the editing area.
+11. **__But__** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to "Commit" your content, and press that confidently enough that it changes color, showing that you weren't too timid.  Otherwise, of course, you will lose everything you did when you leave.
 
 You probably want to link to PDF or PPT files of slides, to files of R exercises, and other media.  Do <em>not put them in our Github repository</em>, but instead post those files to the appropriate folder for Google Drive for the fhleqg Gmail account.  Use the instructions below for “posting files to be linked to from the web page” and also the instructions below that for obtaining the link for each such file to make a link from the web page that you are creating in this list of instructions.
 You may also want to go to the Schedule page and create a new line for the new page, with a link to it.  Be careful if you do that, as we all rely on the schedule page.  So if you fuck up the schedule page, make sure you have a plausible story about how it is someone else's fault. 
@@ -74,7 +74,7 @@ Once there is a web page for a lecture or exercise for this year, you may want t
 5. Some of it is different from what you want, so set to work editing it.  Make sure to note the markdown code that makes the links to the previous and the next lectures, and correct those.  Also, of course, correct the heading that announces the number of the lecture.   One subtle point of Markdown syntax is that if you are highlighting text, or changing headers, _make sure you understand whether there should be a blank before or after the text being highlighted_. (Generally, yes for headers, no for text). 
 6. To figure out Markdown syntax, open a new window on your desktop and in it search for "Github Markdown" and look at some set of easy instructions.
 7. You can see roughly what the page will look like by clicking on the eyeball which is to the right of Edit, at the top of the editing area.
-8. **__But__** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to Commit your content, and press that so that it changes color.  Otherwise, of course, you will lose everything you did when you leave.
+8. **__But__** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to "Commit changes", and press that confidently enough that it changes color, showing that you weren't too timid.  Otherwise, of course, you will lose everything you changed when you leave.
 
 You probably want to link to PDF or PPT files of slides, to files of R exercises, and other media.  Do <em>not put these files into our Github repository</em>, but instead post those files to the appropriate folder for Google Drive for the fhleqg Gmail account.  Use the instructions below for “posting files to be linked to from the web page” and also the instructions below that for obtaining the link for each such file to make a link from the web page that you are creating in this list of instructions.
  
