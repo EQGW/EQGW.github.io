@@ -41,7 +41,7 @@ _These can change: we're still working on the schedule.  So far still getting th
 | time | Lecture 3-2: Brownian Motion and comparative methods | Joe Felsenstein and Samantha Price |
 | time | Exercise 3-1: Brownian Motion / comparative methods | Samantha Price and Joe Felsenstein | 
 | time | Lecture 3-3: OU models on phylogenies | Michelle Lawing and Brian O'Meara |
-| time | Exercise 3-2 | OU models and analyses | Michelle Lawing and Brian O'Meara |
+| time | Exercise 3-2: OU models and methods | Michelle Lawing and Brian O'Meara |
 | | | |
 | **Thursday, 15 July** | | |
 | time |  topic | speaker |
