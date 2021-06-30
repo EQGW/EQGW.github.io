@@ -17,5 +17,7 @@
 ## Lecture 5-2: Threshold model, and Comments on using QTLs and sequence data ##
 
 ### Joe Felsenstein ###
+
+These will be two more-or-less unrelated topics, each for about half of the lecture.
   
 #### Lecture projection: ####
