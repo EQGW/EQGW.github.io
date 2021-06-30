@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 3-2: title here ##
+## Lecture 3-2: Brownian motion and comparative methods ##
 
-### lecturer name here ###
+### Joe Felsenstein and Samantha Price ###
   
 #### Lecture projection: ####
