@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 4-2: title here ##
+## Lecture 4-2:  Identifiability, model adequacy and measurement error ##
 
-### lecturer name here ###
+### Brian O'Meara, Samantha Price, and Joe Felsenstein ###
   
 #### Lecture projection: ####
