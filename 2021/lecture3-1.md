@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 3-1: title here ##
+## Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies ##
 
-### lecturer name here ###
+### Josef Uyeda ###
   
 #### Lecture projection: ####
