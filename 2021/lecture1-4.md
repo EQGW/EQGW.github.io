@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 1-4: title here ##
+## Lecture 1-4: Evolution on adaptive landscapes ##
 
-### lecturer name here ###
+### Stevan Arnold ###
   
 #### Lecture projection: ####
