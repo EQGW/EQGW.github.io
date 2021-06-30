@@ -51,5 +51,5 @@ _These can change: we're still working on the schedule.  So far still getting th
 | **Friday, 16 July** | | |
 | time | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.md) | Joe Felsenstein and Michelle Lawing |
 | time | [Lecture 5-2: Threshold model, and Comments on using QTLs and sequence data](lecture5-2.md) | Joe Felsenstein |
-| time | Discussion: Wrap up Q \& A with surviving instructors | all lecturers |
+| time | Discussion: Wrap up Q & A with surviving instructors | all lecturers |
 | time | Feedback from students | Steve Arnold |
