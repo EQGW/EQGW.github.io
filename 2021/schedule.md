@@ -23,19 +23,25 @@ _These can change: we're still working on the schedule.  So far still getting th
 | **Monday, July 12**  |   |    |   
 | time | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
 | time | Introductions of participants | themselves |
-| time | [Inheritance and response to selection](lecture1-2.html) | Adam Jones |
-| time | [Selection as a surface](lecture1-3.html) | Steve Arnold |
-| time | [Evolution on adaptive landscapes](lecture1-4.html) | Steve Arnold |
+| time | Lecture 1-2:  Inheritance and response to selection | Adam Jones | 
+| time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Steve Arnold | 
+| time | Lecture 1-3:  Selection as a surface | Steve Arnold |
+| time | Exercise 1-2:  Estimating a selection surface  | Steve Arnold | 
+| time | Lecture 1-4:  Evolution on adaptive landscapes (Arnold, break into two 30 min segments)
 |  |  |  |
 | **Tuesday, 13 July** | | |
-| time | [Estimation of inheritance with fixed and random effects](lecture2-1.html) | Patrick Carter |
-| time | [Stability and evolution of the G-matrix](lecture2-2.html)  | Adam Jones |
-| time | [Evolution in the short term and the long term ](lecture2-3.html) | Josef Uyeda |
+| time | Lecture 2-1:  Estimation of inheritance with fixed and random effects | Patrick Carter | 
+| time | Exercise 2-1:  Using MCMCglmm in R to estimate inheritance | Patrick Carter | 
+| time | Lecture 2-2:  Stability and evolution of the G-matrix | Adam Jones | 
+| time | Exercise 2-2:  G-matrix simulations | Adam Jones | 
+| time | Lecture 2-3:  Evolution in the short term and the long term | Josef Uyeda |  
 | | | |
 | **Wednesday, 14 July** | | |
-| time | [Phylogenetic natural history](lecture3-1.html) | Josef Uyeda | 
-| time |  topic | speaker |
-| time |  topic | speaker |
+| time | Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies | Josef Uyeda | 
+| time | Lecture 3-2: Brownian Motion and comparative methods | Joe Felsenstein and Samantha Price |
+| time | Exercise 3-1: Brownian Motion / comparative methods | Samantha Price and Joe Felsenstein | 
+| time | Lecture 3-3: OU models on phylogenies | Michelle Lawing and Brian O'Meara |
+| time | Exercise 3-2 | OU models and analyses | Michelle Lawing and Brian O'Meara |
 | | | |
 | **Thursday, 15 July** | | |
 | time |  topic | speaker |
