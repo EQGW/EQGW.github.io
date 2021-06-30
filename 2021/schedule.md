@@ -44,11 +44,12 @@ _These can change: we're still working on the schedule.  So far still getting th
 | time | Exercise 3-2: OU models and methods | Michelle Lawing and Brian O'Meara |
 | | | |
 | **Thursday, 15 July** | | |
-| time |  topic | speaker |
-| time |  topic | speaker |
-| time |  topic | speaker |
+| time | Lecture 4-1: Simulation using models of evolution: a lizard example | Samantha Price and Michelle Lawing |
+| time | Lecture 4-2: Identifiability, model adequacy and measurement error | Brian O'Meara, Samantha Price and Joe Felsenstein | 
+| time | “Student’s choice” breakout rooms with each of the lecturers | all lecturers |
 | | | |
 | **Friday, 16 July** | | |
-| time |  topic | speaker |
-| time |  topic | speaker |
-| time |  topic | speaker |
+| time | Lecture 5-1 | Morphometrics on phylogenies | Joe Felsenstein and Michelle Lawing |
+| time | Lecture 5-2 | Threshold model, and Comments on using QTLs and sequence data | Joe Felsenstein |
+| time | Discussion: Wrap up Q \& A with surviving instructors | all lecturers |
+| time | Feedback from students | Steve Arnold |
