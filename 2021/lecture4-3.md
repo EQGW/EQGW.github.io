@@ -14,8 +14,22 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 4-3: title here ##
+## Lecture 4-3: "Student's choice" breakout sessions with individual lecturers ##
 
-### lecturer name here ###
+### lecturers available, by number of breakout room (order alphabetical) ###
+  
+  If particular lecturers have topics they want to discuss we will put those here.  Otherwise they are available for discussion of topics raised by the participants. 
+  
+  1. Steve Arnold
+  2. Patrick Carter
+  3. Joe Felsenstein
+  4. Adam Jones
+  5. Michelle Lawing
+  6. Brian O'Meara
+  7. Samantha Price
+  8. Josef Uyeda
+  
+  
+  
   
 #### Lecture projection: ####
