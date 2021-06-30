@@ -12,11 +12,16 @@
 
 # Schedule for 2021 Workshop #
 
+All times are Eastern Daylight Time (EDT).  Pacific Daylight Time (PDT) is 3 hours earlier in the day.
+
+_These can change: we're still working on the schedule.  So far still getting the lectures decided._
+
+
 | time | topic  |  speaker(s) |
 |------|--------|-------------|
 | | | |
 | **Monday, July 12**  |   |    |   
-| time | Introduction | Steve Arnold, Joe Felsenstein |
+| time | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
 | time | Introductions of participants | themselves |
 | time | [Inheritance and response to selection](lecture1-2.html) | Adam Jones |
 | time | [Selection as a surface](lecture1-3.html) | Steve Arnold |
@@ -29,6 +34,15 @@
 | | | |
 | **Wednesday, 14 July** | | |
 | time | [Phylogenetic natural history](lecture3-1.html) | Josef Uyeda | 
-| time |   |   |
-| | |  |
-| (and so on) | | |
+| time |  topic | speaker |
+| time |  topic | speaker |
+| | | |
+| **Thursday, 15 July** | | |
+| time |  topic | speaker |
+| time |  topic | speaker |
+| time |  topic | speaker |
+| | | |
+| **Friday, 16 July** | | |
+| time |  topic | speaker |
+| time |  topic | speaker |
+| time |  topic | speaker |
