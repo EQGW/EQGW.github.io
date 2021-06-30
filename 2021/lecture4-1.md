@@ -14,8 +14,8 @@
 ---|-----------------------------------------|-------   
   
 
-## Lecture 4-1: title here ##
+## Lecture 4-1: Simulation using models of evolution: a lizard example ##
 
-### lecturer name here ###
+### Samantha Price and Michelle Lawing ###
   
 #### Lecture projection: ####
