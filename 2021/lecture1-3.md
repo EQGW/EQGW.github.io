@@ -10,13 +10,13 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-&larr; [Previous lecture](lecture1-2.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture1-4.html) &rarr;
----|-----------------------------------------|-------   
+| &larr; [Previous lecture](lecture1-2.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture1-4.html) &rarr; |
+|---|-----------------------------------------|-------|   
   
 
-## Lecture 1-3: title here ##
+## Lecture 1-3: Selection as a surface ##
 
-### lecturer name here ###
+### Stevan Arnold ###
   
 #### Lecture projection: ####
 
