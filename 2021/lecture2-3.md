@@ -12,6 +12,8 @@
 
 &larr; [Previous lecture](lecture2-2.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture3-1.html) &rarr;
 ---|-----------------------------------------|-------   
+<table><tr><td>&larr; <a href="lecture2-2.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture3-1.html">Next lecture &rarr;</a></td></tr></table>
+
   
 
 ## Lecture 2-3: Evolution in the short term and the long term ##
