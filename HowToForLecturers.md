@@ -10,8 +10,6 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-_WARNING: Joe is still editing this page, so do not trust its instructions (yet).  I've tried to indicate which parts are iffy._
-
 
 # For workshop lecturers: editing lecture and exercise pages and posting files #
 
