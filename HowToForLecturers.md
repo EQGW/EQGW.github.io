@@ -99,18 +99,18 @@ Files such as lecture projections (PPT or PDF), or supplementary documents, or R
 
 ## Getting the link for one of those files ##
 
-But there is still the matter of getting the address of the file, and posting a link to it on the appropriate lecture or exercise web page.
+There is still the matter of getting the address of the file, and posting a link to it on the appropriate lecture or exercise web page.
 
-***After here in this section, not changed yet to reflect access of these folders by link, which is necessary because of two-factor authentication craziness making it impossible to let you all log in to the Google account of the Workshop.  Still, some of this will work.***
-
-_(Can't do this anymore)_ Open a window with the Google Drive page, with you logged in appropriately.
-Find the folder with the file, and open that folder.
-(You may need to do this only once)  The files you put in the Google Drive folders should be accessible by anyone who has the link.  This ensures that clicking on the link in the blog reaches the file.  To make that select the file and click on the icon above and to the right that looks a person with a + sign on their shoulder.  Choose the setting that states that “anyone with the link can view” the file (not just anyone at UW with a link).
-Right-click or Crtl-click on the file name.
-A menu will open.  Choose “Get Sharable Link”.
-A box will open with the URL address for the link.  Select it and copy it.
-_(This next part needs to be changed, too)._ Now go to the Edit screen for the blog page, in Visual mode.  Have the text that will indicate the link selected.
-Choose the symbol for Insert/Edit Link, which looks like a little chain with three links.
-Insert the URL in the box provided.
-Press the return-arrow button which immediately follows the URL field.
-Don’t forget to Publish or Update the web page after that.
+1. Make sure you are logged in to your own Google Drive page using the account of yours that we gave permission to access files at the EQGW Github site.
+2. Make sure you have chosen "Shared with me" from the column of choices on the left side of the Google Drive area.
+3. Make sure you have chosen the year and the folder for the appropriate lecture. 
+4. You want to have a link that will enable anyone to view that file.
+5. Right-click or Crtl-click on the file name.
+6. A menu will open.  Choose “Get link”. Select it.
+7. When a box open asking about access to the file, choose the setting that states that “Anyone on the internet with this link can view” the file.
+8. Leave the permission as "Viewer", do not change it.
+9. Above this there will be a green long complicated URL address.  Select "Copy link" which is to its right.  A black box will appear to verify that it has done that.
+10. Now, perhaps in another window, get to the page in the EQGW repository for that lecture.
+11. Make sure you have chosen the Edit mode (the little pencil icon in the upper-right of the page).
+12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type in on the page is \[This is the PDF](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
+13. Once you have completed pasting in that link and typing that closing curved parenthesis, don’t forget to select the green button for "Commit changes" for that webpage after that.
