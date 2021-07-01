@@ -10,8 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-&larr; [Previous lecture](lecture1-1.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture1-3.html) &rarr; 
----|-----------------------------------------|-------   
+<table><tr><td>&larr; <a href="lecture1-1.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture1-3.md">Next lecture &rarr;</a></td></tr></table>
   
 
 ## Lecture 1-2: Inheritance and response to selection ##
