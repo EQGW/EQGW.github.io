@@ -14,6 +14,7 @@
 
 # Previous years of the workshop #
 
+## in Friday Harbor Labs ##
 
 Here are links to previous years' workshops, with pages for the individual lectures, including lecture projections, audio recordings, and files for computer exercises.  For 2014-2016 there are YouTube videos of the lectures as well.
 
@@ -30,13 +31,17 @@ Here are links to previous years' workshops, with pages for the individual lectu
 
 The workshop has been held yearly since 2011.
 
-
-The workshop was held from 2014 to 2016 at the National Institute for Mathematical and Biological Synthesis (NIMBioS) at the University of Tennessee, Knoxville.
+### in Knoxville, Tennessee ###
 
 &nbsp;
 
+The workshop was held from 2014 to 2016 at the National Institute for Mathematical and Biological Synthesis (NIMBioS) at the University of Tennessee, Knoxville.
+
 The main tutorial page for each of these years includes a link to YouTube videos of the livestreamed lectures.  Once you get used to the lecturer often appearing twice (there were two cameras, one pointed at the projection screen, the other at the podium and whiteboard), these convey the content of the workshop lectures well.  You should also be able to go to the webpage for the lecture and get your own copy of the lecture projection (PowerPoint or PDF), to see the projection more clearly.  Computer exercises were not video-recorded.  Many thanks to the wonderful NIMBioS staff for making these available.
 
+&nbsp;
+
+### in Durham, North Carolina ###
 
 [2016 Workshop](http://www.nimbios.org/tutorials/TT_eqg2016)
 
