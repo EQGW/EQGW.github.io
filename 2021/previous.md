@@ -10,8 +10,6 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-&larr; [Previous lecture](lecture5-2.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;
----|-----------------------------------------|-------   
 
 
 # Previous years of the workshop #
@@ -35,6 +33,7 @@ The workshop has been held yearly since 2011.
 
 The workshop was held from 2014 to 2016 at the National Institute for Mathematical and Biological Synthesis (NIMBioS) at the University of Tennessee, Knoxville.
 
+&nbsp;
 
 The main tutorial page for each of these years includes a link to YouTube videos of the livestreamed lectures.  Once you get used to the lecturer often appearing twice (there were two cameras, one pointed at the projection screen, the other at the podium and whiteboard), these convey the content of the workshop lectures well.  You should also be able to go to the webpage for the lecture and get your own copy of the lecture projection (PowerPoint or PDF), to see the projection more clearly.  Computer exercises were not video-recorded.  Many thanks to the wonderful NIMBioS staff for making these available.
 
@@ -47,11 +46,12 @@ The main tutorial page for each of these years includes a link to YouTube videos
 
 [2014 Workshop](http://www.nimbios.org/tutorials/TT_eqg)
 
+&nbsp;
 
 The 2011 to 2013 workshops were held at NESCENT, the National Evolutionary Synthesis Center at Duke University in Durham North Carolina.  Their NSF funding ran out after 2013.  We were sad to leave the supportive environment of NESCENT, and fortunate to find a new home at NIMBioS in 2014.  The 2011-2013 web pages for our courses at NESCENT are no longer available.  Wiki pages have been preserved by the Wayback Machine archive. Most of the links on those pages do not work.
 
 
-2013 Workshop Wiki page](https://web.archive.org/web/20130517232805/https://academy.nescent.org/wiki/Evolutionary_quantitative_genetics)
+[2013 Workshop Wiki page](https://web.archive.org/web/20130517232805/https://academy.nescent.org/wiki/Evolutionary_quantitative_genetics)
 
 
 [2012 Workshop wiki page with Course materials](https://web.archive.org/web/20121202111458/http://academy.nescent.org:80/wiki/Evolutionary_quantitative_genetics)
