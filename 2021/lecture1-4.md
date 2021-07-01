@@ -13,7 +13,7 @@
 &larr; [Previous lecture](lecture1-3.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture2-1.html) &rarr;
 ---|-----------------------------------------|-------   
   
-<table><td>&larr; <a href="lecture1-3.html">Previous lecture</a></td><td width="600">&nbsp;</td><td> <a href="lecture2-1.md">Next lecture &rarr;</a>
+<table><tr><td>&larr; <a href="lecture1-3.html">Previous lecture</a></td><td width="600">&nbsp;</td><td> <a href="lecture2-1.md">Next lecture &rarr;</a></td></tr></table>
 
 ## Lecture 1-4: Evolution on adaptive landscapes ##
 
