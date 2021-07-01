@@ -10,7 +10,6 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
----|-----------------------------------------|-------   
 <table><tr><td>&larr; <a href="lecture2-2.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture3-1.html">Next lecture &rarr;</a></td></tr></table>
 
   
