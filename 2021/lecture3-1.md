@@ -10,8 +10,8 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-&larr; [Previous lecture](lecture2-3.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture3-2.html) &rarr;
----|-----------------------------------------|-------   
+<table><tr><td>&larr; <a href="lecture2-3.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture3-2.html">Next lecture &rarr;</a></td></tr></table>
+
   
 
 ## Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies ##
