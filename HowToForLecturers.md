@@ -112,5 +112,5 @@ There is still the matter of getting the address of the file, and posting a link
 9. Above this there will be a green long complicated URL address.  Select "Copy link" which is to its right.  A black box will appear to verify that it has done that.
 10. Now, perhaps in another window, get to the page in the EQGW repository for that lecture.
 11. Make sure you have chosen the Edit mode (the little pencil icon in the upper-right of the page).
-12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type in on the page is \[This is the PDF](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
+12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type and paste in on the page is &nbsp; \[This is the PDF](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
 13. Once you have completed pasting in that link and typing that closing curved parenthesis, don’t forget to select the green button for "Commit changes" for that webpage after that.
