@@ -81,15 +81,19 @@ Once there is a web page for a lecture or exercise for this year, you may want t
 You probably want to link to PDF or PPT files of slides, to files of R exercises, and other media.  Do <em>not put these files into our Github repository</em>, but instead post those files to the appropriate folder for Google Drive for the fhleqg Gmail account.  Use the instructions below for “posting files to be linked to from the web page” and also the instructions below that for obtaining the link for each such file to make a link from the web page that you are creating in this list of instructions.
  
 
-## Posting files to be linked to from the web page ##
+## Posting files at Google Drive to be linked to from the EQGW Github webpage ##
 
-***After here in this section, not changed yet to reflect access of these folders by link, which is necessary because of two-factor authentication craziness which has the effect of making it impossible to let us all log in to the Google account of the Workshop***
+Files such as lecture projections (PPT or PDF), or supplementary documents, or R exercises, or audio recordings, are not to be posted in the workshop Github repository.  Instead, you need to put them in the Google Drive area for the  fhleqg  account, which is a gmail account (a Google account).  If you are a lecturer in the Workshop you have been added, under one of your email addresses, to the list of people who can put files into the Google Drive folder for this year's workshop (it has a folder name which is the year number, such as "2021").  To put such a file there:
 
-Files such as lecture projections (PPT or PDF), or supplementary documents, or R exercises, or audio recordings, are not to be posted on the workshop blog.  Instead, open the Google Drive for the  fhleqg  account, which is not a gmail account but a  uw.edu  account.  It has the password we mentioned above.
-
-Find the “Shared folder” and open it, then find the folder for this year (such as “2019”) and open that.  Find the folder for the lecture or exercise, and open that.  If it does not exist, right-click or Ctrl-click and choose New Folder, and give it the appropriate name such as  Lecture 4.3.
-
-Then you should be able to tow the file from your system onto that Drive screen and drop it there.  You can change its name once it is there, if you want.
+1. Go to your Google Drive account and log in, with the username of yours that we gave permission to share folders with the  fhleqg@gmail.com  Google account.
+2. After you have chosen the Google Drive icon, on the left side of the window you will find a menu item "Shared with me".
+3. Select it.  A list of folders or files that have been recently shared with you will appear.
+4. Find the one with the year number for EQGW, such as "2021".
+5. Select it.  A set of folders should appear with names such as "lecture3-2".
+6. Find the one for your lecture and open it.  If none appears, choose New Folder and make one.
+7. Now an area will appear in which you can drag-and-drop any files that you want to store there.
+8. Put the files you want to store there.
+9. You can change its name once it is there, if you want.
 
  
 
