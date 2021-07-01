@@ -10,8 +10,8 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-&larr; [Previous lecture](lecture3-2.html)      | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Next lecture](lecture4-1.html) &rarr;
----|-----------------------------------------|-------   
+<table><tr><td>&larr; <a href="lecture3-2.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture4-1.html">Next lecture &rarr;</a></td></tr></table>
+
   
 
 ## Lecture 3-3: OU models on phylogenies ##
