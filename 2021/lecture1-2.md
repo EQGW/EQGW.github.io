@@ -19,6 +19,6 @@
   
 #### Lecture projection: ####
   
-[Lecture1-2.pdf](lecture1-2.pdf)
+
 
   
