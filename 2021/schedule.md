@@ -23,10 +23,10 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | **Monday, July 12**  |   |    |   
 | time | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
 | time | Introductions of participants | themselves |
-| time | [Lecture 1-2:  Inheritance and response to selection](lecture1-2.md) | Adam Jones | 
-| time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Steve Arnold | 
+| time | [Lecture 1-2:  Inheritance and response to selection](lecture1-2.md) | Steve Arnold | 
+| time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda | 
 | time | [Lecture 1-3:  Selection as a surface](lecture1-3.md) | Steve Arnold |
-| time | Exercise 1-2:  Estimating a selection surface  | Steve Arnold | 
+| time | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda | 
 | time | [Lecture 1-4:  Evolution on adaptive landscapes](lecture1-4.md) | Steve Arnold | 
 |  |  |  |
 | **Tuesday, 13 July** | | |
