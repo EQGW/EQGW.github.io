@@ -17,7 +17,7 @@
 
 ### Stevan J. Arnold ###
   
-#### Lecture projection: ####
+#### Lecture projections: ####
   
 ##### [PowerPoint for Part 1](https://drive.google.com/file/d/1SviIjNogoFk2YjFqeDboFtnbwQTR3J07/view?usp=sharing) #####
 ##### [PowerPoint for Part 2](https://drive.google.com/file/d/1TrTyWR0mC3-UW3pBVm-GUNMpaR4UuLAy/view?usp=sharing) #####
@@ -25,5 +25,10 @@
 ##### [PDF for Part 1](https://drive.google.com/file/d/1eylZZa3gN1V6XvAD7jmASX-L3eX_igsi/view?usp=sharing) #####
 ##### [PDF for Part 2](https://drive.google.com/file/d/13PTu7wGMVWNL9m5FuKlZq7vmtVRXp9vb/view?usp=sharing) #####
 
+
+#### Background readings:  ####
+
+##### [Chapter 5](https://drive.google.com/file/d/1EnXh_InUYDJtP8L7YxaJCZquFDWmcMPU/view?usp=sharing) ####
+##### [Chapter 6](https://drive.google.com/file/d/1Yde1m5K6wez8kldeOWm5MsrkQmcbRY6_/view?usp=sharing) ####
 
   
