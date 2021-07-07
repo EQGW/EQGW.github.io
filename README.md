@@ -7,7 +7,7 @@ will contain links to the PPT or PDF slides for that lecture, for R files for th
 exercises, and for audio files for the lectures.
 
 However, for now those files will actually be stored on the Google Drive account  fhleqg@gmail.com
-in folders for each lecture within a folder for each year.  Users reading the webpages can
-access them using the links in these webpages.
+in folders for each lecture within a folder for each year.  The lecturers will enabled to put 
+materials there.  Users reading the webpages can access them using the links in these webpages.
 
 Joe Felsenstein (felsenst.github.io)
