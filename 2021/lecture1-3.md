@@ -15,7 +15,17 @@
 
 ## Lecture 1-3: Selection as a surface ##
 
-### Stevan Arnold ###
+### Stevan J. Arnold ###
   
 #### Lecture projection: ####
+
+##### [PowerPoint]() #####
+##### [PDF]() #####
+
+#### Background reading: ####
+
+##### [Chapter 1]() #####
+##### [Chapter 2]() #####
+##### [Chapter 3]() #####
+##### [Chapter 4]() #####
 
