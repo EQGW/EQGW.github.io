@@ -19,8 +19,8 @@
   
 #### Lecture projection: ####
   
-#### PowerPoint for Part 1 ####
-#### PowerPoint for Part 2 ####
+##### [PowerPoint for Part 1](https://drive.google.com/file/d/1eylZZa3gN1V6XvAD7jmASX-L3eX_igsi/view?usp=sharing) #####
+##### PowerPoint for Part 2 #####
 
 
   
