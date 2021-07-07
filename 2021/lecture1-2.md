@@ -19,7 +19,8 @@
   
 #### Lecture projection: ####
   
-#### PowerPoint ####
-#### Pdf ####
+#### PowerPoint for Part 1 ####
+#### PowerPoint for Part 2 ####
+
 
   
