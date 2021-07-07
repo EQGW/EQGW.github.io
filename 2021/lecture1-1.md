@@ -16,6 +16,9 @@
 ## Lecture 1-1: Introduction ##
 
 ### Steve Arnold and Joe Felsenstein ###
-  
+
+This short session will describe the topics to be covered in the Workshop, and the organization and format of the sessions in the schedule, and it will also introduce the organizers and the lecturers.
+
+
 #### Lecture projection: ####
 
