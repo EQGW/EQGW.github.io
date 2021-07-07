@@ -19,13 +19,13 @@
   
 #### Lecture projection: ####
 
-##### [PowerPoint]() #####
-##### [PDF]() #####
+##### [PowerPoint](https://drive.google.com/file/d/1H8BoQRvVm6wiFbPjTYfsamShgn_gsbOu/view?usp=sharing) #####
+##### [PDF](https://drive.google.com/file/d/1wg7frqhS4YSK14Al-VmwpYIWQqMfSKPS/view?usp=sharing) #####
 
 #### Background reading: ####
 
-##### [Chapter 1]() #####
-##### [Chapter 2]() #####
-##### [Chapter 3]() #####
-##### [Chapter 4]() #####
+##### [Chapter 1](https://drive.google.com/file/d/1IR3tr-ow7SKUQhLskjMt56H1Yp684Psj/view?usp=sharing) #####
+##### [Chapter 2](https://drive.google.com/file/d/1ASCuHvZWm7w8feTPhJ9v4HWAE5R8j9EA/view?usp=sharing) #####
+##### [Chapter 3](https://drive.google.com/file/d/1eb3FFzlcGGFomS1PJxU7IXLmyNRq6dBQ/view?usp=sharing) #####
+##### [Chapter 4](https://drive.google.com/file/d/1XhZ4gSBnHyFSmqkRkqNk3lYdmQYfIPNM/view?usp=sharing) #####
 
