@@ -15,7 +15,7 @@
 
 ## Lecture 1-2: Inheritance and response to selection ##
 
-### Adam Jones ###
+### Stevan J. Arnold ###
   
 #### Lecture projection: ####
   
