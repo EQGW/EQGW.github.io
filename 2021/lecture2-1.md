@@ -19,7 +19,7 @@
   
 #### Lecture projection: ####
 
-[Slides for Lecture 2.1](https://drive.google.com/drive/folders/15EfhZwgimB4FOZavVXwI4tl5MIExRTKM?usp=sharing)
+[Slides for Lecture 2.1](https://drive.google.com/file/d/1-RsLRkPhYRkk_lY1W0XdJDoqOgdam3l4/view?usp=sharing)
 
 #### Readings: ####
 
