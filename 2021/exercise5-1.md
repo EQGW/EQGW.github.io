@@ -12,5 +12,5 @@
 
 ## Exercise 5-1: Morphometrics ##
 
-### Michelle Lawing and Joe Felsenstein ###
+### Michelle Lawing ###
   
