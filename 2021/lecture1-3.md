@@ -13,7 +13,7 @@
 <table><tr><td>&larr; <a href="lecture1-2.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture1-4.html">Next lecture &rarr;</a></td></tr></table>
   
 
-## Lecture 1-3: Selection as a surface ##
+## Lecture 1-3: Selection as a surface, in 2 parts ##
 
 ### Stevan J. Arnold ###
   
