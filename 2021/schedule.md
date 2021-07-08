@@ -25,12 +25,12 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | 9:30 - 10:00 | Introductions of participants | themselves |
 | 10:00 - 11:15 | [Lecture 1-2:  Inheritance and response to selection, in two parts](lecture1-2.html) | Steve Arnold | 
 | 11:15 - 11:30 | Discussion | participants |
-| 11:30 - 12:00 | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda |
+| 11:30 - 12:00 | [Exercise 1-1:  Heritability estimation by parent-offspring regression in R](exercise1-1.html) | Josef Uyeda |
 | 12:00 - 12:15 | Discussion | participants |
 | 12:15 - 1:30 | Lunch break |  |
 | 1:30 - 2:45 | [Lecture 1-3:  Selection as a surface, in two parts](lecture1-3.html) | Steve Arnold |
 | 2:45 - 3:00 | Discussion | participants |
-| 3:00 - 3:30 | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda |
+| 3:00 - 3:30 | [Exercise 1-2:  Estimating a selection surface](exercise1-2.html)  | Josef Uyeda |
 | 3:30 - 3:45 | Discussion | participants |
 | 3:45 - 5:00 | [Lecture 1-4:  Evolution on adaptive landscapes, in two parts](lecture1-4.html) | Steve Arnold |
 | 5:00 - 5:15 | Discussion | participants |
