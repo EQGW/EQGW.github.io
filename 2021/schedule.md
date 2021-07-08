@@ -21,18 +21,19 @@ _These can change: we're still working on the schedule.  A lot of details involv
 |---------|-------------|------------------|
 | | | |
 | **Monday, July 12**  |   |    |   
-| time | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
-| time | Introductions of participants | themselves |
-| time | [Lecture 1-2:  Inheritance and response to selection, in two parts](lecture1-2.md) | Steve Arnold | 
-| time | Discussion | particpants |
-| time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda |
-| time | Discussion | particpants |
-| time | [Lecture 1-3:  Selection as a surface, in two parts](lecture1-3.md) | Steve Arnold |
-| time | Discussion | particpants |
-| time | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda |
-| time | Discussion | particpants |
-| time | [Lecture 1-4:  Evolution on adaptive landscapes, in two parts](lecture1-4.md) | Steve Arnold |
-| time | Discussion | particpants |
+| 9:00 - 9:30 | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
+| 9:30 - 10:00 | Introductions of participants | themselves |
+| 10:00 - 11:15 | [Lecture 1-2:  Inheritance and response to selection, in two parts](lecture1-2.md) | Steve Arnold | 
+| 11:15 - 11:30 | Discussion | particpants |
+| 11:30 - 12:00 | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda |
+| 12:00 - 12:15 | Discussion | particpants |
+| 12:15 - 1:30 | Lunch break |  |
+| 1:30 - 2:45 | [Lecture 1-3:  Selection as a surface, in two parts](lecture1-3.md) | Steve Arnold |
+| 2:45 - 3:00 | Discussion | particpants |
+| 3:00 - 3:30 | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda |
+| 3:30 - 3:45 | Discussion | particpants |
+| 3:45 - 5:00 | [Lecture 1-4:  Evolution on adaptive landscapes, in two parts](lecture1-4.md) | Steve Arnold |
+| 5:00 - 5:15 | Discussion | particpants |
 |  |  |  |
 | **Tuesday, 13 July** | | |
 | time | [Lecture 2-1:  Estimation of inheritance with fixed and random effects](lecture2-1) | Patrick Carter | 
