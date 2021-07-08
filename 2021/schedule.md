@@ -24,10 +24,15 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | time | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
 | time | Introductions of participants | themselves |
 | time | [Lecture 1-2:  Inheritance and response to selection, in two parts](lecture1-2.md) | Steve Arnold | 
-| time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda | 
+| time | Discussion | particpants |
+| time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda |
+| time | Discussion | particpants |
 | time | [Lecture 1-3:  Selection as a surface, in two parts](lecture1-3.md) | Steve Arnold |
-| time | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda | 
-| time | [Lecture 1-4:  Evolution on adaptive landscapes, in two parts](lecture1-4.md) | Steve Arnold | 
+| time | Discussion | particpants |
+| time | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda |
+| time | Discussion | particpants |
+| time | [Lecture 1-4:  Evolution on adaptive landscapes, in two parts](lecture1-4.md) | Steve Arnold |
+| time | Discussion | particpants |
 |  |  |  |
 | **Tuesday, 13 July** | | |
 | time | [Lecture 2-1:  Estimation of inheritance with fixed and random effects](lecture2-1) | Patrick Carter | 
