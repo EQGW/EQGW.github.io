@@ -36,14 +36,19 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | 5:00 - 5:15 | Discussion | particpants |
 |  |  |  |
 | **Tuesday, 13 July** | | |
-| time | [Lecture 2-1:  Estimation of inheritance with fixed and random effects](lecture2-1) | Patrick Carter | 
-| time | Exercise 2-1:  Using MCMCglmm in R to estimate inheritance | Patrick Carter | 
-| time | [Lecture 2-2:  Sexual radiation: in two parts](lecture2-2.md) | Steve Arnold | 
-| time |  | 
-| time | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.md) | Josef Uyeda |  
+| 9:00 - 10:15 | [Lecture 2-1:  Estimation of inheritance with fixed and random effects](lecture2-1) | Patrick Carter | 
+| 1o:15 - 10:30 | Discussion | particpants |
+| 10:30 - 11:00 | Exercise 2-1:  Using MCMCglmm in R to estimate inheritance | Patrick Carter |
+| 11:00 - 11:15 | Discussion | particpants |
+| 11:15 - 12:30 | [Lecture 2-2:  Sexual radiation: in two parts](lecture2-2.md) | Steve Arnold | 
+| 12:30 - 12:45 | Discussion | particpants |
+| 12:45 - 2:00 | Lunch break | 
+| 2:00 - 3:15 | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.md) | Josef Uyeda |
+| 3:15 - 3:30 | Discussion | particpants |
 | | | |
 | **Wednesday, 14 July** | | |
-| time | [Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies](lecture3-1.md) | Josef Uyeda | 
+| 9:00 - 10:15 | [Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies](lecture3-1.md) | Josef Uyeda | 
+| 1o:15 - 10:30 | Discussion | particpants |
 | time | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.md) | Joe Felsenstein and Samantha Price |
 | time | Exercise 3-1: Brownian Motion / comparative methods | Samantha Price and Joe Felsenstein | 
 | time | [Lecture 3-3: OU models on phylogenies](lecture3-3.md) | Michelle Lawing and Brian O'Meara |
