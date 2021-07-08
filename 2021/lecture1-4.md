@@ -23,7 +23,7 @@
 
 #### Background reading: ####
 
-##### [Chapter 16](https://drive.google.com/file/d/1lcgxUBTqFPcSNEMdrYJh0-MOcdY0yelI/view?usp=sharing) #####
-##### [Chapter 17](https://drive.google.com/file/d/122hdpfGeeU6HDURqaPf6NRXL-SoxQz8B/view?usp=sharing) #####
-
+##### [Chapter 12]() #####
+##### [Chapter 13]() #####
+##### [Chapter 14]() #####
 
