@@ -19,4 +19,8 @@
   
 #### Lecture projection: ####
 
-[Slides for the lecture 2.1](https://drive.google.com/drive/folders/15EfhZwgimB4FOZavVXwI4tl5MIExRTKM?usp=sharing)
+[Slides for Lecture 2.1](https://drive.google.com/drive/folders/15EfhZwgimB4FOZavVXwI4tl5MIExRTKM?usp=sharing)
+
+#### Readings: ####
+
+[Villemereui MCMCglmm tutorial](https://drive.google.com/file/d/1a3SLp3SMbEyE3PmtQr6JZnOFw5GkPEaL/view?usp=sharing)
