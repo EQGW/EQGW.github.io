@@ -40,7 +40,7 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | 1o:15 - 10:30 | Discussion | particpants |
 | 10:30 - 11:00 | Exercise 2-1:  Using MCMCglmm in R to estimate inheritance | Patrick Carter |
 | 11:00 - 11:15 | Discussion | particpants |
-| 11:15 - 12:30 | [Lecture 2-2:  Sexual radiation: in two parts](lecture2-2.md) | Steve Arnold | 
+| 11:15 - 12:30 | [Lecture 2-2:  Sexual radiation, in two parts](lecture2-2.md) | Steve Arnold | 
 | 12:30 - 12:45 | Discussion | particpants |
 | 12:45 - 2:00 | Lunch break | 
 | 2:00 - 3:15 | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.md) | Josef Uyeda |
