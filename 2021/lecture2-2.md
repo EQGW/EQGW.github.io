@@ -20,3 +20,12 @@
   
 #### Lecture projection: ####
 
+##### [PowerPoint](https://drive.google.com/file/d/1ayltJWaBOG8IpOLOsNjydTbi4lgGlczA/view?usp=sharing) #####
+##### [PDF](https://drive.google.com/file/d/1ePIFMldR-cYmqFTEGAjJfJtEl9BToxog/view?usp=sharing) #####
+
+#### Background reading: ####
+
+##### [Arnold & Houck 2016](https://drive.google.com/file/d/1y7d4Sf4qQK-FLzEKnVlS-j0tkc7VxxXA/view?usp=sharing) #####
+##### [Arnold & Houck 2016 Supplementary figures](https://drive.google.com/file/d/1IpMmpz8rTCZOj0o8nd5b5N1f2Vibiur3/view?usp=sharing) #####
+
+
