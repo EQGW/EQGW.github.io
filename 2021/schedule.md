@@ -38,7 +38,7 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | **Tuesday, 13 July** | | |
 | 9:00 - 10:15 | [Lecture 2-1:  Estimation of inheritance with fixed and random effects](lecture2-1.html) | Patrick Carter | 
 | 1o:15 - 10:30 | Discussion | participants |
-| 10:30 - 11:00 | Exercise 2-1:  Using MCMCglmm in R to estimate inheritance | Patrick Carter |
+| 10:30 - 11:00 | [Exercise 2-1:  Using MCMCglmm in R to estimate inheritance](exercise2-1.html) | Patrick Carter |
 | 11:00 - 11:15 | Discussion | participants |
 | 11:15 - 12:30 | [Lecture 2-2:  Sexual radiation, in two parts](lecture2-2.html) | Steve Arnold | 
 | 12:30 - 12:45 | Discussion | participants |
