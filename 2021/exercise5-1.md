@@ -10,7 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-## Exercise 5-1: Threshold model ##
+## Exercise 5-1: Morphometrics ##
 
-### Josef Uyeda ###
+### Michelle Lawing and Joe Felsenstein ###
   
