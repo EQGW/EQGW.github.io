@@ -24,3 +24,9 @@
 #### Readings: ####
 
 [Villemereui MCMCglmm tutorial](https://drive.google.com/file/d/1a3SLp3SMbEyE3PmtQr6JZnOFw5GkPEaL/view?usp=sharing)
+
+[Wilson_et_al-2010 Ecologists Guide to the Animal Model](https://drive.google.com/file/d/152thi0Uk7ih3QZjSGJZYT-0Dhd-4hjA0/view?usp=sharing)
+
+[Wilson et al Ecologists Guide Supplementary File 5 – Tutorial MCMCglmm](https://drive.google.com/file/d/1UTWpavYZcMtHiOTJXJRk4wKnlYl_-Uyw/view?usp=sharing)
+
+[NEW REVISED – Wilson et al Supplementary File 5 – Tutorial MCMCglmm](https://drive.google.com/file/d/1a3SLp3SMbEyE3PmtQr6JZnOFw5GkPEaL/view?usp=sharing)
