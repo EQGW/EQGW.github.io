@@ -13,7 +13,7 @@
 <table><tr><td>&larr; <a href="lecture1-1.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture1-3.html">Next lecture &rarr;</a></td></tr></table>
   
 
-## Lecture 1-2: Inheritance and response to selection ##
+## Lecture 1-2: Inheritance and response to selection, in 2 parts ##
 
 ### Stevan J. Arnold ###
   
