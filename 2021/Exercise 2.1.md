@@ -18,7 +18,7 @@
 
 #### Before our session on Tuesday please make sure you have installed the following R packages: ggplot2, MasterBayes, MCMCglmm, Plyr ####
   
-#### Before Class Tuesday please download the following 4 files. Note that Model 101 output and Model 1201 output can only be read and visualized from within the R environment using a load command; I'll show you how to open these on Tuesday. ####
+#### Before Class Tuesday please download the following 4 files. Note that Model 101 output and Model 1201 output can only be read and visualized from within the R environment using a load command. I'll show you how to open these on Tuesday. ####
 
 [R MCMCglmm script](https://drive.google.com/file/d/1ZPJ0_tfjrXIHULb8uWQrwrHoR47DDUwO/view?usp=sharing)
 
