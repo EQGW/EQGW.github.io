@@ -12,7 +12,7 @@
 
 # Schedule for 2021 Workshop #
 
-All times are Eastern Daylight Time (EDT).  Pacific Daylight Time (PDT) is 3 hours earlier in the day.
+All times are Pacific Daylight Time (EDT).  Eastern Daylight Time (PDT) is 3 hours later in the day.
 
 _These can change: we're still working on the schedule.  A lot of details involving computer exercises and discussion sessions, including the times of sessions, are still not finalized ._
 
