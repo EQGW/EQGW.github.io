@@ -14,9 +14,9 @@
 
   
 
-## Lecture 2-2: Stability and evolution of the G-matrix ##
+## Lecture 2-2: Sexual radiation, in 2 parts ##
 
-### Adam Jones ###
+### Stevan J. Arnold ###
   
 #### Lecture projection: ####
 
