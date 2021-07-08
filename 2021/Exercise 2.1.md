@@ -16,7 +16,7 @@
 
 ### Patrick Carter ###
 
-####Before our session on Tuesday please make sure you have installed the following R packages: ggplot2, MasterBayes, MCMCglmm, Plyr####
+#### Before our session on Tuesday please make sure you have installed the following R packages: ggplot2, MasterBayes, MCMCglmm, Plyr ####
   
 #### Before Class Tuesday please download the following 4 files; note that Model 101 output and Model 1201 output can only be read and visualized from within the R environment. ####
 
