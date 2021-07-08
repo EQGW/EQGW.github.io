@@ -12,8 +12,18 @@
   
 <table><tr><td>&larr; <a href="lecture1-3.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture2-1.html">Next lecture &rarr;</a></td></tr></table>
 
-## Lecture 1-4: Evolution on adaptive landscapes ##
+## Lecture 1-4: Evolution on adaptive landscapes, in two parts ##
 
 ### Stevan Arnold ###
   
 #### Lecture projection: ####
+
+##### [PowerPoint](https://drive.google.com/file/d/1JdRLoxaKjukD_Fg5aXQWFeATX4Wxv8aX/view?usp=sharing) #####
+##### [PDF](https://drive.google.com/file/d/1hUlIo_0Zp1o5ujdFfp_w7fKb31wINixz/view?usp=sharing) #####
+
+#### Background reading: ####
+
+##### [Chapter 16](https://drive.google.com/file/d/1lcgxUBTqFPcSNEMdrYJh0-MOcdY0yelI/view?usp=sharing) #####
+##### [Chapter 17](https://drive.google.com/file/d/122hdpfGeeU6HDURqaPf6NRXL-SoxQz8B/view?usp=sharing) #####
+
+
