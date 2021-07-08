@@ -23,17 +23,17 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | **Monday, July 12**  |   |    |   
 | time | [Introduction](lecture1-1.html) | Steve Arnold, Joe Felsenstein |
 | time | Introductions of participants | themselves |
-| time | [Lecture 1-2:  Inheritance and response to selection](lecture1-2.md) | Steve Arnold | 
+| time | [Lecture 1-2:  Inheritance and response to selection, in two parts](lecture1-2.md) | Steve Arnold | 
 | time | Exercise 1-1:  Heritability estimation by parent-offspring regression in R | Josef Uyeda | 
-| time | [Lecture 1-3:  Selection as a surface](lecture1-3.md) | Steve Arnold |
+| time | [Lecture 1-3:  Selection as a surface, in two parts](lecture1-3.md) | Steve Arnold |
 | time | Exercise 1-2:  Estimating a selection surface  | Josef Uyeda | 
-| time | [Lecture 1-4:  Evolution on adaptive landscapes](lecture1-4.md) | Steve Arnold | 
+| time | [Lecture 1-4:  Evolution on adaptive landscapes, in two parts](lecture1-4.md) | Steve Arnold | 
 |  |  |  |
 | **Tuesday, 13 July** | | |
 | time | [Lecture 2-1:  Estimation of inheritance with fixed and random effects](lecture2-1) | Patrick Carter | 
 | time | Exercise 2-1:  Using MCMCglmm in R to estimate inheritance | Patrick Carter | 
-| time | [Lecture 2-2:  Stability and evolution of the G-matrix](lecture2-2.md) | Adam Jones | 
-| time | Exercise 2-2:  G-matrix simulations | Adam Jones | 
+| time | [Lecture 2-2:  Sexual radiation: in two parts](lecture2-2.md) | Steve Arnold | 
+| time |  | 
 | time | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.md) | Josef Uyeda |  
 | | | |
 | **Wednesday, 14 July** | | |
