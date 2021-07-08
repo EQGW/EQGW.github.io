@@ -48,7 +48,7 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | | | |
 | **Wednesday, 14 July** | | |
 | 9:00 - 10:15 | [Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies](lecture3-1.md) | Josef Uyeda | 
-| 1o:15 - 10:30 | Discussion | participants |
+| 10:15 - 10:30 | Discussion | participants |
 | time | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.md) | Joe Felsenstein and Samantha Price |
 | time | Exercise 3-1: Brownian Motion / comparative methods | Samantha Price and Joe Felsenstein | 
 | time | [Lecture 3-3: OU models on phylogenies](lecture3-3.md) | Michelle Lawing and Brian O'Meara |
