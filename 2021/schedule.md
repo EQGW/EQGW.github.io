@@ -49,18 +49,30 @@ _These can change: we're still working on the schedule.  A lot of details involv
 | **Wednesday, 14 July** | | |
 | 9:00 - 10:15 | [Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies](lecture3-1.md) | Josef Uyeda | 
 | 10:15 - 10:30 | Discussion | participants |
-| time | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.md) | Joe Felsenstein and Samantha Price |
-| time | Exercise 3-1: Brownian Motion / comparative methods | Samantha Price and Joe Felsenstein | 
-| time | [Lecture 3-3: OU models on phylogenies](lecture3-3.md) | Michelle Lawing and Brian O'Meara |
-| time | Exercise 3-2: OU models and methods | Michelle Lawing and Brian O'Meara |
-| | | |
+| 10:30 - 12:00 | nap time | |
+| 12:00 - 1:00 | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.md) | Joe Felsenstein and Samantha Price |
+| 1:00 - 1:15 | break | |
+| 1:15 - 1:45 | Exercise 3-1: Brownian Motion / comparative methods | Samantha Price and Joe Felsenstein | 
+| 1:45 - 2:00 | break | |
+| 2:00 - 3:00 | [Lecture 3-3: OU models on phylogenies](lecture3-3.md) | Michelle Lawing and Brian O'Meara |
+| 3:00 - 3:30 | Exercise 3-2: OU models and methods | Michelle Lawing and Brian O'Meara |
+| 3:30 - 4:00 | Discussion | |
 | **Thursday, 15 July** | | |
-| time | [Lecture 4-1: Simulation using models of evolution: a lizard example](lecture4-1.md) | Samantha Price and Michelle Lawing |
-| time | [Lecture 4-2: Identifiability, model adequacy and measurement error](lecture4-2.md) | Brian O'Meara, Samantha Price and Joe Felsenstein | 
-| time | [“Student’s choice” breakout rooms with each of the lecturers](lecture4-3.md) | all lecturers |
+|12:00 - 1:00 | [Lecture 4-1: Simulation using models of evolution: a lizard example](lecture4-1.md) | Samantha Price and Michelle Lawing |
+| 1:00 - 1:30 | break |  |
+| 1:30 - 2:30 | [Lecture 4-2: Identifiability, model adequacy and measurement error](lecture4-2.md) | Brian O'Meara, Samantha Price and Joe Felsenstein | 
+| 2:30 - 2:45 | break |  |
+| 2:45 - 3:15 | Exercise 4-1 | Brian O'Meara and Samantha Price |
+| 3:15 - 4:15 | Discussion | |
+| 4:15 - 4:30 | break | |
+| 4:30 - 5:30 | [“Student’s choice” breakout rooms with each of the lecturers](lecture4-3.md) | all lecturers |
 | | | |
 | **Friday, 16 July** | | |
-| time | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.md) | Joe Felsenstein and Michelle Lawing |
-| time | [Lecture 5-2: Threshold model, and Comments on using QTLs and sequence data](lecture5-2.md) | Joe Felsenstein |
-| time | Discussion: Wrap up Q & A with surviving instructors | all lecturers |
-| time | Feedback from students | Steve Arnold |
+| 12:00 - 1:00 | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.md) | Joe Felsenstein and Michelle Lawing |
+| 1:00 - 1:30 | Exercise 5-1: Morphometrics | Michelle Lawing |
+| 1:30 - 2:00 | break |  |
+| 2:00 - 3:00 | [Lecture 5-2: Threshold model (30 minutes), and Comments on using QTLs and sequence data (30 minutes)](lecture5-2.md) | Joe Felsenstein |
+| 3:00 - 3:30 | Exercise 5-2: Threshold model | Josef Uyeda |
+| 3:30 - 3:45 | break |  |
+| 3:45 - 5:00 | Discussion: Wrap up Q & A with surviving instructors | all lecturers |
+| 5:00 - 5:30 | Feedback from students | Steve Arnold |
