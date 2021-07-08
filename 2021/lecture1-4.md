@@ -12,7 +12,7 @@
   
 <table><tr><td>&larr; <a href="lecture1-3.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture2-1.html">Next lecture &rarr;</a></td></tr></table>
 
-## Lecture 1-4: Evolution on adaptive landscapes, in two parts ##
+## Lecture 1-4: Evolution on adaptive landscapes, in 2 parts ##
 
 ### Stevan Arnold ###
   
