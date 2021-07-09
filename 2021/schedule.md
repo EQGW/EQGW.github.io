@@ -12,7 +12,7 @@
 
 # Schedule for 2021 Workshop #
 
-All times are Pacific Daylight Time (EDT).  Note that Eastern Daylight Time (PDT) is 3 hours later in the day.
+All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT) is 3 hours later in the day.
 
 _These can change: we're still working on the schedule._
 
@@ -68,7 +68,7 @@ _These can change: we're still working on the schedule._
 | | | |
 | **Friday, 16 July** | | |
 | 9:00 - 10:00 | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.html) | Joe Felsenstein and Michelle Lawing |
-| 10:00 - 10:30 | [Exercise 5-1: Morphometrics](exercise5-1.html) | Michelle Lawing |
+| 10:00 - 10:30 | [Exercise 5-1: Morphometrics](exercise5-1.html) | Michelle Lawing and Joe Felsenstein|
 | 10:30 - 11:00 | break |  |
 | 11:00 - 12:00 | [Lecture 5-2: Threshold model (30 minutes), and Comments on using QTLs and sequence data (30 minutes)](lecture5-2.md) | Joe Felsenstein |
 | 12:00 - 12:30 | [Exercise 5-2: Threshold model](exercise5-2.html) | Josef Uyeda |
