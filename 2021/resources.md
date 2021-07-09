@@ -30,6 +30,8 @@
 
 [How to get ready for the workshop!](http://blogs.uw.edu/fhleqg/2017/05/23/how-to-get-ready-for-the-course/)
 
+[Read about Steve Arnold's forthgoming book, "Evolutionary Quantitative Genetics", and see anuimations of figures!](https://phenotypicevolution.com/)
+
 Matrix Algebra Tutorials
 
 * Wikipedia page for “Matrix_(mathematics)” which is [here.](https://en.wikipedia.org/wiki/Matrix_(mathematics))
