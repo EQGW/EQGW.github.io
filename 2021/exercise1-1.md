@@ -45,18 +45,29 @@ Understanding the dataset in question is the first task. Here is the metadata:
 The data are the values of 6 traits in a sample of mothers and their daughters from one
 population of a garter snake, Thamnophis elegans. The first line is the header which 
 lists the names of the variables (8 columns):
-• local = the name of the population
-• family = the name of the family (the first row with each family name is the
+
+* local = the name of the population
+
+* family = the name of the family (the first row with each family name is the
 mother, the rows that follow with the same name are her daughters)
-• body = the number of vertebrae in the body
-• tail = the number of vertebrae in the tail
-• mid = the number of scale rows around the snake, assessed at the middle point of
+
+* body = the number of vertebrae in the body
+
+* tail = the number of vertebrae in the tail
+
+* mid = the number of scale rows around the snake, assessed at the middle point of
 the body
-• ilab = the number of scales on the lower lip (infralabials, sum of left and right
+
+* ilab = the number of scales on the lower lip (infralabials, sum of left and right
 sides)
-• slab = the number of scales on the upper lip (supralabials, sum of left and right
+
+* slab = the number of scales on the upper lip (supralabials, sum of left and right
 sides)
-• post = the nmber of scales behind the eye (postoculars, sum of left and right sides)
+
+* post = the number of scales behind the eye (postoculars, sum of left and right sides)
 Missing values are denoted by NA. More information on the traits and the sample can 
 be found in Phillips & Arnold (1999) and Arnold & Phillips (1999).
+
+![Snake Head Scales](/media/snakeheadscales.png)
+
 
