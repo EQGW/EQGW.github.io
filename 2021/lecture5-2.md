@@ -24,6 +24,6 @@ These will be two more-or-less unrelated topics, for about the first 20 and the 
 
 PDFs of slides:
 
-[First part (Finite sample size and within-species phenotypic variation)](https://drive.google.com/file/d/1fQ8VavW722vGkzJmWErMOk8dPy2kTz8L/view?usp=sharing)
+[First part (Finite sample size and within-species phenotypic variation)]()
 
 [Second part (QTLs and characters)](https://drive.google.com/file/d/18GEnTQ_RJ9Zxq-OPfYfs7aqUQTLsEXF2/view?usp=sharing)
