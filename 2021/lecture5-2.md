@@ -18,12 +18,12 @@
 
 ### Joe Felsenstein ###
 
-These will be two more-or-less unrelated topics, for about the first 20 and the second 40 minutes.
+These will be two more-or-less unrelated topics.
 
 #### Lecture projections: ####
 
 PDFs of slides:
 
-[First part (Finite sample size and within-species phenotypic variation)]()
+[First part (The threshold model]()
 
 [Second part (QTLs and characters)](https://drive.google.com/file/d/18GEnTQ_RJ9Zxq-OPfYfs7aqUQTLsEXF2/view?usp=sharing)
