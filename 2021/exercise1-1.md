@@ -37,8 +37,8 @@ During the course, I will show you how to open the file in R and access the data
 Your tutorial has two flavors, depending on your preferences. If you don't have the package
 `dplyr` installed and/or find its notation completely foreign to you, choose option 2.
 
-1. [dplyr-Version notebook](https://drive.google.com/file/d/1ifZUx_npsuuyfirEHgugN81bu4yd5h9V/view?usp=sharing)
-2. [base-Version R script](https://drive.google.com/file/d/11PF_NYRm89-Dz2KvuUy-ALp9jPmP5UTp/view?usp=sharing)
+1. [dplyr-Version notebook](https://drive.google.com/file/d/11PF_NYRm89-Dz2KvuUy-ALp9jPmP5UTp/view?usp=sharing)
+2. [base-Version R script](https://drive.google.com/file/d/1ifZUx_npsuuyfirEHgugN81bu4yd5h9V/view?usp=sharing)
 
 Understanding the dataset in question is the first task. Here is the metadata:
 
