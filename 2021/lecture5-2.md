@@ -26,4 +26,4 @@ PDFs of slides:
 
 [First half (Finite sample size and within-species phenotypic variation](lecture5-2a.pdf)
 
-[Second half (QTLs and characters)]{lecture5-2b.pdf)
+[Second half (QTLs and characters)]{https://drive.google.com/file/d/18GEnTQ_RJ9Zxq-OPfYfs7aqUQTLsEXF2/view?usp=sharing)
