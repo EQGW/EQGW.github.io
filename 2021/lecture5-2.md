@@ -20,4 +20,10 @@
 
 These will be two more-or-less unrelated topics, each for about half of the lecture.
   
-#### Lecture projection: ####
+#### Lecture projections: ####
+
+PDFs of slides:
+
+[First half (Finite sample size and within-species phenotypic variation](lecture5-2a.pdf)
+
+[Second half (QTLs and characters)]{lecture5-2b.pdf)
