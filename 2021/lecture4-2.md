@@ -18,3 +18,6 @@
 ### Brian O'Meara, Samantha Price, and Joe Felsenstein ###
   
 #### Lecture projection: ####
+
+
+[Joe Felsenstein: on correcting for within-population variability](https://drive.google.com/file/d/1fQ8VavW722vGkzJmWErMOk8dPy2kTz8L/view?usp=sharing)
