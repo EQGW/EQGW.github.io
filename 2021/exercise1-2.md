@@ -40,5 +40,7 @@ For additional perspective on the sampling properties of the eigenvalues of the 
 and the notes for Lecture 2.2.
 
 * [Download Entire Exercise Directory](https://drive.google.com/drive/folders/1-ACjX-ajjfNqcU3u2CQL5u9K_1U4RIBM?usp=sharing)
-* [Download dataset only:](https://drive.google.com/file/d/1p05Cl0Eo9e8fvZr-PUzfh4wQW9rcuJ7q/view?usp=sharing)
-* [Download R script only:](https://drive.google.com/file/d/1vGiHe6tN9Z-1NatzWrKE-bXikR_CKoV6/view?usp=sharing)
+
+Individual files:
+* [Download dataset only](https://drive.google.com/file/d/1p05Cl0Eo9e8fvZr-PUzfh4wQW9rcuJ7q/view?usp=sharing)
+* [Download R script only](https://drive.google.com/file/d/1vGiHe6tN9Z-1NatzWrKE-bXikR_CKoV6/view?usp=sharing)
