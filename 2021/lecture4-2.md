@@ -20,4 +20,4 @@
 #### Lecture projection: ####
 
 
-[Joe Felsenstein: on correcting for within-population variability](https://drive.google.com/file/d/1k67l9lorUnyiy7b_8Q0u4YkxWKmEIL3W/view?usp=sharing)
+Part 3: [Joe Felsenstein: on correcting for within-population variability](https://drive.google.com/file/d/1k67l9lorUnyiy7b_8Q0u4YkxWKmEIL3W/view?usp=sharing)
