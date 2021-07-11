@@ -51,18 +51,18 @@ _These can change: we're still working on the schedule._
 | 10:15 - 10:30 | Discussion | participants |
 | 10:30 - 11:30 | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.html) | Joe Felsenstein and Samantha Price |
 | 11:30 - 11:45 | break | |
-| 11:45 - 12:45 | [Exercise 3-1: Brownian Motion / comparative methods](exercise3-1.html) | Samantha Price and Joe Felsenstein | 
-| 12:45 - 1:00 | break | |
-| 1:00 - 2:00 | [Lecture 3-3: OU models on phylogenies](lecture3-3.html) | Michelle Lawing and Brian O'Meara |
-| 2:00 - 2:30 | [Exercise 3-2: OU models and methods](exercise3-2.html) | Michelle Lawing and Brian O'Meara |
-| 2:30 - 2:40 | Discussion | |
+| 11:45 - 12:30 | [Exercise 3-1: Brownian Motion / comparative methods](exercise3-1.html) | Samantha Price and Joe Felsenstein | 
+| 12:30 - 12:45 | break | |
+| 12:45 - 1:45 | [Lecture 3-3: OU models on phylogenies](lecture3-3.html) | Michelle Lawing and Brian O'Meara |
+| 1:45 - 2:30 | [Exercise 3-2: OU models and methods](exercise3-2.html) | Michelle Lawing and Brian O'Meara |
+| 2:30 - 2:45 | Discussion | participants |
 | **Thursday, 15 July** | | |
 | 9:00 - 10:00 | [Lecture 4-1: Simulation using models of evolution: a lizard example](lecture4-1.html) | Samantha Price and Michelle Lawing |
 | 10:00 - 10:30 | break |  |
 | 10:30 - 11:30 | [Lecture 4-2: Identifiability, model adequacy and measurement error](lecture4-2.html) | Brian O'Meara, Samantha Price and Joe Felsenstein | 
 | 11:30 - 11:45 | break |  |
 | 11:45 - 12:15 | [Exercise 4-1](exercise4-1.html) | Brian O'Meara and Samantha Price |
-| 12:15 - 1:15 | Discussion | |
+| 12:15 - 1:15 | Discussion | participants |
 | 1:15 - 1:30 | break | |
 | 1:30 - 2:30 | [“Student’s choice” breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers |
 | | | |
@@ -73,5 +73,5 @@ _These can change: we're still working on the schedule._
 | 11:00 - 12:00 | [Lecture 5-2: Threshold model (30 minutes), and Comments on using QTLs and sequence data (30 minutes)](lecture5-2.md) | Joe Felsenstein |
 | 12:00 - 12:30 | [Exercise 5-2: Threshold model](exercise5-2.html) | Josef Uyeda |
 | 12:30 - 12:45 | break |  |
-| 12:45 - 2:00 | Discussion: Wrap up Q & A with surviving instructors | all lecturers |
-| 2:00 - 2:30 | Feedback from students | Steve Arnold |
+| 12:45 - 2:00 | Discussion: Wrap up Q & A with surviving lecturers | all |
+| 2:00 - 2:30 | Feedback from participants | Steve Arnold |
