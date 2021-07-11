@@ -18,4 +18,12 @@
 
 ### Joe Felsenstein and Samantha Price ###
   
-#### Lecture projection: ####
+#### Lecture projections ####
+
+Part 1:  [Brownian motion models of quantitative characters (Joe Felsenstein)](https://drive.google.com/file/d/1Z7VILahdm4akSKJw0FUFjXYRc3qDrv7s/view?usp=sharing)
+
+Part 2:  
+
+Part 3: [Comparative methods: contrasts (Joe Felsenstein)
+
+Part 4:
