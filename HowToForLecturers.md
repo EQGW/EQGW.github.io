@@ -69,14 +69,17 @@ Once there is a web page for a lecture or exercise for this year, you may want t
 1. Click on the year.  This will bring up a folder with files for all the lectures.
 2. The list of existing pages will appear, in their ".md" forms.
 3. Click on the name of the file you want to edit.
-4. That file will be brought up in edit mode.
-5. Some of it is different from what you want, so set to work editing it.  Make sure to note the markdown code that makes the links to the previous and the next lectures, and correct those.  Also, of course, correct the heading that announces the number of the lecture.   One subtle point of Markdown syntax is that if you are highlighting text, or changing headers, _make sure you understand whether there should be a blank before or after the text being highlighted_. (Generally, yes for headers, no for text). 
-6. To figure out Markdown syntax, open a new window on your desktop and in it search for "Github Markdown" and look at some set of easy instructions.
-7. You can see roughly what the page will look like by clicking on the eyeball named "Preview" which is to the right of "Edit file", at the top of the editing area.
-8. **_But_** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to "Commit changes", and press that confidently enough that it changes color, showing that you weren't too timid.  Otherwise, of course, you will lose everything you changed when you leave.
-9. Github will show you what the page will look like based on what you committed.  If that has problems, find the small pencil icon above this preview, and to the right, and use it to reopen editing.  Any further changes you make of course need to be saved using Commit.
+4. That file will be brought up.
+5. Put it in edit mode by clicking on the little pencil icon which is above and to the right.
+6. Some of it is different from what you want, so set to work editing it.  Make sure to note the markdown code that makes the links to the previous and the next lectures, and correct those.  Also, of course, correct the heading that announces the number of the lecture.   One subtle point of Markdown syntax is that if you are highlighting text, or changing headers, _make sure you understand whether there should be a blank before or after the text being highlighted_. (Generally, yes for headers, no for text). 
+7. To figure out Markdown syntax, open a new window on your desktop and in it search for "Github Markdown" and look at some set of easy instructions.
+8. You can see roughly what the page will look like by clicking on the eyeball named "Preview" which is to the right of "Edit file", at the top of the editing area.
+9. **_But_** whatever you do, when you are ready to go elsewhere, _don't_ until you go down to the green button that asks you to "Commit changes", and press that confidently enough that it changes color, showing that you weren't too timid.  Otherwise, of course, when you leave you will lose everything you changed.
+10. In the Preview mode, Github will show you what the page will look like based on what you committed.  If that has problems, find the small pencil icon above this preview, and to the right, and use it to reopen editing.  Any further changes you make of course need to be saved using Commit.
 
 You probably want to link to PDF or PPT files of slides, to files of R exercises, and other media.  Do <em>not put these files into our Github repository</em>, but instead post those files to the appropriate folder for Google Drive for the fhleqg Gmail account.  Use the instructions below for “posting files to be linked to from the web page” and also the instructions below that for obtaining the link for each such file to make a link from the web page that you are creating in this list of instructions.
+
+Note that your changes will appear in the workshop web pages, but only after a delay of perhaps 15 minutes.
  
 
 ## Posting files at Google Drive to be linked to from the EQGW Github webpage ##
@@ -110,5 +113,6 @@ There is still the matter of getting the address of the file, and posting a link
 9. Above this there will be a green long complicated URL address.  Select "Copy link" which is to its right.  A black box will appear to verify that it has done that.
 10. Now, perhaps in another window, get to the page in the EQGW repository for that lecture.
 11. Make sure you have chosen the Edit mode (the little pencil icon in the upper-right of the page).
-12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type and paste in on the page is &nbsp; \[This is the PDF](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
-13. Once you have completed pasting in that link and typing that closing curved parenthesis, don’t forget to select the green button for "Commit changes" for that webpage after that.
+12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type and paste in on the page is
+ &nbsp; \[This is the PDF](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
+14. Once you have completed pasting in that link and typing that closing curved parenthesis, don’t forget to select the green button for "Commit changes" for that webpage after that.
