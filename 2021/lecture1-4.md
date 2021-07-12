@@ -18,8 +18,8 @@
   
 #### Lecture projection: ####
 
-##### [PowerPoint](https://drive.google.com/file/d/1JdRLoxaKjukD_Fg5aXQWFeATX4Wxv8aX/view?usp=sharing) #####
-##### [PDF](https://drive.google.com/file/d/1hUlIo_0Zp1o5ujdFfp_w7fKb31wINixz/view?usp=sharing) #####
+##### [PowerPoint](https://drive.google.com/file/d/1GloWrzt_m6nIssoY1n34epD4pVnbs9Pi/view?usp=sharing) #####
+##### [PDF](https://drive.google.com/file/d/1OpbBFPgUeT4N3F3SP5e7YRIVIloCcC3U/view?usp=sharing) #####
 
 #### Background reading: ####
 

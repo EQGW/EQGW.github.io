@@ -17,7 +17,7 @@
 
 ## For workshop participants ##
 
-**Note: the materials in this section are from the 2019 workshop and have not yet been updated**
+**Note: some materials in this section are from the 2019 workshop and have not yet been updated**
 
 
 [Installing and using R](http://blogs.uw.edu/fhleqg/2017/05/15/installupdate-r/)
@@ -25,8 +25,6 @@
 [Need help using R?](http://blogs.uw.edu/fhleqg/2017/05/15/need-help-using-r/)
 
 [List of R packages you need to install on your computer](http://blogs.uw.edu/fhleqg/2017/05/15/list-of-r-packages-you-need-to-install-on-your-computer/)
-
-[Mac and Linux users, please install Wine](http://blogs.uw.edu/fhleqg/2017/05/15/mac-and-linux-users-please-install-wine/)
 
 [How to get ready for the workshop!](http://blogs.uw.edu/fhleqg/2017/05/23/how-to-get-ready-for-the-course/)
 

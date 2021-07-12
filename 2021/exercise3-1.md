@@ -10,7 +10,6 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-## Exercise 3-1: Brownian motion / comparative methods ##
+## Exercise 3-2: Brownian motion / comparative methods ##
 
-### Joe Felsenstein and Samantha Price ###
-  
+### Samantha Price and Joe Felsenstein ###
