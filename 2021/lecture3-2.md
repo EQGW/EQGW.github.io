@@ -24,6 +24,6 @@ Part 1:  [Brownian motion models of quantitative characters (Joe Felsenstein)](h
 
 Part 2:  
 
-Part 3: [Comparative methods: contrasts (Joe Felsenstein)](https://drive.google.com/file/d/1eUJqYIjfmQCY7fnmzinv2l01xI5RD6db/view?usp=sharing)
+Part 3: [Comparative methods: contrasts (Joe Felsenstein)](https://drive.google.com/file/d/1X1wPH6YGuOV8ZNzNEaSbSj0oJZLDp78e/view?usp=sharing)
 
 Part 4:
