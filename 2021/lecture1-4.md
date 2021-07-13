@@ -27,3 +27,9 @@
 ##### [Chapter 13](https://drive.google.com/file/d/1fVzvuNKp5qFohZ6hbKpSjEW4ZrR9K0NL/view?usp=sharing) #####
 ##### [Chapter 14](https://drive.google.com/file/d/1Widwullh_ZfV_4Qa3ppBIi-jt0z_A1Av/view?usp=sharing) #####
 
+#### Video ####
+
+[EQGW2021lecture1-4.mp4](https://vimeo.com/574563740)
+
+
+
