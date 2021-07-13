@@ -29,3 +29,13 @@
 ##### [Chapter 3](https://drive.google.com/file/d/1eb3FFzlcGGFomS1PJxU7IXLmyNRq6dBQ/view?usp=sharing) #####
 ##### [Chapter 4](https://drive.google.com/file/d/1XhZ4gSBnHyFSmqkRkqNk3lYdmQYfIPNM/view?usp=sharing) #####
 
+##### Videos ####
+
+
+Part 1: [EQGW2021lecture1-3a.mp4](https://vimeo.com/574563808)
+
+Introduction of Workshop lecturer Patrick Carter, and Part 2: [EQGW2021lecture1-3b.mp4](https://vimeo.com/574563828)
+
+
+
+
