@@ -44,3 +44,5 @@ and the notes for Lecture 2.2.
 Individual files:
 * [Download dataset only](https://drive.google.com/file/d/1p05Cl0Eo9e8fvZr-PUzfh4wQW9rcuJ7q/view?usp=sharing)
 * [Download R script only](https://drive.google.com/file/d/1vGiHe6tN9Z-1NatzWrKE-bXikR_CKoV6/view?usp=sharing)
+
+* [Answers](media/exercise_answers/Exercise_2.2_Estimating_a_selection_surface_2021_rev.html)
