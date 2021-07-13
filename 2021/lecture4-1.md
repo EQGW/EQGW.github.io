@@ -18,4 +18,4 @@
 
 ### Samantha Price and Michelle Lawing ###
   
-#### Lecture projection: ####
+[The power of simulation (Sam Price)](https://drive.google.com/file/d/1msE89JDvm6NLGVSGHDMN3RBb8XXcde8G/view?usp=sharing)
