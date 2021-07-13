@@ -31,4 +31,12 @@
 ##### [Chapter 5](https://drive.google.com/file/d/1EnXh_InUYDJtP8L7YxaJCZquFDWmcMPU/view?usp=sharing) ####
 ##### [Chapter 6](https://drive.google.com/file/d/1Yde1m5K6wez8kldeOWm5MsrkQmcbRY6_/view?usp=sharing) ####
 
+
+#### Videos ####
+
+Part 1: [EQGW2021lecture1-2a.mp4](https://vimeo.com/574563760)
+
+Part 2: [EQGW2021lecture1-2b.mp4](https://vimeo.com/574563786)
+
+
   
