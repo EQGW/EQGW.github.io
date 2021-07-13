@@ -19,3 +19,6 @@
 ### Josef Uyeda ###
   
 #### Lecture projection: ####
+
+* [ppt version](https://drive.google.com/file/d/1R7fD_Z6J9NxKC_Vu08-cl5NjHOgTD44u/view?usp=sharing)
+* [pdf version](https://drive.google.com/file/d/1UT0DT3gFAG0Qii3XmFeTOFthXh6AQgMf/view?usp=sharing)
