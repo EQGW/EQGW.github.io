@@ -30,3 +30,7 @@
 [Wilson et al Ecologists Guide Supplementary File 5 – Tutorial MCMCglmm](https://drive.google.com/file/d/1UTWpavYZcMtHiOTJXJRk4wKnlYl_-Uyw/view?usp=sharing)
 
 [NEW REVISED – Wilson et al Supplementary File 5 – Tutorial MCMCglmm](https://drive.google.com/file/d/1a3SLp3SMbEyE3PmtQr6JZnOFw5GkPEaL/view?usp=sharing)
+
+#### Video ####
+
+[EQGW2021lecture2-1](https://vimeo.com/574982762)
