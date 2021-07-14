@@ -19,3 +19,12 @@
 ### Josef Uyeda ###
   
 #### Lecture projection: ####
+* [PPT](https://drive.google.com/file/d/1Y46AWAxMlNKlOqhsdAqK1gu8ViPclnhd/view?usp=sharing)
+* [PDF](https://drive.google.com/file/d/19BhFFhRff9HuYIRPN7S4D0QTY9e4GxLw/view?usp=sharing)
+
+### Bonus Computational Exerise ###
+* [Pat Carter's Toy Pedigree File: Toy4ped.rds](https://drive.google.com/file/d/1jggGf1NI_w3wgJAiUg-kYcN2rayt0jK4/view?usp=sharing)
+* [Parallel QG & PCM MCMCglmm Analyses: QG2PCMs.nb.Rmd](https://drive.google.com/file/d/1x2qH8Gs0jUdrqI16M15dUPF0GV7D3HgO/view?usp=sharing)
+* [HTML version of R notebook with results](/media/exercise_answers/QG2PCMs.nb.html)
+
+
