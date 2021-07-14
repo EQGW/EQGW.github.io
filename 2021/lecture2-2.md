@@ -29,3 +29,11 @@
 ##### [Arnold & Houck 2016 Supplementary figures](https://drive.google.com/file/d/1IpMmpz8rTCZOj0o8nd5b5N1f2Vibiur3/view?usp=sharing) #####
 
 
+#### Videos ####
+
+Part1: [EQGW2021lecture2-2a.mp4](https://vimeo.com/574982792)
+
+Introduction of workshop lecturer Patrick Carter and Part 2 of Steve Arnold lecture: [EQGW2021lecture2-2a.mp4](https://vimeo.com/574982792)
+
+
+
