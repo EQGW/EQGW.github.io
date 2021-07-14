@@ -28,3 +28,9 @@ Relevant Papers:
 * [Estes & Arnold 2007](https://drive.google.com/file/d/1SfBOt2s7RuVndROwc8cjr22i5EW_9UHH/view?usp=sharing)
 * [Uyeda et al. 2011](https://drive.google.com/file/d/1kIMapMsswYjf_lvczRZmArgKjX7dg2aS/view?usp=sharing)
 * [Houle et al. 2017](https://drive.google.com/file/d/1UYqftbJuCPghWeTIDNbqWonJZaiBXR19/view?usp=sharing)
+
+#### Video ####
+
+Part 1: [EQGW2021lecture2-3a.mp4](https://vimeo.com/574982828)
+
+Part 2: [EQGW2021lecture2-3b.mp4](https://vimeo.com/574982860)
