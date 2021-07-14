@@ -33,4 +33,4 @@
 
 #### Video ####
 
-[EQGW2021lecture2-1](https://vimeo.com/574982762)
+[EQGW2021lecture2-1.mp4](https://vimeo.com/574982762)
