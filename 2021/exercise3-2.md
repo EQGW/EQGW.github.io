@@ -14,3 +14,4 @@
 
 ### Michelle Lawing and Brian O'Meara ###
   
+Download the [exercise](https://drive.google.com/file/d/16BI3JwLPJFeWym6rf2smT9Az_L9DCm1T/view?usp=sharing). We will do this together through class, don't rush ahead.
