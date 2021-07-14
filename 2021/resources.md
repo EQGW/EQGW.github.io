@@ -24,7 +24,25 @@
 
 [Need help using R?](http://blogs.uw.edu/fhleqg/2017/05/15/need-help-using-r/)
 
-[List of R packages you need to install on your computer](http://blogs.uw.edu/fhleqg/2017/05/15/list-of-r-packages-you-need-to-install-on-your-computer/)
+List of R packages you need to install on your computer (this list is still evolving):
+
+* MCMCglmm
+* MasterBayes
+* ggplot2
+* plyr
+* rgl
+* MASS
+* car
+* akima
+* OUwie
+* corhmm
+* phytools
+* ape
+* geiger
+* nlme
+* bayou
+* geomorph
+
 
 [How to get ready for the workshop!](http://blogs.uw.edu/fhleqg/2017/05/23/how-to-get-ready-for-the-course/)
 
