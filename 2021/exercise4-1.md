@@ -14,6 +14,8 @@
 
 ### Brian O'Meara and Samantha Price ###
   
+Sam Price [Simulation Exercises](https://drive.google.com/drive/folders/1tlO2riQOHjCBQaD6GP6QXSnwW2nOOajW?usp=sharing) this is a bonus exercise and won't be covered in class (note the OUwie example is a little out of date given the new contour analyses Brian covered yesterday).
+
 Brian O'Meara [MeasurementError.R](https://drive.google.com/file/d/1Y5YLuic8-rSrXBV1c8pI757CLs3gMgm9/view?usp=sharing)
 
 ```
