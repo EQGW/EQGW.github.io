@@ -19,3 +19,6 @@
 ### Samantha Price and Michelle Lawing ###
   
 [The power of simulation (Sam Price)](https://drive.google.com/file/d/1msE89JDvm6NLGVSGHDMN3RBb8XXcde8G/view?usp=sharing)
+
+[The lizard example (Michelle Lawing)](https://drive.google.com/file/d/1K6K5-HjLzMT-jTWmE4S-iQ3dwqUtmFWF/view?usp=sharing)
+
