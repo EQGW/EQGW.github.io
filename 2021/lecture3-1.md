@@ -14,7 +14,7 @@
 
   
 
-## Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies ##
+## Lecture 3-1: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods? ##
 
 ### Josef Uyeda ###
   
