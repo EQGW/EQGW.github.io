@@ -27,3 +27,10 @@ Part 2:  [Brownian motion on trees (Sam Price)](https://drive.google.com/file/d/
 Part 3: [Comparative methods: contrasts (Joe Felsenstein)](https://drive.google.com/file/d/1X1wPH6YGuOV8ZNzNEaSbSj0oJZLDp78e/view?usp=sharing)
 
 Part 4: [Using Brownian motion to ask comparative questions (Sam Price)](https://drive.google.com/file/d/1f47Ag9womxM5jFi46MHlymR6nqyO7Gxa/view?usp=sharing)
+
+#### Video ####
+
+[EQGW2021lecture3-1b.mp4](https://vimeo.com/575495119)
+
+
+
