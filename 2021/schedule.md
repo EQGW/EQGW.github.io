@@ -47,7 +47,7 @@ _These can change: we're still working on the schedule._
 | 3:15 - 3:30 | Discussion | participants |
 | | | |
 | **Wednesday, 14 July** | | |
-| 9:00 - 10:15 | [Lecture 3-1: Parallels of micro & macro analyses - Structuring knowledge with pedigrees & phylogenies](lecture3-1.html) | Josef Uyeda | 
+| 9:00 - 10:15 | [Lecture 3-1: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods?](lecture3-1.html) | Josef Uyeda | 
 | 10:15 - 10:30 | Discussion | participants |
 | 10:30 - 11:30 | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.html) | Joe Felsenstein and Samantha Price |
 | 11:30 - 11:45 | break | |
