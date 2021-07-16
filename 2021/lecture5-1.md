@@ -18,4 +18,9 @@
 
 ### Joe Felsenstein and Michelle Lawing ###
   
-#### Lecture projection: ####
+#### Lecture projections: ####
+
+Part 1: [lecture5-1a.pdf](https://drive.google.com/file/d/15FQis2KI4O0GrhtTugD3k9Vxf2Dosaxh/view?usp=sharing)
+
+Part 2: 
+
