@@ -27,3 +27,14 @@ PDFs of slides:
 [First part (The threshold model)](https://drive.google.com/file/d/17cZr9vOz3U9yfrdlx6A4sEoZPNn9JS7H/view?usp=sharing)
 
 [Second part (SNPs, QTLs and characters)](https://drive.google.com/file/d/18GEnTQ_RJ9Zxq-OPfYfs7aqUQTLsEXF2/view?usp=sharing)
+
+
+#### Videos #####
+
+Threshold models: [EQGW2021lecture5-2a.mp4](https://vimeo.com/576012706)
+
+Sequences, SNPs, QTLs: [EQGW2021lecture5-2b.mp4](https://vimeo.com/576012702)
+
+
+
+#### Miscellanea ####
