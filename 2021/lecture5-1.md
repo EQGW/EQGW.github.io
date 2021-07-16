@@ -22,5 +22,5 @@
 
 Part 1: [lecture5-1a.pdf](https://drive.google.com/file/d/15FQis2KI4O0GrhtTugD3k9Vxf2Dosaxh/view?usp=sharing)
 
-Part 2: 
+Part 2: [lecture5-1b.pdf](https://drive.google.com/file/d/1p6ozYMNbo9ZaKhEu0RtSyAjHC-ID3du4/view?usp=sharing)
 
