@@ -61,7 +61,7 @@ _These can change: we're still working on the schedule._
 | 10:00 - 10:30 | break |  |
 | 10:30 - 11:30 | [Lecture 4-2: Identifiability, model adequacy and measurement error](lecture4-2.html) | Brian O'Meara, Samantha Price and Joe Felsenstein | 
 | 11:30 - 11:45 | break |  |
-| 11:45 - 12:15 | [Exercise 4-1](exercise4-1.html) | Brian O'Meara and Samantha Price |
+| 11:45 - 12:15 | [Exercise 4-1:  Simulations and Measurement error](exercise4-1.html) | Brian O'Meara and Samantha Price |
 | 12:15 - 1:15 | Discussion | participants |
 | 1:15 - 1:30 | break | |
 | 1:30 - 2:30 | [“Student’s choice” breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers |
