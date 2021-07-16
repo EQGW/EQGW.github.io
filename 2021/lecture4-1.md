@@ -16,9 +16,17 @@
 
 ## Lecture 4-1: Simulation using models of evolution: a lizard example ##
 
-### Samantha Price and Michelle Lawing ###
+#### Samantha Price and Michelle Lawing ####
   
 [The power of simulation (Sam Price)](https://drive.google.com/file/d/1msE89JDvm6NLGVSGHDMN3RBb8XXcde8G/view?usp=sharing)
 
 [The lizard example (Michelle Lawing)](https://drive.google.com/file/d/1K6K5-HjLzMT-jTWmE4S-iQ3dwqUtmFWF/view?usp=sharing)
+
+
+#### Videos ####
+
+[EQGW2021lecture4-1.mp4](https://vimeo.com/575974854)
+
+[EQGW2021lecture4-2.mp4](https://vimeo.com/575974848)
+
 
