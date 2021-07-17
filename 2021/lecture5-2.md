@@ -38,3 +38,7 @@ Sequences, SNPs, QTLs: [EQGW2021lecture5-2b.mp4](https://vimeo.com/576012702)
 
 
 #### Miscellanea ####
+
+[Brian O'Meara made this Guinea Pig eraser for Joe](https://2021/media/GuineaPig.jpg)
+
+
