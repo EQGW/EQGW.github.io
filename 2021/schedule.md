@@ -14,8 +14,7 @@
 
 All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT) is 3 hours later in the day.
 
-_These can change: we're still working on the schedule._
-
+<em>These were the scheduled times.  We sometimes fell behind this schedule, or even ahead.</em>
 
 | time | topic  |  speaker(s) |
 |---------|-------------|------------------|
