@@ -24,3 +24,8 @@ Part 1: [lecture5-1a.pdf](https://drive.google.com/file/d/15FQis2KI4O0GrhtTugD3k
 
 Part 2: [lecture5-1b.pdf](https://drive.google.com/file/d/1p6ozYMNbo9ZaKhEu0RtSyAjHC-ID3du4/view?usp=sharing)
 
+
+
+#### Video #####
+
+[EQGW2021lecture5-1.mp4](https://vimeo.com/576012712)
