@@ -44,7 +44,7 @@ List of R packages you need to install on your computer (this list is still evol
 * geomorph
 
 
-[How to get ready for the workshop!](http://blogs.uw.edu/fhleqg/2017/05/23/how-to-get-ready-for-the-course/)
+[How to get ready for the workshop!](/2021/howtogetready.html)
 
 [Read about Steve Arnold's forthcoming book, "Evolutionary Quantitative Genetics", and see animations of figures](https://phenotypicevolution.com/)
 
