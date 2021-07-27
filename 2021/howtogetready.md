@@ -11,7 +11,7 @@
 </div>
 <P>
 
-## How to get ready for the workshop! ###
+## How to get ready for the workshop! ##
 
 Our five day course at Friday Harbor will be fast-paced, so here are some 
 points to keep in mind in getting ready for it.  As you can see from the Schedule, 
