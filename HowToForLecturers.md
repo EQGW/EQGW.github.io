@@ -3,7 +3,7 @@
 
 |        |        |        |    |
 |--------|---------------------------------------------|--------------------|------------------------------------------|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2021 Workshop (Online)](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](/2021/schedule.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](/2021/resources.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](/2021/previous.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2022 Workshop (Online)](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](/2022/schedule.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](/2022/resources.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](/2022/previous.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 
 <div align="left">
@@ -84,7 +84,7 @@ Note that your changes will appear in the workshop web pages, but only after a d
 
 ## Posting files at Google Drive to be linked to from the EQGW Github webpage ##
 
-Files such as lecture projections (PPT or PDF), or supplementary documents, or R exercises, or audio recordings, are not to be posted in the workshop Github repository.  Instead, you need to put them in the Google Drive area for the  fhleqg  account, which is a gmail account (a Google account).  If you are a lecturer in the Workshop you have been added, under one of your email addresses, to the list of people who can put files into the Google Drive folder for this year's workshop (it has a folder name which is the year number, such as "2021").  To put such a file there:
+Files such as lecture projections (PPT or PDF), or supplementary documents, or R exercises, or audio recordings, are not to be posted in the workshop Github repository.  Instead, you need to put them in the Google Drive area for the  fhleqg  account, which is a gmail account (a Google account).  If you are a lecturer in the Workshop you have been added, under one of your email addresses, to the list of people who can put files into the Google Drive folder for this year's workshop (it has a folder name which is the year number, such as "2022").  To put such a file there:
 
 1. Go to your Google Drive account and log in, with the username of yours that we gave permission to share folders with the  fhleqg@gmail.com  Google account.
 2. After you have chosen the Google Drive icon, on the left side of the window you will find a menu item "Shared with me".
@@ -114,5 +114,5 @@ There is still the matter of getting the address of the file, and posting a link
 10. Now, perhaps in another window, get to the page in the EQGW repository for that lecture.
 11. Make sure you have chosen the Edit mode (the little pencil icon in the upper-right of the page).
 12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type and paste in on the page is
- &nbsp; \[This is the PDF](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
+ &nbsp; \[This is the PDF\](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
 14. Once you have completed pasting in that link and typing that closing curved parenthesis, don’t forget to select the green button for "Commit changes" for that webpage after that.
