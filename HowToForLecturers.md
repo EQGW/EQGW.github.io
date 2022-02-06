@@ -28,7 +28,7 @@ and skip this section and go to the one below, about how to edit an existing pag
 If we do not already have a page for the lecture, figure out what its name will be.  You can figure 
 out what it is by noting which day of the workshop it is on, and which lecture.  If it is the 2nd 
 lecture on the 3rd day of the workshop, its name will be &nbsp; lecture3-2.md  &nbsp; It will be in the 
-folder for that year, so in the 2021 Workshop it will be file &nbsp; 2021/lecture3-2.md
+folder for that year, so in the 2022 Workshop it will be file &nbsp; 2022/lecture3-2.md
 
 The ".md" indicates
 a page in the Github Markdown language, an allegedly simple system for entering text and links, and
