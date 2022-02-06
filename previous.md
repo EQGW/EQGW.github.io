@@ -18,7 +18,7 @@
 
 Including pages for the individual lectures, including lecture projections, video recordings of lectures, and files for computer exercises
 
-[2021 Workshop](https://EQGW.github.io/2022/schedule.md)
+[2021 Workshop](https://EQGW.github.io/2021/schedule.md)
 
 ## in Friday Harbor Labs ##
 
