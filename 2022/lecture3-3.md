@@ -16,14 +16,14 @@
 
 ## Lecture 3-3: OU models on phylogenies ##
 
-### Brian O'Meara and Michelle Lawing ###
+### Brian O'Meara ###
   
 #### Lecture projection: ####
 
-* Michelle Lawing: [Powerpoint](https://drive.google.com/file/d/1-BlNW-rZaz3G_YaM4zhhihApP1572VCg/view?usp=sharing)
 * Brian O'Meara: [Powerpoint](https://drive.google.com/file/d/1c9h6XQ8-xIhKFKB_hhLp6qkIfGbTp8gu/view?usp=sharing) and [PDF](https://drive.google.com/file/d/1OurRKzePbqBJCYm27-tuq1GJdYODGJhl/view?usp=sharing)
 
 #### Video ####
 
-[EQGW2022lecture3-3.mp4](https://vimeo.com/575495084)
+[EQGW2022lecture3-3.mp4]() (to be added)
+
 
