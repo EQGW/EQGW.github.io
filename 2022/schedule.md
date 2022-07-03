@@ -42,7 +42,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 10:30 - 11:00 | [Exercise 2-1:  Using MCMCglmm in R to estimate inheritance](exercise2-1.html) | Patrick Carter |
 | 11:00 - 11:15 | Discussion | participants |
 | 11:15 - 12:30 | [Lecture 2-2:  Simulations of evolution of the G-matrix](lecture2-2.html) | Adam Jones | 
-| 12:30 - 1:00 | Exercise 2-2 | evolution of the G-matrix |
+| 12:30 - 1:00 | Exercise 2-2: evolution of the G-matrix | Adam Jones |
 | 12:45 - 2:00 | meal break | 
 | 2:00 - 3:15 | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.html) | Josef Uyeda |
 | 3:15 - 3:30 | Discussion | participants |
