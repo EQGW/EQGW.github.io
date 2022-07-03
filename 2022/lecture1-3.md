@@ -32,9 +32,9 @@
 ##### Videos ####
 
 
-Part 1: [EQGW2022lecture1-3a.mp4](https://vimeo.com/574563808)
+Part 1: [EQGW2022lecture1-3a.mp4]() (to be added)
 
-Introduction of Workshop lecturer Patrick Carter, and Part 2: [EQGW2021lecture1-3b.mp4](https://vimeo.com/574563828)
+Part 2: [EQGW2021lecture1-3b.mp4]() (to be added)
 
 
 
