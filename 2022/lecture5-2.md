@@ -31,9 +31,9 @@ PDFs of slides:
 
 #### Videos #####
 
-Threshold models: [EQGW2022lecture5-2a.mp4](https://vimeo.com/576012706)
+Threshold models: [EQGW2022lecture5-2a.mp4]() (to be added)
 
-Sequences, SNPs, QTLs: [EQGW2022lecture5-2b.mp4](https://vimeo.com/576012702)
+Sequences, SNPs, QTLs: [EQGW2022lecture5-2b.mp4]() (to be added)
 
 
 
