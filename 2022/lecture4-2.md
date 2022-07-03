@@ -24,3 +24,7 @@ Part 1: Brian O'Meara on various issues. [Powerpoint](https://drive.google.com/f
 Part 2: Sam Price on an empirical example [Powerpoint](https://drive.google.com/file/d/1bGzZloLPmrxJXs0y0f5TepKHRUd5NtB3/view?usp=sharing)
 
 Part 3: [Joe Felsenstein: on correcting for within-population variability](https://drive.google.com/file/d/1k67l9lorUnyiy7b_8Q0u4YkxWKmEIL3W/view?usp=sharing)
+
+### Video ###
+
+[EQGW2022Lecture4-3.mp4]() (to be added)
