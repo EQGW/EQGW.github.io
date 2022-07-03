@@ -16,16 +16,15 @@
 
 ## Lecture 5-1: Morphometrics on phylogenies ##
 
-### Joe Felsenstein and Michelle Lawing ###
+### Joe Felsenstein ###
   
-#### Lecture projections: ####
+#### Lecture projection: ####
 
-Part 1: [lecture5-1a.pdf](https://drive.google.com/file/d/15FQis2KI4O0GrhtTugD3k9Vxf2Dosaxh/view?usp=sharing)
-
-Part 2: [lecture5-1b.pdf](https://drive.google.com/file/d/1p6ozYMNbo9ZaKhEu0RtSyAjHC-ID3du4/view?usp=sharing)
+Part 1: [lecture5-1a.pdf]() (to be added)
 
 
 
 #### Video #####
 
-[EQGW2022lecture5-1.mp4](https://vimeo.com/576012712)
+[EQGW2022lecture5-1.mp4]() (to be added)
+
