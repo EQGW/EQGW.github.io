@@ -14,7 +14,7 @@
 
   
 
-## Lecture 4-3: "Student's choice" breakout sessions with individual lecturers ##
+## Lecture 4-3: "Participants' choice" breakout sessions with individual lecturers ##
 
 ### lecturers available, by number of breakout room (order is alphabetical) ###
   
