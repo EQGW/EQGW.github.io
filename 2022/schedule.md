@@ -5,7 +5,7 @@
 
 |        |        |        |    |
 |--------|---------------------------------------------|--------------------|------------------------------------------|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2021 Workshop (Online)](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](schedule.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](resources.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](previous.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2022 Workshop (Online)](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](/2022/schedule.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](/2022/resources.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](/2022/previous.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 
 <div align="left">
@@ -43,7 +43,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 11:00 - 11:15 | Discussion | participants |
 | 11:15 - 12:30 | [Lecture 2-2:  Simulations of evolution of the G-matrix](lecture2-2.html) | Adam Jones | 
 | 12:30 - 1:00 | Exercise 2-2: evolution of the G-matrix | Adam Jones |
-| 12:45 - 2:00 | meal break | 
+| 1:00 - 2:00 | meal break | 
 | 2:00 - 3:15 | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.html) | Josef Uyeda |
 | 3:15 - 3:30 | Discussion | participants |
 | | | |
@@ -51,7 +51,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 9:00 - 10:15 | [Lecture 3-1: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods?](lecture3-1.html) | Josef Uyeda | 
 | 10:15 - 10:30 | Discussion | participants |
 | 10:30 - 11:30 | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.html) | Joe Felsenstein and Samantha Price |
-| 11:30 - 11:45 | break | |
+| 11:30 - 11:45 | meal break | |
 | 11:45 - 12:30 | [Exercise 3-1: Brownian Motion / comparative methods](exercise3-1.html) | Samantha Price and Joe Felsenstein | 
 | 12:30 - 12:45 | break | |
 | 12:45 - 1:45 | [Lecture 3-3: OU models on phylogenies](lecture3-3.html) | Brian O'Meara |
@@ -65,7 +65,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 11:45 - 12:15 | [Exercise 4-1:  Simulations and Measurement error](exercise4-1.html) | Brian O'Meara and Samantha Price |
 | 12:15 - 1:15 | Discussion | participants |
 | 1:15 - 1:30 | break | |
-| 1:30 - 2:30 | [“Student’s choice” breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers |
+| 1:30 - 2:30 | [“Participants' choice” breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers and participants |
 | | | |
 | **Friday, 15 July** | | |
 | 9:00 - 10:00 | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.html) | Joe Felsenstein |
