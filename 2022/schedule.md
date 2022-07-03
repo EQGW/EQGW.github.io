@@ -1,7 +1,7 @@
 
 # Evolutionary Quantitative Genetics Workshop #
 
-** For now, part of this schedule is the 2021 schedule, and that part's links lead to the 2021 workshop materials.  To be gradually updated **
+**For now, part of this schedule is the 2021 schedule, and that part's links lead to the 2021 workshop materials.  To be gradually updated**
 
 |        |        |        |    |
 |--------|---------------------------------------------|--------------------|------------------------------------------|
