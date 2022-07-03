@@ -58,7 +58,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 1:45 - 2:30 | [Exercise 3-2: OU models and methods](exercise3-2.html) | Michelle Lawing and Brian O'Meara |
 | 2:30 - 2:45 | Discussion | participants |
 | **Thursday, 14 July** | | |
-| 9:00 - 10:00 | [Lecture 4-1: Simulation using models of evolution: a lizard example](lecture4-1.html) | Samantha Price and Michelle Lawing |
+| 9:00 - 10:00 | [Lecture 4-1: Simulation using models of evolution: a lizard example](lecture4-1.html) | Samantha Price |
 | 10:00 - 10:30 | break |  |
 | 10:30 - 11:30 | [Lecture 4-2: Identifiability, model adequacy and measurement error](lecture4-2.html) | Brian O'Meara, Samantha Price and Joe Felsenstein | 
 | 11:30 - 11:45 | break |  |
