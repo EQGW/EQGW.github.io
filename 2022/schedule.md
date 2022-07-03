@@ -54,8 +54,8 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 11:30 - 11:45 | break | |
 | 11:45 - 12:30 | [Exercise 3-1: Brownian Motion / comparative methods](exercise3-1.html) | Samantha Price and Joe Felsenstein | 
 | 12:30 - 12:45 | break | |
-| 12:45 - 1:45 | [Lecture 3-3: OU models on phylogenies](lecture3-3.html) | Michelle Lawing and Brian O'Meara |
-| 1:45 - 2:30 | [Exercise 3-2: OU models and methods](exercise3-2.html) | Michelle Lawing and Brian O'Meara |
+| 12:45 - 1:45 | [Lecture 3-3: OU models on phylogenies](lecture3-3.html) | Brian O'Meara |
+| 1:45 - 2:30 | [Exercise 3-2: OU models and methods](exercise3-2.html) | Brian O'Meara |
 | 2:30 - 2:45 | Discussion | participants |
 | **Thursday, 14 July** | | |
 | 9:00 - 10:00 | [Lecture 4-1: Simulation using models of evolution: a lizard example](lecture4-1.html) | Samantha Price |
