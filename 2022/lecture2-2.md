@@ -14,26 +14,16 @@
 
   
 
-## Lecture 2-2: Sexual radiation, in 2 parts ##
+## Lecture 2-2: Genetic simulation of evolution of variances and covariances ##
 
-### Stevan J. Arnold ###
+### Adam Jones ###
   
 #### Lecture projection: ####
 
-##### [PowerPoint](https://drive.google.com/file/d/1_kL5vgO3mOvwhv-Le-eykha6CqT6e3R8/view?usp=sharing) #####
-##### [PDF](https://drive.google.com/file/d/18zf351TVUHY5MjGV3SXt_QjHCpSn0z64/view?usp=sharing) #####
-
-#### Background reading: ####
-
-##### [Arnold & Houck 2016](https://drive.google.com/file/d/1y7d4Sf4qQK-FLzEKnVlS-j0tkc7VxxXA/view?usp=sharing) #####
-##### [Arnold & Houck 2016 Supplementary figures](https://drive.google.com/file/d/1IpMmpz8rTCZOj0o8nd5b5N1f2Vibiur3/view?usp=sharing) #####
+##### [PowerPoint]() ##### (to be added)
+##### [PDF]() ##### (to be added)
 
 
 #### Videos ####
 
-Part1: [EQGW2022lecture2-2a.mp4](https://vimeo.com/574982792)
-
-Introduction of workshop lecturer Patrick Carter and Part 2 of Steve Arnold lecture: [EQGW2022lecture2-2b.mp4](https://vimeo.com/574982815])
-
-Steve & Joe demonstrate the Phenotypic Tango: [From SteveFest 2019, skip to 26:00 for tango](https://www.youtube.com/watch?v=5UA9SVwSQ3U&list=PLCHPzwXO5rNK6K_te0AQCwOMA0k-uA9wV&index=3)
-
+[EQGW2022lecture2-2a.mp4]() (to  be added)
