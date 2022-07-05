@@ -28,7 +28,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 11:15 - 11:30 | Discussion | participants |
 | 11:30 - 12:00 | [Exercise 1-1:  Heritability estimation by parent-offspring regression in R](exercise1-1.html) | Josef Uyeda |
 | 12:00 - 12:15 | Discussion | participants |
-| 12:15 - 1:30 | Lunch break |  |
+| 12:15 - 1:30 | meal break | all |
 | 1:30 - 2:45 | [Lecture 1-3:  Selection as a surface, in two parts](lecture1-3.html) | Steve Arnold |
 | 2:45 - 3:00 | Discussion | participants |
 | 3:00 - 3:30 | [Exercise 1-2:  Estimating a selection surface](exercise1-2.html)  | Josef Uyeda |
@@ -47,16 +47,15 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 2:00 - 2:15 | Discussion | participants | 
 | | | |
 | **Wednesday, 13 July** | | |
-| 9:00 - 10:15 | [Lecture 2-3:  Evolution in the short term and the long term](lecture2-3.html) | Josef Uyeda |
+| 9:00 - 10:15 | [Lecture 3-1:  Evolution in the short term and the long term](lecture2-3.html) | Josef Uyeda |
 | 10:15 - 10:30 | Discussion | participants |
-| 10:30 - 11:15 | [Lecture 3-1: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods?](lecture3-1.html) | Josef Uyeda | 
+| 10:30 - 11:15 | [Lecture 3-2: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods?](lecture3-1.html) | Josef Uyeda | 
 | 11:15 - 11:30 | Discussion | participants |
-| 11:30 - 12:30 | [Lecture 3-2: Brownian Motion and comparative methods](lecture3-2.html) | Joe Felsenstein and Samantha Price |
-| 12:30 - 1:00 | meal break | |
+| 11:30 - 12:30 | [Lecture 3-3: Brownian Motion and comparative methods](lecture3-2.html) | Joe Felsenstein and Samantha Price |
+| 12:30 - 1:00 | meal break | all |
 | 1:00 - 1:30 | [Exercise 3-1: Brownian Motion / comparative methods](exercise3-1.html) | Samantha Price and Joe Felsenstein | 
-| 1:30 - 1:45 | break | |
-| 1:45 - 2:45 | [Lecture 3-3: OU models on phylogenies](lecture3-3.html) | Brian O'Meara |
-
+| 1:30 - 1:45 | break | all |
+| 1:45 - 2:45 | [Lecture 3-4: OU models on phylogenies](lecture3-3.html) | Brian O'Meara |
 | **Thursday, 14 July** | | |
 | 9:00 - 9:45 | [Exercise 4-1: OU models and methods](exercise3-2.html) | Brian O'Meara |
 | 9:45 - 10:00 | Discussion | participants |
@@ -67,7 +66,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 12:15 - 12:45 | [Exercise 4-2:  Simulations and Measurement error](exercise4-1.html) | Brian O'Meara and Samantha Price |
 | 12:45 - 1:00 | Discussion | participants |
 | 1:00 - 1:15 | break | |
-| 1:15 - 2:15 | [“Participants' choice”: three successive breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers and participants |
+| 1:15 - 2:15 | [“Participants' choice”: three successive 20-minute breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers and participants |
 | | | |
 | **Friday, 15 July** | | |
 | 9:00 - 10:00 | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.html) | Joe Felsenstein |
