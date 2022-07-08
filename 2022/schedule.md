@@ -43,7 +43,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 11:30 - 12:00 | Discussion | participants |
 | 12:00 - 12:30 | meal break | all |
 | 12:30 - 1:30 | [Lecture 2-2:  Simulations of evolution of the G-matrix](lecture2-2.html) | Adam Jones | 
-| 1:30 - 2:00 | [Exercise 2-2: evolution of the G-matrix](lecture2-2.html) | Adam Jones |
+| 1:30 - 2:00 | [Exercise 2-2:  Evolution of the G-matrix](lecture2-2.html) | Adam Jones |
 | 2:00 - 2:15 | Discussion | participants | 
 | | | |
 | **Wednesday, 13 July** | | |
