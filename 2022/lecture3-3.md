@@ -14,7 +14,7 @@
 
   
 
-## Lecture 3-2: Brownian motion and comparative methods ##
+## Lecture 3-3: Brownian motion and comparative methods ##
 
 ### Joe Felsenstein and Samantha Price ###
   
