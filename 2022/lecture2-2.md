@@ -10,7 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-<table><tr><td>&larr; <a href="lecture2-1.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture2-3.html">Next lecture &rarr;</a></td></tr></table>
+<table><tr><td><a href="exercise2-1.html">&larr; Previous</a></td><td width="665">&nbsp;</td><td> <a href="exercise2-2.html">Next &rarr;</a></td></tr></table>
 
   
 
@@ -26,4 +26,4 @@
 
 #### Videos ####
 
-[EQGW2022lecture2-2a.mp4]() (to  be added)
+[EQGW2022lecture2-2.mp4]() (to  be added)
