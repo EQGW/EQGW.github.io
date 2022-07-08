@@ -20,7 +20,7 @@
   
 #### Lecture projection: ####
 
-Part 1: [lecture5-1.pdf]() (to be added)
+Part 1: [lecture5-1.pdf](https://drive.google.com/file/d/1RWCqmZPpDuuIhdJ-OPe-7an5TV2LMP0v/view?usp=sharing) (to be added)
 
 
 
