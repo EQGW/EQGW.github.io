@@ -10,7 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-## Exercise 4-1 ##
+## Exercise 4-1: OU Models and Methods ##
 
 ### Brian O'Meara and Samantha Price ###
   
