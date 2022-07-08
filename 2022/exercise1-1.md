@@ -10,6 +10,8 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
+<table><tr><td>&larr; <a href="lecture1-2.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lexture1-3.html">Next &rarr;</a></td></tr></table>
+
 ## Exercise 1-1: Heritability estimation by parent-offspring regression in R ##
 
 ### Josef C Uyeda & Stevan J Arnold ###
