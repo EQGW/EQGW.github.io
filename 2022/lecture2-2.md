@@ -20,8 +20,9 @@
   
 #### Lecture projection: ####
 
-##### [PowerPoint]() ##### (to be added)
-##### [PDF]() ##### (to be added)
+[PowerPoint]() (to be added)
+
+[PDF]() (to be added)
 
 
 #### Videos ####
