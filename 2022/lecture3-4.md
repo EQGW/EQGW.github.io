@@ -10,9 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-<table><tr><td>&larr; <a href="lecture3-2.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture4-1.html">Next lecture &rarr;</a></td></tr></table>
-
-  
+<table><tr><td><a href="lecture3-2.html">&larr; Previous</a></td><td width="800">&nbsp;</td><td> <a href="exercise4-1.html">Next &rarr;</a></td></tr></table>
 
 ## Lecture 3-4: OU models on phylogenies ##
 
@@ -24,6 +22,6 @@
 
 #### Video ####
 
-[EQGW2022lecture3-3.mp4]() (to be added)
+[EQGW2022lecture3-4.mp4]() (to be added)
 
 
