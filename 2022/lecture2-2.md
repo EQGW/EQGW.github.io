@@ -20,9 +20,13 @@
   
 #### Lecture projection: ####
 
-[PowerPoint]() (to be added)
+[PowerPoint](https://docs.google.com/presentation/d/17HbElIjO2DvUqYmvTUKcWMgPqyh5Yo3s/edit?usp=sharing&ouid=111554424698184937627&rtpof=true&sd=true)
 
-[PDF]() (to be added)
+[PDF](https://drive.google.com/file/d/1R-z1OBcIGpx4qgPYhPEKRHTm3P9KHu9l/view?usp=sharing)
+
+#### Exercise: ####
+
+[Word Doc](https://docs.google.com/document/d/17JlzmWAaFoOnjz-haEA2oJKzxSZXMDhf/edit?usp=sharing&ouid=111554424698184937627&rtpof=true&sd=true)
 
 
 #### Videos ####
