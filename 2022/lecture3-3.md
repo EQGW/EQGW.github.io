@@ -14,7 +14,7 @@
 
   
 
-## Lecture 3-3: OU models on phylogenies ##
+## Lecture 3-4: OU models on phylogenies ##
 
 ### Brian O'Meara ###
   
