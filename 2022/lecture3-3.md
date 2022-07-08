@@ -10,7 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-<table><tr><td>&larr; <a href="lecture3-1.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture3-3.html">Next lecture &rarr;</a></td></tr></table>
+<table><tr><td><a href="lecture3-2.html">&larr; Previous</a></td><td width="665">&nbsp;</td><td> <a href="exercise3-1.html">Next &rarr;</a></td></tr></table>
 
   
 
@@ -30,7 +30,7 @@ Part 4: [Using Brownian motion to ask comparative questions (Sam Price)](https:/
 
 #### Video ####
 
-[EQGW2022lecture3-2.mp4]() (to be added)
+[EQGW2022lecture3-3.mp4]() (to be added)
 
 
 
