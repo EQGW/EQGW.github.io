@@ -10,6 +10,8 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
+<table><tr><td><a href="lecture2-1.html">&larr; Previous</a></td><td width="665">&nbsp;</td><td> <a href="lecture2-1.html">Next &rarr;</a></td></tr></table>
+
 ## Computational Exercise 2.2: Estimating and plotting a selection surface ##
 
 ### Josef Uyeda ###
