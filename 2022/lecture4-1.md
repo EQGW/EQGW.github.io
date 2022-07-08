@@ -14,7 +14,7 @@
 
   
 
-## Lecture 4-1: Simulation using models of evolution: a lizard example ##
+## Lecture 4-1: Simulation using models of evolution ##
 
 #### Samantha Price ####
   
