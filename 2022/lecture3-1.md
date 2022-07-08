@@ -14,7 +14,7 @@
 
   
 
-## Lecture 2-3: Evolution in the short term and the long term ##
+## Lecture 3-1: Evolution in the short term and the long term ##
 
 ### Josef Uyeda ###
   
@@ -31,7 +31,7 @@ Relevant Papers:
 
 #### Video ####
 
-Part 1: [EQGW2022lecture2-3a.mp4]() (to be added)
+Part 1: [EQGW2022lecture3-1a.mp4]() (to be added)
 
-Part 2: [EQGW2022lecture2-3b.mp4]() (to be added)
+Part 2: [EQGW2022lecture3-1b.mp4]() (to be added)
 
