@@ -14,7 +14,7 @@
 
   
 
-## Lecture 3-1: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods? ##
+## Lecture 3-2: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods? ##
 
 ### Josef Uyeda ###
   
@@ -32,9 +32,9 @@
 
 #### Videos
 
-Part 1: [EQGW2022lecture3-1a.mp4]() (to be added)
+Part 1: [EQGW2022lecture3-2a.mp4]() (to be added)
 
-Part 2: [EQGW2022lecture3-1b.mp4]() (to be added)
+Part 2: [EQGW2022lecture3-2b.mp4]() (to be added)
 
 
 
