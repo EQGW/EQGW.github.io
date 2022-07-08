@@ -10,7 +10,8 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-<table><tr><td>&larr; <a href="lecture4-1.html">Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="lecture4-3.html">Next lecture &rarr;</a></td></tr></table>
+
+<table><tr><td><a href="lecture4-1.html">&larr; Previous</a></td><td width="772">&nbsp;</td><td> <a href="exercise4-2.html">Next &rarr;</a></td></tr></table>
 
 
 ## Lecture 4-2:  Identifiability, model adequacy and measurement error ##
@@ -27,4 +28,4 @@ Part 3: [Joe Felsenstein: on correcting for within-population variability](https
 
 ### Video ###
 
-[EQGW2022lecture4-3.mp4]() (to be added)
+[EQGW2022lecture4-2.mp4]() (to be added)
