@@ -48,3 +48,7 @@ Individual files:
 * [Download R script only](https://drive.google.com/file/d/1vGiHe6tN9Z-1NatzWrKE-bXikR_CKoV6/view?usp=sharing)
 
 * [Answers](media/exercise_answers/Exercise_2.2_Estimating_a_selection_surface_2021_rev.html)
+
+#### Computational lab exercise ####
+
+[Simulation of evolution of covariances](https://docs.google.com/document/d/17JlzmWAaFoOnjz-haEA2oJKzxSZXMDhf/edit?usp=sharing&ouid=100704143279937220613&rtpof=true&sd=true)
