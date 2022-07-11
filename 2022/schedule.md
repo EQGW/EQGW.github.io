@@ -1,7 +1,7 @@
 
 # Evolutionary Quantitative Genetics Workshop #
 
-## Note: This schedule is tentative.  It is gradually being updated. ##
+### _Note: This schedule is tentative.  It is gradually being updated._ ###
 
 |        |        |        |    |
 |--------|---------------------------------------------|--------------------|------------------------------------------|
