@@ -10,7 +10,7 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-<table><tr><td><a href="exercise1-1.html">&larr; Previous lecture</a></td><td width="665">&nbsp;</td><td> <a href="exercise1-2.html">Next lecture &rarr;</a></td></tr></table>
+<table><tr><td><a href="exercise1-1.html">&larr; Previous</a></td><td width="772">&nbsp;</td><td> <a href="exercise1-2.html">Next &rarr;</a></td></tr></table>
   
 
 ## Lecture 1-3: Selection as a surface, in 2 parts ##
