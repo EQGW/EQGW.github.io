@@ -20,7 +20,7 @@
   
 #### Before Class Tuesday please download the following 4 files. Note that Model 101 output and Model 1201 output can only be read and visualized from within the R environment using a load command. I'll show you how to open these on Tuesday. ####
 
-[R MCMCglmm script](https://drive.google.com/file/d/1ZPJ0_tfjrXIHULb8uWQrwrHoR47DDUwO/view?usp=sharing)
+[R MCMCglmm script](https://drive.google.com/file/d/1KwUC9Pj_nMtgw4BZQQJhsZBTfKYEqKuY/view?usp=sharing)
 
 [ASCCI data set to use with above R script](https://drive.google.com/file/d/1bNNZM2rTrGR1X985xBn8UnTqruEOvfeR/view?usp=sharing)
 
