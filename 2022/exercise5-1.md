@@ -17,4 +17,9 @@
 
 ### Joe Felsenstein ###
 
-(to be added)
+10 data sets were simulated, each showing 10-landmark fish outlines.  Each is available with the tree on which it was
+simulated.  You should pick one, and copy the data set to a file called "fish" and the tree to a file called "tree".
+The R code given below enables you to use Liam Revell's package "phytools" to read in the data set into
+his format, and to read in the tree in his format.
+
+(more to be added)
