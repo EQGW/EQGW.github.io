@@ -66,7 +66,7 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 12:15 - 12:45 | [Exercise 4-2:  Simulations and Measurement error](exercise4-1.html) | Brian O'Meara and Samantha Price |
 | 12:45 - 1:00 | Discussion | participants |
 | 1:00 - 1:15 | break | |
-| 1:15 - 2:15 | [“Participants' choice”: three successive 20-minute breakout rooms with each of the lecturers](lecture4-3.html) | all lecturers and participants |
+| 1:15 - 2:15 | [“Participants' choice”: three successive 20-minute breakout rooms with some of the lecturers](lecture4-3.html) | all lecturers and participants |
 | | | |
 | **Friday, 15 July** | | |
 | 9:00 - 10:00 | [Lecture 5-1: Morphometrics on phylogenies](lecture5-1.html) | Joe Felsenstein |
