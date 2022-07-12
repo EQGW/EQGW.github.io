@@ -37,11 +37,12 @@ List of R packages you need to install on your computer (this list is still evol
 * OUwie
 * corhmm
 * phytools
+* phangorn (which  phytools needs)
 * ape
 * geiger
 * nlme
 * bayou
-* geomorph
+* geomorph (not sure anyone is using this one in any lab)
 
 
 [How to get ready for the workshop!](/2021/howtogetready.html)
