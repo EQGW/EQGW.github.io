@@ -12,7 +12,7 @@
 
 <table><tr><td><a href="lecture3-4.html">&larr; Previous</a></td><td width="772">&nbsp;</td><td> <a href="lecture4-2.html">Next &rarr;</a></td></tr></table>
 
-## Exercise 4-1: OU Models and Methods ##
+## Exercise 4-2: OU Models and Methods ##
 
 ### Brian O'Meara and Samantha Price ###
   
