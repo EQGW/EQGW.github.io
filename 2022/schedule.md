@@ -57,13 +57,13 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 1:30 - 1:45 | break | all |
 | 1:45 - 2:45 | [Lecture 3-4: OU models on phylogenies](lecture3-4.html) | Brian O'Meara |
 | **Thursday, 14 July** | | |
-| 9:00 - 9:45 | [Exercise 4-1: OU models and methods](exercise3-2.html) | Brian O'Meara |
+| 9:00 - 9:45 | [Exercise 4-1: OU models and methods](exercise4-1.html) | Brian O'Meara |
 | 9:45 - 10:00 | Discussion | participants |
 | 10:00 - 10:45 | [Lecture 4-1: Simulation using models of evolution](lecture4-1.html) | Samantha Price |
 | 10:45 - 11:00 | break |  |
 | 11:00 - 12:00 | [Lecture 4-2: Identifiability, model adequacy and measurement error](lecture4-2.html) | Brian O'Meara, Samantha Price and Joe Felsenstein | 
 | 12:00 - 12:15 | break |  |
-| 12:15 - 12:45 | [Exercise 4-2:  Simulations and Measurement error](exercise4-1.html) | Brian O'Meara and Samantha Price |
+| 12:15 - 12:45 | [Exercise 4-2:  Simulations and Measurement error](exercise4-2.html) | Brian O'Meara and Samantha Price |
 | 12:45 - 1:00 | Discussion | participants |
 | 1:00 - 1:15 | break | |
 | 1:15 - 2:15 | [“Participants' choice”: three successive 20-minute breakout rooms with some of the lecturers](lecture4-3.html) | all lecturers and participants |
