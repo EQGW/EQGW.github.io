@@ -10,163 +10,153 @@
 <img src="/media/FHLimage2018b.jpg" alt="FHL waterfront in 2018">
 </div>
 
-<table><tr><td><a href="lecture3-4.html">&larr; Previous</a></td><td width="772">&nbsp;</td><td> <a href="lecture4-2.html">Next &rarr;</a></td></tr></table>
+## Exercise 4-1: OU Models ##
 
-## Exercise 4-2: OU Models and Methods ##
-
-### Brian O'Meara and Samantha Price ###
+###  Brian O'Meara ###
   
-Sam Price [Simulation Exercises](https://drive.google.com/drive/folders/1tlO2riQOHjCBQaD6GP6QXSnwW2nOOajW?usp=sharing) this is a bonus exercise and won't be covered in class (note the OUwie example is a little out of date given the new contour analyses Brian covered yesterday).
+Download the [exercise](https://drive.google.com/file/d/16BI3JwLPJFeWym6rf2smT9Az_L9DCm1T/view?usp=sharing). We will do this together through class, don't rush ahead.
 
-Brian O'Meara [MeasurementError.R](https://drive.google.com/file/d/1Y5YLuic8-rSrXBV1c8pI757CLs3gMgm9/view?usp=sharing)
+Here's the code we'll be running in a different format.
 
 ```
-library(OUwie)
-library(plyr)
-library(parallel)
-library(knitr)
-library(ggplot2)
+#Here is a basic exercise for OUwie, along with more advanced topics
+#Brian O'Meara, July 14, 2021
+require('OUwie')
+require('geiger')
 
-## Measurement error
+?OUwie #gives help on OUwie. You can also look at some of the recent changes: https://github.com/thej022214/OUwie/blob/master/vignettes/OUwie_2.1_adds.pdf
 
-#Let's do some investigations to see how measurement error could matter.
+#Let's get some data
 
-# Get a tree and some data. In this case, stored in OUwie; you could use your own data and tree instead
-data(sim.ex, package="OUwie")
+#First, a tree
+phy <- geiger::drop.extinct(geiger::sim.bdtree(b=1, d=.9, stop="taxa", n=80, seed=round(runif(1, 1, 1000)), extinct=FALSE))
+
+#Look at it
+plot(phy)
+
+#Now, a discrete state on the tree
+q <- list(rbind(c(-.5, .5), c(.2, -.2)))
+discrete <- geiger::sim.char(phy, q, model="discrete", n=1)[,,1]
+
+#It is possible that by chance our tips end up in only one state. This is an important result to consider, but for our exercise, it makes later steps hard. So we will instead simulate until we get data we "like". This can create a bias, something we'll talk about more tomorrow.
+while (length(unique(discrete))==1 | min(table(discrete))<5) {
+	discrete <- geiger::sim.char(phy, q, model="discrete", n=1)[,,1]
+}
+
+#With many OU models, there's a "painting" of regimes on the tree (but not all, including the original Hansen (1997) model). This is nontrivial. How do you know where a regime should be, given all the problems of ancestral state reconstruction? We're going to fix the discrete states at their maximum likelihood estimates; a different way would be to do stochastic character mapping, and even better ways (see Boyko et al., in development) fit the regime and OU model jointly.
+recons <- ape::ace(discrete, phy, type="discrete")$lik.anc
+recons_better <- apply(recons, 1, which.max)
+phy$node.label <- recons_better
+
+#Plot the tree and the internal nodes to highlight the selective regimes:
+select.reg<-character(length(phy$node.label)) 
+select.reg[phy$node.label == 1] <- "black"
+select.reg[phy$node.label == 2] <- "red"
+
+tip.reg<-character(ape::Ntip(phy)) 
+tip.reg[discrete == 1] <- "black"
+tip.reg[discrete == 2] <- "red"
+
+plot(phy, show.tip.label = FALSE, type="fan") 
+nodelabels(pch=21, bg=select.reg)
+tiplabels(pch=21, bg=tip.reg)
 
 
-#Set up the model parameters
+stop("look at the tree!")
 
-alpha=rep(2,2)
-sigma.sq=rep(.45, 2)
-theta0=10
-theta=rep(10,2)
+#Get the discrete data into OUwie format
+discrete_OUwie <- data.frame(taxon=names(discrete), regime=discrete, trait=NA)
 
-stop("What model is this?")
 
-#Next, make up the data
+#Simulate an Ornstein-Uhlenbeck model with different state means
+#and sigma^2 per selective regime, but same alpha
+alpha=c(1.0, 1.0)
+sigma.sq=c(0.45,0.9)
+theta0=1.0
+theta=c(1.0,2.0)
 
-sim.data<-OUwie::OUwie.sim(tree, trait, simmap.tree=FALSE,
-  scaleHeight=FALSE, alpha=alpha, sigma.sq=sigma.sq,
-  theta0=theta0, theta=theta)
+stop("what parameters should you use?")
 
-#Look to see if it's ok. 
+sim.data<-OUwie.sim(phy,discrete_OUwie,simmap.tree=FALSE,scaleHeight=FALSE,
+alpha=alpha,sigma.sq=sigma.sq,theta0=theta0,theta=theta)
 
+#Always look at your data:
 print(sim.data)
 
-#Including on the tree
+stop("look at the data")
+
+#And look on a tree:
 sim.data.to.plot <- sim.data$X
 names(sim.data.to.plot) <- sim.data$Genus_species
-obj <- phytools::contMap(tree, sim.data.to.plot) #Note this is using Brownian motion for the reconstructions. Is that right?
-n<-length(obj$cols)
-obj$cols[1:n]<-colorRampPalette(c("blue","gray", "red"), space="Lab")(n)
-plot(obj)
+phytools::dotTree(phy, sim.data.to.plot)
+nodelabels(pch=21, bg=select.reg)
+tiplabels(pch=21, bg=tip.reg)
 
-stop("Does this dataset have uncertainty at the tips? Is this obvious from looking at it?")
+stop("look at the data on the tree")
 
-#Now, let's think about a range of combinations we could try.
+#Now estimate parameters
+sim.results <- OUwie(phy, sim.data, model="OUMV", algorithm = "three.point")
 
-mserr.vector <- seq(from=0, to=.25*max(sim.data$X), length.out=10)
+#Look at the results
+print(sim.results)
 
-stop("Are these ranges that you'd expect for your data? If not, change them (though do include zero).")
+#What do these mean?
 
+stop("let's talk")
 
-models.vector <- c("BM1", "OU1")
-mserr.argument.vector <- c("none", "known")
-all.analysis.combinations <- expand.grid(model=models.vector, mserr = mserr.argument.vector, stringsAsFactors = FALSE)
-print(all.analysis.combinations)
+#Compare true values to estimated:
+comparison <- data.frame(true=c(alpha, sigma.sq, theta), est=c(sim.results$solution[1,], sim.results$solution[2,], sim.results$theta[,1]))
+rownames(comparison) <- c("alpha1", "alpha2", "sigma.sq1", "sigma.sq2", "theta1", "theta2")
+print(comparison)
 
+stop("what do you see?")
 
-#We're going to make some functions to make running this all easier. 
-
-
-#' Do a single OUwie run for a model and summarize the results
-#' @param model Model name, as for OUwie
-#' @param mserr "known" or "none" as for OUwie
-#' @param new.data OUwie-formatted data.frame
-#' @param phy Phylo object with node labels
-#' @return Data.frame summarizing this run
-ouwie.single.run <- function(model, mserr, new.data, phy) {
-  result <- OUwie::OUwie(phy, new.data, model=model, mserr=mserr)
-  result.df <- data.frame(mserr=mserr, alpha=result$solution['alpha',1], sigma.sq=result$solution['sigma.sq',1], theta=result$theta[1,1] , AICc=result$AICc, model=model, stringsAsFactors = FALSE)
-  return(result.df)
+#we can repeat this a few times 
+nreps=5
+all.results <- matrix(nrow=6, ncol=nreps)
+for (rep.index in sequence(nreps)) {
+	sim.data.loop<-OUwie.sim(phy,discrete_OUwie,simmap.tree=FALSE,scaleHeight=FALSE,alpha=alpha,sigma.sq=sigma.sq,theta0=theta0,theta=theta)
+		sim.results <- OUwie(phy, sim.data.loop, model="OUMV", algorithm = "three.point")
+		all.results[,rep.index] <- c(sim.results$solution[1,], sim.results$solution[2,], sim.results$theta[,1])
 }
+all.results <- cbind(comparison, all.results)
+colnames(all.results) <- c("true", paste("sim", sequence(nreps+1), sep="_"))
+print(all.results)
 
-#' Compute everything for a given mserr.value. Note we use the same dataset for each combo
-#' @param mserr.value The value of measurement error
-#' @param all.combos The data.frame of all analysis combinations
-#' @param new.data The simulated data
-#' @param phy Phylo object with node labels
-#' @return A data.frame of results for each element in the combinations
-compute.w.error <- function(mserr.value, all.combos = all.analysis.combinations, new.data = sim.data, phy=tree) {
-  #First add true measurement error to our data
-  new.data$X <- stats::rnorm(length(new.data$X), mean=new.data$X, sd=mserr.value)
-  new.data$mserr <- mserr.value
-  all.result.df <- data.frame()
-  for (i in sequence(nrow(all.combos))) {
-    # Note that this is a slow way to write this: it has to keep adding to the object in memory. Look at plyr or dplyr for faster ways to do this
-    all.result.df <- rbind(all.result.df, ouwie.single.run(model=all.combos$model[i], mserr=all.combos$mserr[i],  new.data=new.data, phy=phy))
-  }
-  rownames(all.result.df)<-NULL
-  all.result.df$mserr.value = mserr.value
-  all.result.df$delta.AICc = NA
-  all.result.df$delta.AICc[which(all.result.df$mserr=="none")] <- all.result.df$AICc[which(all.result.df$mserr=="none")] - min(all.result.df$AICc[which(all.result.df$mserr=="none")])
-  all.result.df$delta.AICc[which(all.result.df$mserr=="known")] <- all.result.df$AICc[which(all.result.df$mserr=="known")] - min(all.result.df$AICc[which(all.result.df$mserr=="known")]) 
-  return(all.result.df)
+#What does this tell you?
+
+stop("what does this tell you?")
+
+
+#Let's try other models, too
+#The models are "BM1","BMS","OU1","OUM","OUMV","OUMA","OUMVA" (and you've already done "OUMV")
+
+#We can loop over the models. A faster way to analyze it would be to use mclapply rather than lapply (see the parallel package)
+OUwie.model<-function(model, phy, data) {
+	print(paste("Now starting model",model))
+	return(OUwie(phy, data, model, simmap.tree=FALSE, diagn=FALSE, algorithm="three.point"))	
 }
+models <- c("BM1","BMS","OU1","OUM","OUMV","OUMA","OUMVA")
+results <- lapply(models, OUwie.model, phy=phy, data=sim.data)
+
+#Get the AICc values, put in a vector
+AICc.values<-sapply(results, "[[", "AICc")
+names(AICc.values)<-models
+AICc.values<-AICc.values-min(AICc.values)
 
 
-#Now, we do a bunch of runs.
+print(AICc.values) #The best model is the one with smallest AICc score
 
-#This stip will take all your computer's cores by default. You can use lapply instead of parallel::mclapply to use one, or set within mclapply the mc.cores argument to some number to use that number of cores
-all.results <- plyr::rbind.fill(parallel::mclapply(mserr.vector, 
-compute.w.error, all.combos = all.analysis.combinations, new.data = sim.data, phy=tree))
+best<-results[[which.min(AICc.values)]] #store for later
 
-all.results$mserr.fraction <- all.results$mserr.value / max(sim.data$X)
-all.results$model_type <- paste(all.results$model, all.results$mserr, sep="_")
+print(best) #prints info on best model
 
-#Look at the results. First the ones with no error in the data.
+#Is the best model the generating model? Should it be?
 
-#The *_none models assume there is zero measurement error. The *_known models are given the true measurement error and use that in their estimates.
+stop("should the best be the true generating model?")
 
-View(subset(all.results, mserr.fraction==0))
+#It is often good to look at uncertainty in the parameter estimates. Let's look at sigma and alpha from the generating model
 
-stop("Why are there pairs of identical models?")
-
-#Now let's look at the opposite extreme
-
-View(subset(all.results, mserr.fraction==max(all.results$mserr.fraction))) #note: see how I'm not hardcoding here? I'm using max, not a particular value like 0.25
-
-stop("What do you notice about the values that are similar or different?")
-
-#Ok, now let's look at the whole thing
-
-View(all.results)
-
-## Plot the results
-
-### AIC 
-
-ggplot2::ggplot(data=all.results, aes(x=mserr.fraction, y=delta.AICc, colour=model_type)) + ggplot2::geom_line(alpha=0.9) + scale_colour_brewer(palette = "Set2")
-
-stop("What does this plot mean? What's the generating model? Compare BM1 known and none; compare OU1 known and none")
-
-## Sigma-squared
-
-stop("Before you run this, which models should have the highest estimates?")
-
-ggplot2::ggplot(data=all.results, aes(x=mserr.fraction, y=sigma.sq, colour=model_type)) + ggplot2::geom_line() + scale_colour_brewer(palette = "Set2")  + ggplot2::geom_hline(yintercept=sigma.sq[1], linetype="dotted", color="black")
-
-stop("Were you right?")
-
-## Alpha
-
-ou1_data <- subset(all.results, model=="OU1")
-ggplot2::ggplot(data=ou1_data, aes(x=mserr.fraction, y=alpha, colour=model_type)) + ggplot2::geom_line(alpha=0.5) + ggplot2::scale_color_viridis_d(end=0.8)
-
-## Theta
-
-ggplot2::ggplot(data=ou1_data, aes(x=mserr.fraction, y=theta, colour=model_type)) + ggplot2::geom_line(alpha=0.5) + ggplot2::scale_color_viridis_d(end=0.8)
-
-stop("Which parameters are most sensitive to ignoring measurement error? Why?")
+contour.results <- OUwie::OUwie.contour(sim.results, focal.params=c("alpha_1", "sigma.sq_1"), nreps=100)
+plot(contour.results)
 ```
