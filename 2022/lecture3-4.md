@@ -22,6 +22,6 @@
 
 #### Video ####
 
-[EQGW2022lecture3-4.mp4]() (to be added)
+(to be added)
 
 
