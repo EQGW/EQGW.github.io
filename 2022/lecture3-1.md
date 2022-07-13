@@ -20,8 +20,8 @@
   
 #### Lecture projection: ####
 
-* [ppt version](https://drive.google.com/file/d/1R7fD_Z6J9NxKC_Vu08-cl5NjHOgTD44u/view?usp=sharing)
-* [pdf version](https://drive.google.com/file/d/1UT0DT3gFAG0Qii3XmFeTOFthXh6AQgMf/view?usp=sharing)
+* [ppt version](https://drive.google.com/file/d/1KBOUyfn6kQMtk0icbTpzEsU-4dmBjIA4/view?usp=sharing)
+* [pdf version](https://drive.google.com/file/d/1uYoiD74oEEyrjCaXjaHvZ_Xp-ZaXjU2U/view?usp=sharing)
 
 Relevant Papers: 
 * [Hansen & Houle 2004](https://drive.google.com/file/d/1hZwbwvFs4aYOaAEOJWduEAMgjgYotDU8/view?usp=sharing)
