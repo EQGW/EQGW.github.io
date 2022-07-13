@@ -47,15 +47,15 @@ All times are Pacific Daylight Time (PDT).  Note that Eastern Daylight Time (EDT
 | 2:00 - 2:15 | Discussion | participants | 
 | | | |
 | **Wednesday, 13 July** | | |
-| 9:00 - 10:15 | [Lecture 3-1:  Evolution in the short term and the long term](lecture2-3.html) | Josef Uyeda |
+| 9:00 - 10:15 | [Lecture 3-1:  Evolution in the short term and the long term](lecture3-1.html) | Josef Uyeda |
 | 10:15 - 10:30 | Discussion | participants |
-| 10:30 - 11:15 | [Lecture 3-2: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods?](lecture3-1.html) | Josef Uyeda | 
+| 10:30 - 11:15 | [Lecture 3-2: Micro to Macroevolution: What does Quantitative Genetics have to do with Comparative methods?](lecture3-2.html) | Josef Uyeda | 
 | 11:15 - 11:30 | Discussion | participants |
-| 11:30 - 12:30 | [Lecture 3-3: Brownian Motion and comparative methods](lecture3-2.html) | Joe Felsenstein and Samantha Price |
+| 11:30 - 12:30 | [Lecture 3-3: Brownian Motion and comparative methods](lecture3-3.html) | Joe Felsenstein and Samantha Price |
 | 12:30 - 1:00 | meal break | all |
 | 1:00 - 1:30 | [Exercise 3-1: Brownian Motion / comparative methods](exercise3-1.html) | Samantha Price and Joe Felsenstein | 
 | 1:30 - 1:45 | break | all |
-| 1:45 - 2:45 | [Lecture 3-4: OU models on phylogenies](lecture3-3.html) | Brian O'Meara |
+| 1:45 - 2:45 | [Lecture 3-4: OU models on phylogenies](lecture3-4.html) | Brian O'Meara |
 | **Thursday, 14 July** | | |
 | 9:00 - 9:45 | [Exercise 4-1: OU models and methods](exercise3-2.html) | Brian O'Meara |
 | 9:45 - 10:00 | Discussion | participants |
