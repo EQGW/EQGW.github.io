@@ -22,11 +22,11 @@
 
 Part 1:  [Brownian motion models of quantitative characters (Joe Felsenstein)](https://drive.google.com/file/d/1Z7VILahdm4akSKJw0FUFjXYRc3qDrv7s/view?usp=sharing)
 
-Part 2:  [Brownian motion on trees (Sam Price)](https://drive.google.com/file/d/1xTQ5CihusrcaXwJlO7U9k3PFnth3FSY4/view?usp=sharing)
+Part 2:  [Brownian motion on trees 2022 (Sam Price)](https://drive.google.com/file/d/1ZPC-wHf41Eamkc4BvJ1IsjngMGTJpDaW/view?usp=sharing)
 
 Part 3: [Comparative methods: contrasts (Joe Felsenstein)](https://drive.google.com/file/d/1X1wPH6YGuOV8ZNzNEaSbSj0oJZLDp78e/view?usp=sharing)
 
-Part 4: [Using Brownian motion to ask comparative questions (Sam Price)](https://drive.google.com/file/d/1f47Ag9womxM5jFi46MHlymR6nqyO7Gxa/view?usp=sharing)
+Part 4: [Using Brownian motion to ask comparative questions 2022 (Sam Price)](https://drive.google.com/file/d/1yWr3FXubqa9GWQeyDj8Kn-KPR8lAM9hY/view?usp=sharing)
 
 #### Video ####
 
