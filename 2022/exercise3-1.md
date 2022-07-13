@@ -18,7 +18,7 @@
 
 This exercise covers basic Brownian motion on a phylogeny (section 1) and changes in Brownian motion rate over time and branches using phylogenetic independent contrasts and model-fitting approaches (section 2). 
 
-[Exercise R script](https://drive.google.com/file/d/1ETFplCApZfJxkL_QQ9Ovafov45cfEbg-/view?usp=sharing)
+[Exercise R script 2022](https://drive.google.com/file/d/1j7hR0MxnthfG7LNWsbVrvLHC3sttp4pn/view?usp=sharing)
 
 [Cetacean Phylogeny for exercise](https://drive.google.com/file/d/1HOLzpiEB3P9LqM6e8XPd9SCHsMQ5OGIX/view?usp=sharing)
 
