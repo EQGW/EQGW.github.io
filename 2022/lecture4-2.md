@@ -24,7 +24,7 @@ Part 1: Brian O'Meara on various issues. [Powerpoint](https://drive.google.com/f
 
 Part 2: Sam Price on an empirical example [Powerpoint](https://docs.google.com/presentation/d/1DNJTkW2hEB5SSyh6I_QG3MaEx9P7RD1-/edit?usp=sharing&ouid=105527304317606042497&rtpof=true&sd=true)
 
-Part 3: Joe Felsenstein: on correcting for within-population variability [PDF](https://drive.google.com/file/d/1k67l9lorUnyiy7b_8Q0u4YkxWKmEIL3W/view?usp=sharing)
+Part 3: Joe Felsenstein: on correcting for within-population variability [PDF](https://drive.google.com/file/d/1fKwKYWwgT1Af6qbhvgqQDomaypEJ-GT3/view?usp=sharing)
 
 ### Video ###
 
