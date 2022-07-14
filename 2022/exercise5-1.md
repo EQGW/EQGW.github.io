@@ -22,4 +22,5 @@ simulated.  You should pick one, and copy the data set to a file called "fish" a
 The R code given below enables you to use Liam Revell's package "phytools" to read in the data set into
 his format, and to read in the tree in his format.
 
-(more to be added)
+[R exercise (computing and plotting PCs for simulated fish forms)-Entire Folder](https://drive.google.com/drive/folders/12JQyh9H3wYeuGwCAJMxkqAXxzYi9-3Mq?usp=sharing)
+
