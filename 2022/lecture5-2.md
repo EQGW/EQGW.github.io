@@ -25,7 +25,7 @@ These will be two more-or-less unrelated topics.
 PDFs of slides:
 
 [First part (The threshold
-model)](https://drive.google.com/file/d/1N4H869zI5Jh2n3-wFAFJ0hExA2b_Xn2B/view?usp=sharing`
+model)](https://drive.google.com/file/d/1N4H869zI5Jh2n3-wFAFJ0hExA2b_Xn2B/view?usp=sharing)
 
 [Second part (SNPs, QTLs and
 characters)](https://drive.google.com/file/d/1N4H869zI5Jh2n3-wFAFJ0hExA2b_Xn2B/view?usp=sharing)
