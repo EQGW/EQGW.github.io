@@ -18,7 +18,7 @@
 
 ### Joe Felsenstein ###
 
-These will be two more-or-less unrelated topics.  This sentence is a test.
+These will be two more-or-less unrelated topics.
 
 #### Lecture projections: ####
 
