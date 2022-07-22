@@ -32,9 +32,8 @@
 ##### Videos ####
 
 
-Part 1: [EQGW2022lecture1-3a.mp4]() (to be added)
-
-Part 2: [EQGW2021lecture1-3b.mp4]() (to be added)
+Both parts: [EQGW2022lecture1-3.mp4](https://vimeo.com/732600022
+)
 
 
 
