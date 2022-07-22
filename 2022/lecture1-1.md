@@ -22,7 +22,7 @@ This short session will describe the topics to be covered in the Workshop, and t
 
 #### Video ####
 
-[EQGW2022lecture1-1.mp4]() (to be added)
+[EQGW2022lecture1-1.mp4](https://vimeo.com/732598444)
 
 
 
