@@ -30,10 +30,4 @@ Part 4: [Using Brownian motion to ask comparative questions 2022 (Sam Price)](ht
 
 #### Video ####
 
-[EQGW2022lecture3-3.mp4]() (to be added)
-
-
-
-
-
-
+[EQGW2022lecture3-3.mp4](https://vimeo.com/732598604)
