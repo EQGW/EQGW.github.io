@@ -22,6 +22,4 @@
 
 #### Video ####
 
-(to be added)
-
-
+[EQGW2922lecture3-4](https://vimeo.com/732598615)
