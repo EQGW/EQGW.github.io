@@ -28,4 +28,5 @@ Part 3: Joe Felsenstein: on correcting for within-population variability [PDF](h
 
 ### Video ###
 
-[EQGW2022lecture4-2.mp4]() (to be added)
+[EQGW2022lecture4-2.mp4](https://vimeo.com/732627566)
+
