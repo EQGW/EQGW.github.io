@@ -20,9 +20,7 @@
   
 #### Lecture projection: ####
 
-Part 1: [lecture5-1.pdf](https://drive.google.com/drive/folders/1GUeeAfDibEQ4NA9Q27OS-2YZ_0uvbsrW?usp=sharing)
-
-
+[lecture5-1.pdf](https://drive.google.com/drive/folders/1GUeeAfDibEQ4NA9Q27OS-2YZ_0uvbsrW?usp=sharing)
 
 
 #### Video #####
