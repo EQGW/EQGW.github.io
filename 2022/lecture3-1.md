@@ -31,7 +31,4 @@ Relevant Papers:
 
 #### Video ####
 
-Part 1: [EQGW2022lecture3-1a.mp4]() (to be added)
-
-Part 2: [EQGW2022lecture3-1b.mp4]() (to be added)
-
+Part 1: [EQGW2022lecture3-1.mp4](https://vimeo.com/732598589)
