@@ -27,5 +27,4 @@ Part 1: [lecture5-1.pdf](https://drive.google.com/drive/folders/1GUeeAfDibEQ4NA9
 
 #### Video #####
 
-[EQGW2022lecture5-1.mp4]() (to be added)
-
+[EQGW2022lecture5-1.mp4](https://vimeo.com/732627549)
