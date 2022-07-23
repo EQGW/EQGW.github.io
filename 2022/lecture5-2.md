@@ -34,9 +34,7 @@ characters)](https://drive.google.com/file/d/1N4H869zI5Jh2n3-wFAFJ0hExA2b_Xn2B/v
 
 #### Videos #####
 
-Threshold models: [EQGW2022lecture5-2a.mp4]() (to be added)
-
-Sequences, SNPs, QTLs: [EQGW2022lecture5-2b.mp4]() (to be added)
+[EQGW2022lecture5-2a.mp4](https://vimeo.com/732627538)
 
 
 
