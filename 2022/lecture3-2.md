@@ -32,4 +32,4 @@
 
 #### Videos
 
-[EQGW2022lecture3-2a.mp4](https://vimeo.com/732598593)
+[EQGW2022lecture3-2.mp4](https://vimeo.com/732598593)
