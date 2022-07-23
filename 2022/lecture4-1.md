@@ -23,7 +23,4 @@
 
 #### Videos ####
 
-[EQGW2022lecture4-1.mp4]() (to be added)
-
-
-
+[EQGW2022lecture4-1.mp4](https://vimeo.com/732627574)
