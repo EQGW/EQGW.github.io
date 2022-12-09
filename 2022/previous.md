@@ -24,11 +24,11 @@ Including pages for the individual lectures, including lecture projections, vide
 
 Here are links to previous years' workshops, with pages for the individual lectures, including lecture projections, audio recordings, and files for computer exercises.  For 2014-2016 there are YouTube videos of the lectures as well.
 
-[2019 Workshop](https://blogs.uw.edu/fhleqg/)
+[2019 Workshop](https://sites.uw.edu/fhleqg/)
 
-[2018 Workshop](http://blogs.uw.edu/fhleqg/schedule-2018/)
+[2018 Workshop](http://sites.uw.edu/fhleqg/schedule-2018/)
 
-[2017 Workshop](http://blogs.uw.edu/fhleqg/2017-schedule/)
+[2017 Workshop](http://sites.uw.edu/fhleqg/2017-schedule/)
 
 
 &nbsp;
