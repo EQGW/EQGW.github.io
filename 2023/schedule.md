@@ -13,7 +13,7 @@
 
 # _After this point, the schedule is last year's schedule, for an online workshop_
 
-_It will gradually be updated as the Workshop nears_
+_It will gradually be updated as the Workshop nears.  To see the most recent example of the schedule of an in-person workshop, use the Previous Years link above, and go to the 2019 schedule._
 
 &nbsp;
 
