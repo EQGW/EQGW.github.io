@@ -3,7 +3,7 @@
 
 |        |        |        |    |
 |--------|---------------------------------------------|--------------------|------------------------------------------|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2023 Workshop](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](/schedule.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](/resources.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](/previous.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [2023 Workshop](/index.html) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SCHEDULE](/schedule.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](/resources.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PREVIOUS YEARS](/previous.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
 
 <div align="left">
@@ -22,7 +22,7 @@ Including pages for the individual lectures, including lecture projections, vide
 
 [2021 Workshop](https://EQGW.github.io/2021/schedule.md)
 
-## in Friday Harbor Labs ##
+## In-person workshop at Friday Harbor Labs ##
 
 Here are links to previous years' workshops, with pages for the individual lectures, including lecture projections, audio recordings, and files for computer exercises.  For 2014-2016 there are YouTube videos of the lectures as well.
 
@@ -70,4 +70,3 @@ The 2011 to 2013 workshops were held at NESCENT, the National Evolutionary Synth
 
 
 [2011 Workshop wiki page including group photo](https://web.archive.org/web/20130725033210/https://academy.nescent.org/wiki/2011_Evolutionary_quantitative_genetics)
-
