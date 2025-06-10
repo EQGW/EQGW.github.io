@@ -24,9 +24,5 @@
 
 #### Dataset
 
--   [vipers_tree.tre](vipers_tree.tre)
--   [body_size.txt](body_size.txt)
--   [vipers_habitat_bodysize_mod.csv](vipers_habitat_bodysize_mod.csv)
--   [vipers_tree_BAMM.txt](vipers_tree_BAMM.txt)
--   [event_data_tree1.txt](event_data_tree1.txt)
+-   [Tutorial Files (zip)](Viper_files.zip)
 
