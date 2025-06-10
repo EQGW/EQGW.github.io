@@ -1,0 +1,82 @@
+Command line: ./bamm -c traitcontrol.txt
+Git commit id: 462bc39af9d4c4b4dd81a481f32c953e93a076e7
+Random seed: 1746798562
+Start time: Fri May  9 09:49:22 2025
+
+Current parameter settings:
+       acceptanceInfoFileName    acceptance_info.txt
+          acceptanceResetFreq    1000
+                     autotune    0
+                     betaInit    0.5
+                betaInitPrior    130.7455775131
+            betaInitRootPrior    -1.0
+      betaIsTimeVariablePrior    1
+                  betaOutfile    beta_rates.txt
+                betaShiftInit    0
+               betaShiftPrior    0.051557257131277
+           betaShiftRootPrior    -1.0
+         branchRatesWriteFreq    0
+            chainSwapFileName    chain_swap.txt
+             checkUltrametric    1
+                       deltaT    0.01
+              eventDataInfile    event_data_in.txt
+             eventDataOutfile    event_data_tree1.txt
+           eventDataWriteFreq    1000
+       expectedNumberOfShifts    1.0
+fastSimulatePriorExperimental    0
+     fastSimulatePrior_BurnIn    0.05
+fastSimulatePrior_Generations    5000000
+ fastSimulatePrior_SampleFreq    50
+          initialNumberEvents    0
+              initializeModel    1
+                loadEventData    0
+         localGlobalMoveRatio    10.0
+              maxNumberEvents    5000
+                  mcmcOutfile    mcmc_out_tree1.txt
+                mcmcWriteFreq    1000
+                    modeltype    trait
+             nodeStateOutfile    node_state.txt
+           nodeStateWriteFreq    0
+            numberOccurrences    0
+               numberOfChains    4
+          numberOfGenerations    8000000
+              observationTime    -1
+                      outName    
+         outputAcceptanceInfo    0
+                    overwrite    0
+             poissonRatePrior    1
+         preservationRateInit    0
+        preservationRatePrior    1.0
+                    printFreq    1000
+          priorOutputFileName    prior_probs.txt
+ priorSim_IntervalGenerations    5000
+              runInfoFilename    run_info.txt
+                      runMCMC    1
+          sampleFromPriorOnly    0
+                         seed    -1
+          simulatePriorShifts    1
+                   swapPeriod    1000
+                traitPriorMax    0
+                traitPriorMin    0
+                    traitfile    body_size.txt
+                     treefile    vipers_tree_BAMM.txt
+          updateBetaInitScale    1
+         updateBetaShiftScale    1
+     updateEventLocationScale    0.05
+         updateEventRateScale    4.0
+         updateNodeStateScale    1
+  updatePreservationRateScale    1.0
+              updateRateBeta0    1
+          updateRateBetaShift    1
+       updateRateBetaTimeMode    0
+        updateRateEventNumber    1
+updateRateEventNumberForBranch    0.0
+      updateRateEventPosition    1
+          updateRateEventRate    1
+          updateRateNodeState    25
+   updateRatePreservationRate    -1
+useObservedMinMaxAsTraitPriors    1
+   validateEventConfiguration    0
+   writeMeanBranchLengthTrees    0
+End time: Fri May  9 09:50:01 2025
+
