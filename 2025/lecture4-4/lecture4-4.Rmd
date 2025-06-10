@@ -1,4 +1,4 @@
-## Lecture 3-4: The paradox of predictability
+# Evolutionary Quantitative Genetics Workshop #
 
 |        |        |        |    |
 |--------|---------------------------------------------|--------------------|------------------------------------------|
@@ -12,6 +12,7 @@
 
 <table><tr><td>&larr; <a href="lecture1-1.html">Previous</a></td><td width="772">&nbsp;</td><td> <a href="exercise1-3.html">Next &rarr;</a></td></tr></table>
   
+## Lecture 4-4: Best practices in phylogenetic comparative methods.
 
 ### Fabio A. Machado
 
