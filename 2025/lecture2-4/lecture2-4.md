@@ -23,7 +23,7 @@ a botanical anatomist who had connections to Charles Darwin, can be
 used to (rather roughly) approximate changes of gene frequencies by 
 genetic drift.  And how that leads to an approximation of changes 
 of quantitative characters.  How one can get from theoretical population 
-genetic a rough approximation of how much additive genetic variance will 
+genetics a rough approximation of how much additive genetic variance will 
 be maintained in a population when it undergoes neutral mutation and 
 genetic drift.
 
@@ -31,11 +31,14 @@ How simple forms of optimum selection, where the fitness surface is
 shaped like a Gaussian (normal) distribution, lead to simple rules 
 for change of the character(s).
 
-What if the optima are themselves move through time?  Can we model 
+What if the optima themselves move through time?  Can we model 
 that as being just like change of quantitative characters?  Why that 
 is questionable.  A simple computer simulation suggests that in 
 the short term the change of characters will be affected strongly by 
 genetic covariances.  But not nearly as much in the long term.
+The result is that "selective covariance" (Tedin, 1926; Stebbins, 
+1948; Armbruster, 1996) must be considered in addition to genetic 
+covariances.
 
   
 #### Lecture projection ####
