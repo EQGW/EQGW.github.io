@@ -37,7 +37,7 @@ is questionable.  A simple computer simulation suggests that in
 the short term the change of characters will be affected strongly by 
 genetic covariances.  But not nearly as much in the long term.
 The result is that "selective covariance" (Tedin, 1926; Stebbins, 
-1948; Armbruster, 1996) must be considered in addition to genetic 
+1950; Armbruster, 1996) must be considered in addition to genetic 
 covariances.
 
   
