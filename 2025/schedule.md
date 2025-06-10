@@ -76,7 +76,7 @@ All times are Eastern Daylight Time (EDT).  Note that Pacific Daylight Time (PDT
 | **Friday, June 13th** | | |
 | 9:00 - 10:00 | [Lecture 5-1: Multivariate PCMs](/2025/lecture5-1/lecture5-1.html) | Fabio Machado |
 | 10:00 - 10:15 | break | | 
-| 10:15 - 12:00 | [Exercise 5-1: Morphometrics](/2025/exercise5-1/exercise5-1.html) | Fabio Machado & Josef Uyedaa|
+| 10:15 - 12:00 | [Exercise 5-1: Multivariate PCMs](/2025/exercise5-1/exercise5-1.html) | Fabio Machado & Josef Uyeda|
 | 12:00 - 1:30 | meal break | all |
 | 1:30 - 2:30 | [Lecture 5-2: Threshold model and discrete/continuous connections](/2025/lecture5-2/lecture5-2.html) | Josef Uyeda
 | 2:30 - 3:30 | [Exercise 5-2: Discrete & continuous model connections](/2025/exercise5-2/exercise5-2.html) | Josef Uyeda |
