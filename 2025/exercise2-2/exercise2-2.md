@@ -38,7 +38,7 @@ non-linear selection acting on these traits.
 #### Data: ####
 * [Data.csv](/2025/exercise2-2/Data.csv)
 * [fullped.csv](/2025/exercise2-2/fullped.csv)
-* [model2.Rdata](/2025/exercise2-2/model2.Rdata)
+* [model.Rdata](/2025/exercise2-2/model.Rdata)
 * [model_null.Rdata](/2025/exercise2-2/model_null.Rdata)
   
 

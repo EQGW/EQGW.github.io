@@ -11,3 +11,4 @@ in folders for each lecture within a folder for each year.  The lecturers will e
 materials there.  Users reading the webpages can access them using the links in these webpages.
 
 Joe Felsenstein (felsenst.github.io)
+Josef Uyeda (juyeda@vt.edu)
