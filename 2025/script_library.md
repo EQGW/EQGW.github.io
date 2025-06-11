@@ -47,7 +47,7 @@ the sensitivity of that surface to sampling.
   
 #### 4. Learning Maximum Likelihood vs. Bayesian Estimation ####
 * Learning ML vs. Bayes Script
-  * [Script](/script_library/MLvsBayes/LearningMLBayes_Exercise.R)
+  * [Script](/script_library/MLvsBayes/LearningML&Bayes_Exercise.R)
   * [Script with answers](/script_library/MLvsBayes/LearningMLBayes_Answers.Rmd)
-  * [HTML with answers](/script_library/MLvsBayes/LearningMLBayes_Exercise.nb.html)
+  * [HTML with answers](/script_library/MLvsBayes/LearningML&Bayes_Exercise.nb.html)
   
