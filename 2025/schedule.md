@@ -50,9 +50,9 @@ All times are Eastern Daylight Time (EDT).  Note that Pacific Daylight Time (PDT
 | **Wednesday, June 11th** | | |
 | 9:00 - 10:00 | [Exercise 2-2 (continued): G-matrix exercise](/2025/exercise2-2/exercise2-2.html) | Jacqueline Sztepanacz |
 | 10:00 - 11:00 | [Lecture 3-1: Evolving G-matrices](/2025/lecture3-1/lecture3-1.html) | Joel McGlothlin | 
-| 11:15 - 12:00 | [Exercise 3-2: G-matrices](/2025/exercise3-2/exercise3-2.html) | Joel McGlothlin |
+| 11:15 - 12:00 | Discussion | Joel McGlothlin |
 | 12:00 - 1:30 | meal break | all |
-| 1:30 - 2:30 | [Lecture 3-2: Micro2Macro-EQG to Comparative methods](/2025/lecture3-2/lecture3-2.html) | Joel McGlothlin & Josef Uyeda | 
+| 1:30 - 2:30 | [Lecture 3-2: Micro2Macro-EQG to Comparative methods](/2025/lecture3-2/lecture3-2.html) | Josef Uyeda | 
 | 2:30 - 3:15 | [Exercise 3-3: EQG on trees](/2025/exercise3-3/exercise3-3.html) | Josef Uyeda |
 | 3:15 - 3:30 | Break | | 
 | 3:30 - 4:30 | [Lecture 3-3: The Paradox of Predictability](/2025/lecture3-3/lecture3-3.html) | Fabio Machado |
