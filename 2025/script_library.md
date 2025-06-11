@@ -44,3 +44,10 @@ the sensitivity of that surface to sampling.
   * [Readme](/script_library/Estimating_selection_as_a_surface/Exercise_2.2_Readme_rev.pdf)
   * [Lande Arnold 1983.](/papers/LandeArnold1983MeasurementSelectiononCorrelatedCharacters.pdf)
   * [Arnold and Bennett 1988.](/script_library/Estimating_selection_as_a_surface/ArnoldBennett1988.pdf)
+  
+#### Learning Maximum Likelihood vs. Bayesian Estimation ####
+* Learning ML vs. Bayes Script
+  * [Script](/script_library/MLvsBayes/LearningMLBayes_Exercise.R)
+  * [Script with answers](/script_library/MLvsBayes/LearningMLBayes_Answers.Rmd)
+  * [HTML with answers](/script_library/MLvsBayes/LearningMLBayes_Exercise.nb.html)
+  
