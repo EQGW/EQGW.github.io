@@ -21,7 +21,7 @@ phylogenetic comparative data, and learning about how Gaussian models work.
 
 #### Script: ####
 * [QG2PCMs.nb.Rmd](/2025/exercise3-3/QG2PCMs.nb.Rmd)
-
+* [Toy4ped.rds](/2025/exercise3-3/Toy4ped.rds)
 
 #### Background readings:  ####
 * [Hadfield & Nakagawa, 2010.General quantitative genetic methods for comparative biology:phylogenies, taxonomies and multi-trait models for continuous andcategorical characters](/papers/Hadfield&Nakagawa2010QGforPCMs.pdf)
