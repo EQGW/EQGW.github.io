@@ -86,6 +86,11 @@ and easily download course materials all at once, we recommend you use git.
 * Matrix algebra primer is [here](/2025/otherresources/Appendix1.pdf), or [wikipedia](https://en.wikipedia.org/wiki/Matrix_(mathematics)), with a R
 markdown exercise [here](/2025/otherresources/Matrix_algebra_session_rev2.Rmd).
 
+## Script library
+
+* [Script library](/2025/script_library.html) Some exercises and things we've made that we
+don't have an exercise for. Explore as you wish!
+
 ## For lecturers ##
 
 [Editing lecture or exercise web pages, adding new ones, posting files (a brief guide)](/2025/HowToForLecturers.html)

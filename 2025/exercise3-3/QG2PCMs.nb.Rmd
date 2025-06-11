@@ -1,0 +1,215 @@
+---
+title: "QG & PCMs - Methodological connections"
+output:
+  html_document:
+    df_print: paged
+---
+
+Earlier in this course, we learned how to use `MCMCglmmm` to estimate Additive Genetic Variance-Covariance matrices (G-matrices or *G*) from related individuals. Let's do a comparison of estimating the G-matrix from pedigrees and the R-matrix from phylogenies.
+
+```{r}
+#Load some familiar packages
+library(MCMCglmm)
+library(mvtnorm)
+
+```
+
+
+```{r}
+#Let's simulate our data. As simulation deities, these are the TRUE VALUES of G and E
+Gmatrix <- matrix(c(3.5, 1.1, 
+                    1.1, 2), byrow=TRUE, ncol=2, nrow=2)
+Ematrix <- matrix(c(1, -0.2,
+                  -0.2, 1), byrow=TRUE, ncol=2, nrow=2)
+
+#Let's grab Patrick Carter's Toy pedigree and make it smaller to speed up computation
+Toy4ped <- readRDS("./Toy4ped.rds")
+pedigree <-prunePed(Toy4ped,keep=1501:2500, make.base=TRUE)
+
+```
+
+There are built in tools to simulate breeding values from a pedigree and given the G and E matrices. Let's use them. 
+```{r}
+set.seed(1) #To get consistent results
+simdat <- rbv(pedigree, Gmatrix, nodes="ALL") + rmvnorm(nrow(pedigree),c(0,0), Ematrix) #Simulates breeding values from a pedigree
+simdat <- data.frame(trait1=simdat[,1], trait2=simdat[,2], animal=rownames(simdat)) #Arrange and name it how MCMCglmm wants
+plot(simdat[,1], simdat[,2], xlab="Trait 1", ylab="Trait 2", pch=21, col="gray20", bg="gray20")
+```
+
+
+Let's rerun a very simple quantitative genetic analysis: 
+
+```{r}
+#I took these from the MCMCglmm tutorial, should be similar to what Patrick had you do yesterday.
+prior <- list(R=list(V=diag(2)*(0.002/1.002),nu=1.002),
+                  G=list(G1=list(V=diag(2)*(0.002/1.002),nu=1.002)))
+mmQG <- MCMCglmm(cbind(trait1, trait2)~ trait-1, random=~us(trait):animal, rcov=~us(trait):units, family = c("gaussian", "gaussian"), prior=prior, data=simdat, pedigree = pedigree)
+#We're gonna run it for FAR TOO SHORT A TIME cause we don't care if our estimates are really rough...in the interests of speed
+
+```
+
+Let's pull out our estimated G and E from the our model fit using the median of the posteriors.
+```{r}
+G <- matrix(c(median(mmQG$VCV[,1]), median(mmQG$VCV[,2]),
+                    median(mmQG$VCV[,3]), median(mmQG$VCV[,4])), byrow=TRUE, nrow=2, ncol=2)
+
+E <- matrix(c(median(mmQG$VCV[,5]), median(mmQG$VCV[,6]),
+                    median(mmQG$VCV[,7]), median(mmQG$VCV[,8])), byrow=TRUE, nrow=2, ncol=2)
+
+cat("True values for G-matrix \n", Gmatrix, "\n Estimated values for G-matrix \n", G, "\n\n")
+cat("True values for E-matrix \n", Ematrix, "\n Estimated values for E-matrix \n", E)
+
+
+```
+
+Not half bad!! Now we used a fancy simulator from the package. I want to demystify it for you. We don't need that to simulate data (although it is more efficient than what I'm going to have you do now). To get data like our data, we simply draw from a multivariate normal distribution. All normal distributions just need a mean and variance. If our observations are independent, identically distributed from the same normal distribution, the typical way of drawing them is to use `rnorm`.
+
+```{r}
+set.seed(1)
+z1 <- rnorm(1000, 0, 1)
+plot(density(z), col="red")
+```
+We could (though it would make no sense to) draw it from a multivariate normal distribution. 
+
+```{r}
+set.seed(1)
+I <- diag(1000)
+z2 <- MASS::mvrnorm(1, rep(0, 1000), I)
+plot(density(z1), col="red", lwd=4)
+lines(density(z2), col="blue",lwd=2)
+```
+
+
+
+
+All of our traits for all individuals have the same mean of 0 for both traits. The complete variance-covariance matrix FOR ALL OBSERVATIONS is equal to `kronecker(G, A) + kronecker(E,I)` where `A` is the relatedness matrix, and `I` is the identity matrix. In other words, `mvrnorm(1, c(0,0), kronecker(G,A) + kronecker(E,I))`. The "Kronecker product" multiplies each entry of one matrix (e.g. G) by another matrix (e.g. A), basically making a matrix of submatrices. This will be much slower than rbv.
+
+```{r}
+set.seed(1)
+A <- solve(inverseA(pedigree)$Ainv)
+I <- diag(nrow(simdat))
+.simdat2 <- MASS::mvrnorm(1, rep(0, dim(Gmatrix)[1]*nrow(A)), kronecker(Gmatrix, A) + kronecker(E, I))
+```
+
+Does the distribution look similar to before?
+```{r}
+simdat2 <- data.frame(trait1=.simdat2[1:nrow(A)], trait2=.simdat2[(nrow(A)+1):(2*nrow(A))], animal=pedigree$animal)
+plot(simdat2[,1:2], xlab="Trait 1", ylab="Trait 2", pch=21, col="gray20", bg="gray20", main="Direct from mvNormal Distribution", xlim=c(-7,7), ylim=c(-7,7))
+plot(simdat[,1:2], xlab="Trait 1", ylab="Trait 2", pch=21, col="gray20", bg="gray20", main="From rbv in MCMCglmm", xlim=c(-7,7), ylim=c(-7,7))
+```
+
+Let's see if the model fit gets a similar answer.
+```{r}
+prior <- list(R=list(V=diag(2)*(0.002/1.002),nu=1.002),
+                  G=list(G1=list(V=diag(2)*(0.002/1.002),nu=1.002)))
+mmQG2 <- MCMCglmm(cbind(trait1, trait2)~ trait-1, random=~us(trait):animal, rcov=~us(trait):units, family = c("gaussian", "gaussian"), prior=prior, data=simdat2, pedigree = pedigree)
+```
+
+
+```{r}
+G2 <- matrix(c(median(mmQG2$VCV[,1]), median(mmQG2$VCV[,2]),
+                    median(mmQG2$VCV[,3]), median(mmQG2$VCV[,4])), byrow=TRUE, nrow=2, ncol=2)
+
+E2 <- matrix(c(median(mmQG2$VCV[,5]), median(mmQG2$VCV[,6]),
+                    median(mmQG2$VCV[,7]), median(mmQG2$VCV[,8])), byrow=TRUE, nrow=2, ncol=2)
+
+cat("True values for G-matrix \n", Gmatrix, "\n Estimated values for G-matrix \n", G2, "\n\n")
+cat("True values for E-matrix \n", Ematrix, "\n Estimated values for E-matrix \n", E2)
+```
+Again, maybe not bad!
+
+
+#II. Now let's move to a phylogenetic model. 
+We're going to do the same thing as before. This time, our traits are measured as species means. We can assume a model of genetic drift, and a tree in millions of years. 
+
+```{r}
+library(geiger)
+library(phytools)
+Ne <- 10000000 #set the effective population size
+Rmatrix <- Gmatrix/Ne*1000000 #multiply by a million, so we can have our tree in millions of years
+Lmatrix <- Ematrix/10
+
+tree <- sim.bdtree(b=1, n=200, stop="taxa")
+tree$edge.length <- tree$edge.length/max(branching.times(tree)) * 50 #Makes tree 50 million years old
+plot(tree)
+```
+
+We can use the R package geiger to simulate our trait data under Brownian Motion. To analogize to the the QG model, we're going to add some random noise on top of that by simulating from the E matrix. In other words, our phylogenetic heritabilities will be less than 1. (This is analogous to what is done in so-called lambda models, which transform the tree. Lambda is similar in interpretation as the phylogenetic heritability we will get here). 
+
+```{r}
+phydat <- sim.char(tree, par=Rmatrix, nsim=1, root=0, model="BM")[,,1] + MASS::mvrnorm(n=length(tree$tip.label), c(0,0), Lmatrix)
+plot(phydat, xlab="Trait 1", ylab="Trait 2", pch=21, col="gray20", bg="gray20", main="From sim.char in Geiger", xlim=c(-10,10), ylim=c(-10,10))
+```
+Let's look at the tree in matrix form, analogous to how we represent the pedigree
+as an ancestry matrix. Move between the phylogeny and the matrix, and see if you 
+can see the correspondence and predict which entries are large and which are small.
+
+```{r}
+V <- vcv.phylo(tree)
+V[1:10,1:10]
+tree_first10 <- drop.tip(tree, 11:200)
+plot(tree_first10)
+```
+
+
+Convert to MCMCglmm format. Pass our tree into the function `inverseA` to get the A matrix to feed into MCMCglmm.
+
+```{r}
+phydat <- data.frame(trait1=phydat[,1], trait2=phydat[,2], animal=tree$tip.label)
+rownames(phydat) <- tree$tip.label
+inv.phylo <- inverseA(tree, scale=FALSE) #Take the inverse of the tree's variance-covariance matrix
+```
+
+Besides feeding the function our inverse of the A matrix from the phylogeny instead of the pedigree, this function call should be identical to the previous ones!
+```{r}
+prior <- list(R=list(V=diag(2)*(0.002/1.002),nu=1.002),
+                  G=list(G1=list(V=diag(2)*(0.002/1.002),nu=1.002)))
+mmPCM <- MCMCglmm(cbind(trait1, trait2)~1, random=~us(trait):animal, rcov=~us(trait):units, family = c("gaussian", "gaussian"), prior=prior, data=phydat, ginverse=list(animal=inv.phylo$Ainv), scale=FALSE)
+
+```
+
+
+Let's compare estimates to the true values.
+```{r}
+R <- matrix(c(median(mmPCM$VCV[,1]), median(mmPCM$VCV[,2]),
+                    median(mmPCM$VCV[,3]), median(mmPCM$VCV[,4])), byrow=TRUE, nrow=2, ncol=2)
+
+Lambda <- matrix(c(median(mmPCM$VCV[,5]), median(mmPCM$VCV[,6]),
+                    median(mmPCM$VCV[,7]), median(mmPCM$VCV[,8])), byrow=TRUE, nrow=2, ncol=2)
+
+cat("True values for R-matrix \n", Rmatrix, "\n Estimated values for R-matrix \n", R, "\n\n")
+cat("True values for L-matrix \n", Lmatrix, "\n Estimated values for L-matrix \n", Lambda)
+```
+
+Is that good? Maybe! Now let's do our demystification of what distribution we're pulling from again. Let's go
+back to our V matrix, the Variance-Covariance Matrix. Now, we create a new dataset doing the same thing we 
+did for the individuals on the pedigree, but use V instead of A. 
+
+```{r}
+set.seed(1)
+ntip <- length(tree$tip.label)
+stop("The lines below are broken!!! Remove this stop line and fix it.")
+I <- ?
+.phydat2 <- MASS::mvrnorm(?, mu=rep(0,2*ntip), ?) 
+```
+
+Does it give us the same answer?
+```{r}
+phydat2 <- data.frame(trait1 = .phydat2[1:ntip], trait2 = .phydat2[(ntip+1):(2*ntip)], animal=tree$tip.label)
+mmPCM2 <- MCMCglmm(cbind(trait1, trait2)~1, random=~us(trait):animal, rcov=~us(trait):units, family = c("gaussian", "gaussian"), prior=prior, data=phydat2, ginverse=list(animal=inv.phylo$Ainv), scale=FALSE)
+
+R2 <- matrix(c(median(mmPCM2$VCV[,1]), median(mmPCM2$VCV[,2]),
+                    median(mmPCM2$VCV[,3]), median(mmPCM2$VCV[,4])), byrow=TRUE, nrow=2, ncol=2)
+
+Lambda2 <- matrix(c(median(mmPCM2$VCV[,5]), median(mmPCM2$VCV[,6]),
+                    median(mmPCM2$VCV[,7]), median(mmPCM2$VCV[,8])), byrow=TRUE, nrow=2, ncol=2)
+
+cat("True values for R-matrix \n", Rmatrix, "\n Estimated values for R-matrix \n", R2, "\n\n")
+cat("True values for L-matrix \n", Lmatrix, "\n Estimated values for L-matrix \n", Lambda2)
+
+```
+
+Squint and it looks great. 
+
+
+

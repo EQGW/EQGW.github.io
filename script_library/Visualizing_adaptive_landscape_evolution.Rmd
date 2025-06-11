@@ -1,0 +1,197 @@
+---
+title: "G-matrices on Adaptive Landscapes visualization"
+author: "Josef Uyeda"
+date: "2025-06-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## G-matrices on Adaptive Landscapes ##
+
+This script visualizes the multivariate response to selection as evolving 
+G-matrices approach the adaptive peak. It is a discrete time simulation. 
+
+First we load packages. 
+```{r}
+require(MASS)
+require(car)
+
+```
+
+
+Next we make a helper function. If you've never made an R function, this is a way
+to make code that does stuff for you.
+```{r functions1}
+make.vcv <- function(G11, G22, r){
+   C <- diag(2)
+   C[1,2] <- C[2,1] <- r
+   S <- diag(c(sqrt(G11),sqrt(G22)))
+   G <- S %*% C %*% S
+   return(G)
+}
+
+```
+
+
+Test it out!This function makes a variance-covariance matrix from 3 inputs, 
+the variance of the first element, the variance of the second element, and
+the genetic correlation (bound between -1 and 1).
+```{r}
+G <- make.vcv(2,1, 0.9)
+G
+```
+
+
+Plotting functions to visualize G-matrices and their responses to selection.
+```{r}
+G.ellipse <- function(G,null.bar,color,...){
+  ##Plot the ellipse for a given G matrix (2.5 is for the 99% CI)
+  ellipse(center=null.bar, shape=G, radius=2.5, center.cex=0.1, col=color, add=TRUE,...)
+  
+  #Get eigenvectors & eigenvalues and use them to plot axes of the ellipse
+  k=2.5*sqrt(eigen(G)$values[2])
+  delx1 = null.bar[1] + k*eigen(G)$vectors[1,2]
+  delx2 = null.bar[2] + k*eigen(G)$vectors[2,2]
+  delx11 =  null.bar[1] - k*eigen(G)$vectors[1,2]
+  delx22 =  null.bar[2]  - k*eigen(G)$vectors[2,2]
+  x.values=c(null.bar[1], delx1, delx11)
+  y.values=c(null.bar[2] , delx2, delx22)
+  lines(x.values, y.values, col=color, ...)
+  
+  j=2.5*sqrt(eigen(G)$values[1])
+  delx1 = null.bar[1]  + j*eigen(G)$vectors[1,1]
+  delx2 = null.bar[2]  + j*eigen(G)$vectors[2,1]
+  delx11 = null.bar[1]  - j*eigen(G)$vectors[1,1]
+  delx22 = null.bar[2]  - j*eigen(G)$vectors[2,1]
+  x.values=c(null.bar[1] , delx1, delx11)
+  y.values=c(null.bar[2] , delx2, delx22)
+  lines(x.values, y.values, col=color, ...)
+}
+
+##A function for making transparent color gradients
+makeTransparent <- function(someColor, alpha=100){
+  newColor<-col2rgb(someColor)
+  apply(newColor, 2, function(curcoldata){rgb(red=curcoldata[1], green=curcoldata[2],blue=curcoldata[3],alpha=alpha, maxColorValue=255)})
+}
+
+G.trajectory <- function(stops, steps, G, Omega, color, plot.every=1, P=matrix(0,ncol=2,nrow=2), Ne=Inf, pts=FALSE, lines=TRUE, 
+                         alphaseq=NULL, linealpha=255, linelwd=3, lwd=4, outline=1.2,linelty=1, linecol=NULL,plot.every.pts=1,...){
+  ##Initialize zbar
+  start <- stops[[1]]
+  optimum <- stops[[2]]
+  zbar <- start
+  ##Plot the original G
+  G.ellipse(G,zbar,color="black",lwd=lwd*outline, ...)
+  G.ellipse(G,zbar, color=color, lwd=lwd, ...)
+  
+  ##Create a transparency ramp
+  if(is.null(alphaseq)){
+    trans.ramp <- exp(seq(log(10),log(245),length.out=steps))
+  } else {
+    trans.ramp <- exp(seq(alphaseq[1],alphaseq[2],length.out=steps))
+  }
+  
+  ##Create an empty matrix to store results
+  Z <- matrix(start,ncol=2,nrow=steps+1)
+  ##Loop over the number of generations
+  for(i in 1:steps){
+    ##Make the color transparent
+    #col.i <- makeTransparent(color,alpha=trans.ramp[i])
+    ##Calculate the selection gradient based on the current location
+    Beta <- (optimum-zbar)%*%solve(Omega+P)
+    ##Determine the location of the new optimum
+    zbar <- Beta%*%G+zbar+mvrnorm(1,c(0,0),G/Ne)
+    ##Plot the G-matrix
+    ##Store the results from this generation
+    Z[i+1,] <- zbar
+    #if(i %% plot.every==0){
+    #  G.ellipse(G,as.vector(zbar),color=makeTransparent("black", trans.ramp[i]),lwd=lwd*outline, ...)
+    #  G.ellipse(G,as.vector(zbar),color=col.i,lwd=lwd, ...)
+    #}
+    if(pts & i %% plot.every.pts==0){
+      points(zbar, bg=color, col=color, cex=0.5, pch=21)
+    }
+  }
+  if(lines){
+    if(is.null(linecol)) linecol= color
+    lines(Z,col=makeTransparent(linecol,linealpha), lwd=linelwd, lty=linelty)
+  }
+  for(i in 1:steps){
+  if(i %% plot.every==0){
+    col.i <- makeTransparent(color,alpha=trans.ramp[i])
+    G.ellipse(G,as.vector(as.vector(Z[i,])),color=makeTransparent("black", trans.ramp[i]),lwd=lwd*outline, ...)
+    G.ellipse(G,as.vector(as.vector(Z[i,])),color=col.i,lwd=lwd, ...)
+  }
+  }
+  invisible(Z)
+}
+
+plotAL <- function(w11=99999999, w22=99999999, w12=0, optimum=c(0,0), scaleALdiff=0.2, xlim=c(-25, 25), ylim=c(-25, 25), ALalpha=100, pal=colorRampPalette(c("#505277","#345DB2", "#4CA3CE","#97C8EB", "#ecf0f1", "white"))){
+  omega <- make.vcv(w11, w22, w12)
+  grid <- expand.grid(xlim[1]:xlim[2], xlim[1]:xlim[2])
+  colnames(grid) <- c('x', 'y')
+  x <- xlim[1]:xlim[2]
+  y <- ylim[1]:ylim[2]
+  AL_z <- matrix(NA, ncol=length(x), length(y))
+  for(i in 1:length(x)){
+    for(j in 1:length(y)){
+      AL_z[i,j] <- dmvnorm(c(x[i], y[j]), optimum, omega)
+    }
+  }
+
+  AL_z <- (AL_z/(max(AL_z)))^scaleALdiff
+  ## plot
+  plot(0,0, type="n", xlab="Trait 1", ylab="Trait 2", xlim=xlim, ylim=ylim)
+  image(x, y, AL_z, add=TRUE, drawlabels=FALSE, nlevels=100, col = makeTransparent(pal(300),ALalpha))
+  contour(x, y, AL_z, add=TRUE, drawlabels=FALSE, nlevels=20)
+  return(list(omega=omega, optimum=optimum, AL=list(x=x, y=y, z=AL_z)))
+}
+
+plotGpath <- function(G11, G22, r12, omega, gens, start=c(0,0), optimum=c(0,0), Ne=Inf, gcolor="#F6CE79", alphaseq=c(log(100),log(255)),  ...){
+  G <- make.vcv(G11, G22, r12)
+  #stops, steps, G, Omega, color, 
+  tmp <- G.trajectory(stops=list(start, optimum), steps=gens, G , omega, color = gcolor, Ne=Ne, alphaseq=alphaseq, ...)
+  Zend <- tail(tmp,1)
+  G.ellipse(G,as.vector(Zend),color="black",lwd=3*2)
+  G.ellipse(G,as.vector(Zend),color=gcolor,lwd=3)
+}
+
+```
+
+Here is an example plot 
+
+```{r, fig.width=8, fig.height=8}
+# Set the plot and the Gaussian selective surface
+tmp <- plotAL(49, 49, 0.4, optimum=c(0,20), xlim=c(-50,50), ylim=c(-50,50))
+
+# Add some populations responding to selection on this landscape. These differ only in their
+# stopping point. 
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=100, start=c(-20,-20), optimum=tmp$optimum)
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=100, start=c(0,-20), optimum=tmp$optimum)
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=100, start=c(-35,-15), optimum=tmp$optimum)
+```
+
+
+We can also simulate genetic drift. Here I'm going to greatly weaken the strength of selection
+and reduce the effective population size from infinite to only 100 individuals. 
+```{r, fig.width=8, fig.height=8}
+tmp <- plotAL(999999,999999, 0, optimum=c(0,0), xlim=c(-15,15), ylim=c(-15,15))
+
+# Here's replicates evolving under multivariate Brownian motion via Genetic Drift.
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000)
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000)
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000)
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000)
+plotGpath(G11=1, G22=1, r12=0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000)
+
+## Reverse the correlation
+plotGpath(G11=1, G22=1, r12=-0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000, gcolor = "#2ecc71")
+plotGpath(G11=1, G22=1, r12=-0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000, gcolor = "#2ecc71")
+plotGpath(G11=1, G22=1, r12=-0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000, gcolor = "#2ecc71")
+plotGpath(G11=1, G22=1, r12=-0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000, gcolor = "#2ecc71")
+plotGpath(G11=1, G22=1, r12=-0.8, tmp$omega, gens=1000, start=tmp$optimum, optimum=tmp$optimum, Ne=100, plot.every=1000, gcolor = "#2ecc71")
+
+```
