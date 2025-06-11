@@ -14,14 +14,14 @@ Here are some exercises we won't cover directly, but you may want to play around
 We will add more as time goes on, if you ever wanted to help make an R package for 
 teaching a QG course, we could publish it and you could be an author!
 
-#### Visualizing multivariate evolution on adaptive landscapes ####
+#### 1. Visualizing multivariate evolution on adaptive landscapes ####
 * [Visualizing adaptive landscape evolution](/script_library/Visualizing_adaptive_landscape_evolution.Rmd)
 
 
-#### A ridiculous "simulation" of adaptive evolution in excel ####
+#### 2. A ridiculous "simulation" of adaptive evolution in excel ####
 * [Quantitative Genetic Simulation in a Spreadsheet](/script_library/QuantitativeGeneticSimulationInASpreadsheet.xlsx)
 
-#### Estimating selection as a surface ####
+#### 3. Estimating selection as a surface ####
 In this exercise, we will use garter snake data on crawling speed and vertebral 
 numbers to estimate and plot a selection surface, or – more accurately – a 
 performance surface.  Crawling speed in the l meter dash was assessed for 174 
@@ -45,7 +45,7 @@ the sensitivity of that surface to sampling.
   * [Lande Arnold 1983.](/papers/LandeArnold1983MeasurementSelectiononCorrelatedCharacters.pdf)
   * [Arnold and Bennett 1988.](/script_library/Estimating_selection_as_a_surface/ArnoldBennett1988.pdf)
   
-#### Learning Maximum Likelihood vs. Bayesian Estimation ####
+#### 4. Learning Maximum Likelihood vs. Bayesian Estimation ####
 * Learning ML vs. Bayes Script
   * [Script](/script_library/MLvsBayes/LearningMLBayes_Exercise.R)
   * [Script with answers](/script_library/MLvsBayes/LearningMLBayes_Answers.Rmd)
