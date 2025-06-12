@@ -63,14 +63,13 @@ All times are Eastern Daylight Time (EDT).  Note that Pacific Daylight Time (PDT
 | **Thursday, June 12th** | | |
 | 9:00 - 10:00 | [Lecture 4-1: Trait evolution on trees](/2025/lecture4-1/lecture4-1.html) | Laura Alencar |
 | 10:00 - 11:00 |[Exercise 4-1: Intro to PCMs](/2025/exercise4-1/exercise4-1.html)| Laura Alencar & Josef Uyeda |
+| 11:00 - 11:15 | break | |
 | 11:15 - 12:00 | [Lecture 4-2: Ornstein-Uhlenbeck models](/2025/lecture4-2/lecture4-2.html) | Laura Alencar |
 | 12:00 - 1:30 | meal break | all |
 | 1:30 - 3:00 | [Exercise 4-2: OU models](/2025/exercise4-2/exercise4-2.html) | Laura Alencar & Josef Uyeda | 
-| 3:00 - 4:00 | [Lecture 4-3: Measurement & meaning](/2025/lecture4-3/lecture4-3.html) | Josef Uyeda |
-| 4:00 - 4:15 | break | |
-| 4:15 - 5:15 | [Lecture 4-4: Best practices in PCMs](/2025/lecture4-4/lecture4-4.html) | Fabio Machado |
-| 5:15 - 5:30 | discussion | |
-| 5:30 - 6:30 | Dinner | all |
+| 3:00 - 5:00 | Afternoon Break - Go on a hike! |  |
+| 5:00 - 6:00 | [Lecture 4-4: Best practices in PCMs](/2025/lecture4-4/lecture4-4.html) | Fabio Machado |
+| 6:00 - 7:00 | Dinner | all |
 | 6:30 - 8:00 | Breakouts | Instructor Team | 
 | | | |
 | **Friday, June 13th** | | |
@@ -79,8 +78,8 @@ All times are Eastern Daylight Time (EDT).  Note that Pacific Daylight Time (PDT
 | 10:15 - 12:00 | [Exercise 5-1: Multivariate PCMs](/2025/exercise5-1/exercise5-1.html) | Fabio Machado & Josef Uyeda|
 | 12:00 - 1:30 | meal break | all |
 | 1:30 - 2:30 | [Lecture 5-2: Threshold model and discrete/continuous connections](/2025/lecture5-2/lecture5-2.html) | Josef Uyeda
-| 2:30 - 3:30 | [Exercise 5-2: Discrete & continuous model connections](/2025/exercise5-2/exercise5-2.html) | Josef Uyeda |
-| 3:30 - 4:30 | Links between scales: Discussion for all | all instructors & participants |
+| 2:45 - 4:00 | [Exercise 5-2: Discrete & continuous model connections](/2025/exercise5-2/exercise5-2.html) | Josef Uyeda |
+| 4:00 - 4:30 | Links between scales: Discussion for all | all instructors & participants |
 | 4:30 - 5:00 | Participant feedback | all |
 | 5:30 - 6:30 | Dinner | all |
 
