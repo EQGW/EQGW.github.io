@@ -1,0 +1,727 @@
+---
+title: "Discrete to Continuous Connections"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+# Discrete modeling of traits
+I strongly recommend Revell and Harmon's `Phylogenetic Comparative Methods in R` for
+learning how to model and understand the evolution of discrete traits. Instead of going
+through the basics, I'm going to go straight toward an advanced topic. The purpose is to
+get you comfortable with thinking about transition matrices as MAPS of the state space.
+```{r}
+library(corHMM)
+
+```
+
+```{r}
+tree=sim.bdtree(stop='taxa',n=200, seed=1)
+tree$edge.length=100*tree$edge.length/max(branching.times(tree))
+
+```
+
+Let's plot a process of polyploidy with a custom rate matrix that counts chromosome counts that 
+matches the graph. Can you explain why this could represent this process? What do the three
+parameters mean?
+
+Let's start by loading in an "All-rates different" or "ARD model.
+
+```{r}
+Q <- read.csv("./Qmatrix.csv")
+print(Q)
+```
+Each unique number is a unique transition rate. That means this model is VERY parameter rich, with 20 parameters!
+How could we reasonably simplify it while testing the hypothesis of whether or not polyploidy is important for the
+evolution of the traits? What do you think is reasonable to assume? Modify the Q-matrix to something simpler that
+reflects the processes you think are reasonable. 
+
+```{r, eval=FALSE}
+Q <- as.matrix(read.csv("./Qmatrix_modified.csv", row.names = 1)) #Your modified Q matrix
+```
+
+
+Stop to discuss. Just to make sure that the rest of my code works, I'm going to use my version here. 
+It doesn't mean my version is the best one to consider (but we're simulating, so we'll be right either way).
+```{r}
+Q <- as.matrix(read.csv("./Qanswer.csv", row.names=1))
+```
+
+Let's replace our matrix of parameter indices to real parameter values. Everything that is
+`NA` will become 0, except on the diagonal, which is the negative rowSums. 
+***Warning*** Some software codes its matrix with rows `i` transitioning to columns `j`, while
+others are the reverse...
+
+```{r}
+
+QQ <- Q
+QQ[Q==1] <- 0.01 #Gain of a single chromosome. 
+QQ[Q==2] <- 0.03 #Polyploidy rate
+QQ[Q==3] <- 0.02 #Fusion of a chromosome pair. 
+QQ[is.na(Q)] <- 0
+diag(QQ) <- -1*rowSums(QQ) #replace the diagonal with the negative row sums
+QQ
+```
+
+Let's simulate full "true" history of the evolution of these traits. Phytools uses
+transitions from i->j as given by Q[j,i] (the reverse of what we did), but it's smart
+and notices our rowSums rather than columnSums add to 0, so transposes to what it wants
+automatically.
+
+```{r}
+set.seed(1)
+true.history <- sim.history(tree, QQ, anc="C2")
+```
+
+```{r}
+pal <- setNames(rainbow(5), rownames(QQ))
+plotSimmap(true.history, colors=pal)
+add.simmap.legend(colors=pal, prompt=FALSE, x=10, y=95)
+```
+
+Now let's erase our knowledge of the past, like we would given a real dataset: 
+```{r, fig.height=10, fig.width=5}
+dat <- true.history$states
+plot(tree)
+tiplabels(pch=22, bg=pal[dat], col=pal[dat])
+```
+
+Let's make it worse. Suppose we have conflicting information that s30, s49, and s150 are ambiguous from the data. 
+```{r}
+dat.original <- dat[c(30,49,150)]
+dat['s30'] <- "C2&C4" #not sure if this species has 2 or 4 chromosomes
+dat['s49'] <- "C2&C4" #not sure if this species has 2 or 4 chromosomes
+dat['s150'] <- "C2&C4&C6" #not sure if this species has 2, 4, or 6 chromosomes
+```
+
+
+```{r}
+corDat <- data.frame("name"=tree$tip.label, "trait"=dat) #get data into the corHMM format
+fit.true <- rayDISC(tree, corDat,rate.mat=Q, root.p=rep(0.2,5),model="ER")
+```
+
+```{r}
+par(mfrow=c(1,2))
+pal <- setNames(rainbow(5), rownames(QQ))
+plotSimmap(true.history, colors=pal)
+add.simmap.legend(colors=pal, prompt=FALSE, x=10, y=95)
+plotRECON(tree, fit.true$states, piecolors=pal, pie.cex=0.5)
+
+```
+```{r}
+fit.true$AIC
+```
+
+Compare the AIC above to a model without polyploidy events!
+```{r}
+Q2 <- Q
+Q2 <- ??? #Modify Q2 to disallow polyploidy!!! May take several lines
+fit.noPoly <- rayDISC(tree, corDat,rate.mat=Q2, root.p=rep(0.2,5),model="ER")
+fit.noPoly$AIC
+```
+
+```{r}
+fit.true$solution
+fit.noPoly$solution
+```
+
+# Tutorial for the R package *BBMV*
+
+The purpose of the **BBMV** package is to fit highly flexible models for continuous traits evolving on phylogenies. The package implements two main models: the *FPK* model and the *BBMV* model, or the Bounded Brownian Motion model. 
+
+Under the *FPK* model, a continuous trait evolves according to random diffusion (Brownian motion) and is also subject to an 'evolutionary potential' that creates a force that pulls the trait towards specific regions of the trait interval. In theory, this force can be of any conceivable shape but for the present implementation we have chosen a parametric shape for the potential of the shape: *V(x)=ax<sup>4</sup>+bx<sup>2</sup>+cx*. 
+
+The *BBMV* model is a special case of *FPK* in which the trait is subject to an 'evolutionary potential' but also evolves between two reflective bounds. This parametrization is rather flexible since it allows for no force, directional trends, attraction towards a trait value within the interval, attraction towards the two bounds, or attraction towards several distinct trait values within the interval. In this tutorial we will see how to estimate the model parameters using maximum-likelihood and MCMC.
+
+Our implementation of the *FPK* and *BBMV* models does **not** require that the phylogenetic tree you provide be ultrametric: you can use it with fossil data for example.
+
+The **BBMV** package is not maintained on CRAN anymore. To be able to use it you must download the R folder in this repository and then *source* all R files within it.
+
+Extract the zip archive from github into your working directory, then run:
+```{r}
+BBMV_files <- list.files("./BBMV-master/R/")
+for (i in 1:length(BBMV_files)){
+  source(paste0("./BBMV-master/R/", BBMV_files[i]))
+}
+```
+
+## Running BBMV
+
+Let's do a quick run on an empirical dataset. The package geiger has a built in dataset on turtle carapace sizes.
+
+```{r}
+library(geiger)
+data(chelonia)
+tree <- chelonia$phy
+dat <- chelonia$dat[chelonia$phy$tip.label] #reorder to match tree
+tree 
+head(dat)
+```
+
+Maximum-likelihood (ML) estimation of the parameters of the *FPK* model is done in two steps: (i) creating the likelihood function and (ii) finding its maximum.
+
+The likelihood function is created using the function *lnL_FPK*, which takes the phylogenetic tree and the vector of trait values at the tips of the tree as main arguments. In addition, we need to specify how finely we want to discretize the trait interval: our implementation of the *FPK* process indeed works by divinding the continuous trait intervals into a regular grid of points ranging from the lower to the upper bound. The finer the discretization the better the accuracy in the calculation of the likelihood, but the longer it takes. Here we will only take 50 points to discretize the interval so that the test is quick, but more should be used if computational ressources allow it. For this example we will use the *Nelder-Mead* optimization routine, which seems to perform better than others in the tests we have made. Finally, we need to specify the shape of the potential which we want to fit. The most complex form has three parameters (see above) but we can fit simpler shapes by fixing unnecessary parameters to 0.
+
+We'll start with the most general shape of the potential, which can accommodate up to two peaks in the macroevolutionary landscape: 
+
+```{r}
+ll_FPK4=lnL_FPK(tree,dat,Npts=50,a=NULL,b=NULL,c=NULL) # the full model
+```
+
+Then we can actually fit simpler versions of the FPK model. Here is the Ornstein-Uhlenbeck model, with *V(x)=b.x^2+c.x*:
+```{r}
+ll_FPK2=lnL_FPK(tree,dat,Npts=50,a=0,b=NULL,c=NULL)
+```
+
+And here is Brownian motion, with *V(x)=0*:
+```{r}
+ll_FPK0=lnL_FPK(tree,dat,Npts=50,a=0,b=0,c=0)
+```
+
+Once these likelihood functions are created, we need to use the *find.mle_FPK* function to estimate their maxima. This function takes one single argument: a likelihood function created by *lnL_FPK*. Once each model is fitted, we can plot the macroevolutionary landscape estimated using the function *get.landscape.BBMV* and compare it with the macroevolutionary landscape that we simulated:
+
+```{r}
+bounds=c(min(dat)-sd(dat),max(dat)+sd(dat))
+
+
+fit4=find.mle_FPK(model=ll_FPK4)
+fit2=find.mle_FPK(model=ll_FPK2)
+fit0=find.mle_FPK(model=ll_FPK0) 
+```
+
+
+```{r}
+get.landscape.FPK(fit=fit4)
+get.landscape.FPK(fit=fit2) # this shape of the landscape cannot have 2 peaks
+get.landscape.FPK(fit=fit0) # this one is forced to be flat
+
+```
+Which is the best model?
+
+```{r}
+fit4$aic 
+fit2$aic
+fit0$aic
+```
+
+
+We can measure the time it takes to reach stationarity in the FPK model using the function *charac_time*:
+```{r}
+charac_time(fit=fit4)
+charac_time(fit=fit2)
+charac_time(fit=fit0)
+```
+
+And we should compare it with tree depth to see how far are we from stationarity: 
+```{r}
+max(branching.times(tree))
+```
+
+The process may not yet have reached stationarity on most branches of the tree since the characteristic time is larger than the median branch length:
+```{r}
+summary(tree$edge.length)
+```
+
+
+## Ok, but does it work?
+
+For this tutorial we will simulate data and then infer parameters of the *BBMV* model on this simulated dataset. We need the R package **geiger** to simulate phylogenetic trees.
+```{r}
+tree=sim.bdtree(stop='taxa',n=50)
+tree$edge.length=100*tree$edge.length/max(branching.times(tree))
+```
+Here we have simulated a tree with only 50 tips. This is rather small but will allow for functions to run quickly. We have rescaled the total tree depth to 100 arbitrary time units for an easier interpretation of model parameters. 
+
+Next we will simulate a macroevolutionary landscape with two peaks of equal heights, defined over the interval [-1.5,1.5]. We first create an evolutionary potential with two wells:
+```{r}
+x=seq(from=-1.5,to=1.5,length.out=100)
+bounds=c(min(x),max(x))
+V6=10*(x^4-0.5*(x^2)+0.*x)
+```
+
+From this evolutionary potential (*V6*), we calculate the normalized macroevolutionary landscape, which is the stationary distribution of the FPK model. It has two peaks of equal height:
+
+```{r}
+step_size=(max(bounds)-min(bounds))/(100-1)
+V6_norm=exp(-V6)/sum(exp(-V6)*step_size)
+par(mfrow=c(1,1))
+plot(V6_norm)
+```
+
+Now we will use the function *Sim_FPK* to simulate a continuous trait evolving on the tree we just simulated. To do so we need to provide a rate of evolution (*sigma*), bounds on the trait interval (which might not influence the whole process because they are located far away), a value for the trait at the root of the tree (*x0*), and the evolutionary potential that we just simulated (*V6*): 
+
+```{r}
+TRAIT= Sim_FPK(tree,x0=0.5,V=V6,sigma=1,bounds=bounds)
+hist(TRAIT,breaks=20)
+```
+
+## Estimate FPK model
+
+```{r}
+ll_FPK4=lnL_FPK(tree,TRAIT,Npts=50,a=NULL,b=NULL,c=NULL) # the full model
+```
+Then we can actually fit simpler versions of the FPK model. Here is the Ornstein-Uhlenbeck model, with *V(x)=b.x^2+c.x*:
+```{r}
+ll_FPK2=lnL_FPK(tree,TRAIT,Npts=50,a=0,b=NULL,c=NULL)
+```
+
+And here is Brownian motion, with *V(x)=0*:
+```{r}
+ll_FPK0=lnL_FPK(tree,TRAIT,Npts=50,a=0,b=0,c=0)
+```
+
+Once these likelihood functions are created, we need to use the *find.mle_FPK* function to estimate their maxima. This function takes one single argument: a likelihood function created by *lnL_FPK*. Once each model is fitted, we can plot the macroevolutionary landscape estimated using the function *get.landscape.BBMV* and compare it with the macroevolutionary landscape that we simulated:
+
+```{r}
+fit4=find.mle_FPK(model=ll_FPK4)
+get.landscape.FPK(fit=fit4)
+lines(V6_norm~seq(from=min(bounds),to=max(bounds),length.out=length(V6_norm)))
+
+fit2=find.mle_FPK(model=ll_FPK2)
+get.landscape.FPK(fit=fit2) # this shape of the landscape cannot have 2 peaks
+lines(V6_norm~seq(from=min(bounds),to=max(bounds),length.out=length(V6_norm)))
+
+fit0=find.mle_FPK(model=ll_FPK0) 
+get.landscape.FPK(fit=fit0) # this one is forced to be flat
+lines(V6_norm~seq(from=min(bounds),to=max(bounds),length.out=length(V6_norm)))
+```
+
+Now let's compare the goodness of fit of these three models using AIC:
+```{r}
+fit4$aic 
+fit2$aic
+fit0$aic
+```
+*fit4* should be the best model by far since no other form of the FPK model can accommodate two peaks.
+
+We can measure the time it takes to reach stationarity in the FPK model using the function *charac_time*:
+```{r}
+charac_time(fit=fit4)
+charac_time(fit=fit2)
+charac_time(fit=fit0)
+```
+
+And we should compare it with tree depth to see how far are we from stationarity: 
+```{r}
+max(branching.times(tree))
+```
+
+It actually appears that the process reaches stationarity on most branches of the tree since the characteristic time is smaller than the median branch length:
+```{r}
+summary(tree$edge.length)
+```
+
+
+In this case we've reached stationarity since a while. Next, we will have a look at the probability distribution at the root of the tree. Be careful with the y-scale of the plot: this might actually be quite flat!
+```{r}
+plot(fit4$root,type='l') 
+```
+
+We can also estimate the uncertainty around maximum-likelihood parameter estimates using the function *Uncertainty_FPK*, which produces graphs of the likelihood of the model as a function of the value of each parameter. In this function, the parameter *effort_uncertainty* determines how many values of each parameter will be evaluated. The function returns confidence interval that contain the 95% highest probability density around parameter estimates while fixing other parameters to their maximum likelihood estimate. We first look at the MLEs of parameters estimated, which are contained in the *$par* argument of a fitted FPK model:
+```{r}
+fit4$par
+```
+And from that we can choose the *scope* of the uncertainty search for each parameter so that they include your MLEs:
+```{r}
+Uncertainty_FPK(fit=fit4,tree,trait=TRAIT,Npts=50,effort_uncertainty= 100,scope_a=c(-1,10),scope_b=c(-5,5),scope_c=c(-2,2))
+```
+One particularly interesting result from this will be to see if the confidence intervals for each parameter of the potential (*a*, *b*, and *c*) contain 0.
+
+Finally, we can fit the OU model using the package **geiger** to see if its likelihood matches the one calculated using BBMV. They should be quite close but remember that the FPK model uses an approximation of the likelihood, hence the implementation in **geiger** is more accurate:
+```{r}
+OU=fitContinuous(phy=tree,dat=TRAIT,model="OU")
+OU$opt$lnL ; fit2$lnL 
+```
+
+
+## Fit the *FPK* model on multiple clades at once
+It is also possible to fit the *FPK* model on multiple clades together in order to statistically test whether they share a similar macroevolutionary landscape. This is an alternative to existing methods that infer heterogeneity in macroevolutionary dynamics across large phylogenies (e.g. packages **l1ou** or **bayou** for OU models). The advantage of this procedure is that it does not require a backbone tree connecting the different clades one wants to compare. Drawbacks are that clades are considered independent and that only *these* clades can be compared (*i.e.*, the algorithm does not explore the possibility that any subsclade has different dynamics). This method could also help in cases where one has data at hand for multiple small clades in which traits are believed to have evolved under similar dynamics: pooling clades together might improve estimation of the macroevolutionary landscape.
+
+We first create a potential that we will use to simulate trait evolution: it has two peaks of very unequal heights.
+
+```{r}
+x=seq(from=-1.5,to=1.5,length.out=100)
+bounds=c(min(x),max(x))
+a=8 ; b=-4 ; c=1
+V6=a*x^4+b*(x^2)+c*x
+step_size=(max(bounds)-min(bounds))/(100-1)
+V6_norm=exp(-V6)/sum(exp(-V6)*step_size)
+par(mfrow=c(1,1))
+plot(V6_norm,type='l')
+```
+
+Now we simulate a tree and a continuous trait for 3 independent clades. The trait evolves in the same macroevolutionary landscape for the 3 clades, but with different evolutionary rates (parameter *sigma* in the *Sim_FPK* function).
+
+```{r}
+tree=sim.bdtree(stop='taxa',n=25)
+tree$edge.length=100*tree$edge.length/max(branching.times(tree))
+TRAIT= Sim_FPK(tree,x0=0.5,V=V6,sigma=1,bounds=bounds)
+tree1=tree ; TRAIT1=TRAIT
+
+tree=sim.bdtree(stop='taxa',n=25)
+tree$edge.length=100*tree$edge.length/max(branching.times(tree))
+TRAIT= Sim_FPK(tree,x0=0.5,V=V6,sigma=0.5,bounds=bounds) 
+tree2=tree ; TRAIT2=TRAIT
+
+tree=sim.bdtree(stop='taxa',n=25)
+tree$edge.length=100*tree$edge.length/max(branching.times(tree))
+TRAIT= Sim_FPK(tree,x0=0.5,V=V6,sigma=0.1,bounds=bounds) 
+tree3=tree ; TRAIT3=TRAIT
+rm(tree) ; rm(TRAIT)
+```
+
+The phylogenies and trait vectors for each clade are put in a list. This is the format required for the multiclade functions.
+
+```{r}
+TREES=list(tree1,tree2,tree3)
+TRAITS=list(TRAIT1,TRAIT2,TRAIT3)
+```
+
+We can have a look at the trait distribution in each clade: from left to right the evolutionary rate decreases and thus the macroevolutionary landscape is less well explored
+
+```{r}
+par(mfrow=c(1,3))
+hist(TRAITS[[1]],breaks=20)
+hist(TRAITS[[2]],breaks=20)
+hist(TRAITS[[3]],breaks=20)
+```
+
+ Now we will fit three different scenarios of the FPK model with the most complex form of the potential, V(x)=a.x^4+b.x^2+c.x.
+
+ 1) All clades share the same macroevolutionary landscape and evolutionary rate :
+
+```{r} 
+testFPK4=lnl_FPK_multiclades_same_V_same_sig2(trees=TREES,traits=TRAITS,a=NULL,b=NULL,c=NULL,Npts=50)
+fitFPK4=find.mle_FPK_multiple_clades_same_V_same_sig2(model=testFPK4,method='Nelder-Mead',init.optim=NULL)
+```
+
+2) All clades share the same macroevolutionary landscape but they have different evolutionary rates:
+
+```{r}
+testbFPK4=lnl_FPK_multiclades_same_V_different_sig2(trees=TREES,traits=TRAITS,a=NULL,b=NULL,c=NULL,Npts=50)
+fitbFPK4=find.mle_FPK_multiple_clades_same_V_different_sig2(model=testbFPK4,method='Nelder-Mead',init.optim=NULL)
+```
+
+3) All clades have their own dynamics, both the macroevolutionary landscape and the evolutionary rate vary:
+```{r}
+fitmFPK4=fit_FPK_multiple_clades_different_V_different_sig2(trees=TREES,traits=TRAITS,a=NULL,b=NULL,c=NULL,Npts=50)
+```
+
+We can compare the fits of these three scenarios using AIC:
+```{r}
+fitFPK4$aic
+fitbFPK4$aic
+fitmFPK4$aic
+```
+
+The second model should have the lowest AIC (this is the one we simulated under). We can have a look at parameter estimates:
+
+```{r}
+fitbFPK4$par
+```
+
+In order to do an ACE, calculate the characteristic time of the FPK process or even plot the macroevolutionary landscape, we first need to separate results for each clade. The function 'reformat_multiclade_results' separates the results for each clade and returns a list with results for each clade, as done by 'find.mle_FPK'. 
+
+```{r}
+fits=reformat_multiclade_results(fitbFPK4)
+```
+
+And now we can do various things on clade #1.
+
+```{r}
+ace_tree1=ACE_FPK(fits$fit_clade_1)
+par(mfrow=c(1,1))
+plot(ace_tree1[[length(fits$fit_clade_1$tree$tip.label)+1]],type='l')
+charac_time(fit=fits$fit_clade_1)
+get.landscape.FPK(fit=fits$fit_clade_1)
+lines(V6_norm~seq(from=min(bounds),to=max(bounds),length.out=length(V6_norm)))
+```
+
+
+
+## Threshold model
+This exercise won't be done in class, but I put it here for reference. The functions in
+phytools will work, but probably take forever to converge. The `MCMCglmmRAM` version is broken
+because it is not being maintained. You could either install an old version of the `Matrix` package
+and see if you could get it to work. OR you could ask Jerrod Hadfield to fix it. 
+
+MCMCglmmRAM is a "Reduced Animal Model" version of MCMCglmm that runs the threshold model at 
+very high efficiency. See Hadfield 2015. 
+
+# Simulating data
+
+Load in the required packages
+```{r}
+#remotes::install_github("uyedaj/treeplyr")
+library(treeplyr)
+library(geiger)
+library(phytools)
+library(coda) # This package lets us plot MCMC results nicely, as well as lots of diagnostic features
+```
+
+Let's start by simulating data under multivariate Brownian Motion with a known covariance structure.
+```{r}
+
+ntaxa <- 100
+set.seed(1)
+tree <- sim.bdtree(b=1, stop="taxa", n=ntaxa)
+tree$edge.length <- tree$edge.length/max(branching.times(tree))
+plot(tree)
+
+```
+
+Set up the covariance matrix for changes in the underlying liabilities. Choose the values you want to use below. Remember the matrix must be positive definite (how do you check?) 
+
+```{r}
+
+covAB <- 0.4
+covAC <- 0.8
+covBC <- -0.2
+R <- matrix(c(  1,   covAB, covAC,
+              covAB,     1, covBC,
+              covAC,  covBC,  1), ncol=3, nrow=3, byrow=TRUE)
+colnames(R) <- rownames(R) <- c("A", "B", "C")
+R 
+eigen(R)
+
+```
+
+Simulate the data using 'sim.char()'. 
+
+```{r}
+
+dat <- sim.char(tree, par=R, nsim=1, model="BM")[,,1]
+colnames(dat) <- c("A", "B", "C")
+pairs(dat)
+
+```
+
+Match the tree and to the liabilities and create discretized variables. 
+
+```{r}
+
+td <- make.treedata(tree, dat)
+
+```
+
+A pretty way to plot the liabilities:
+
+```{r}
+
+X <- as.matrix(td[c("A", "B", "C")])
+rownames(X) <- td$phy$tip.label
+fancyTree(td$phy, type="scattergram", X=X)
+
+```
+
+We now convert the liabilities into binary characters:
+
+```{r}
+
+td <- mutate(td, a = as.numeric(A > median(A)), b = as.numeric(B > median(B)), c = as.numeric(C > median(C)))
+tree <- td$phy
+traits <- as.data.frame(td$dat)
+rownames(traits) <- td$phy$tip.label
+
+
+```
+
+Plot out the discrete traits:
+```{r}
+
+par(mfrow=c(1,1))
+plot(tree, show.tip.label=FALSE, x.lim = c(0,1.25))
+tiplabels(pch=22, bg=traits[['a']])
+tiplabels(pch=22, bg=traits[['b']], adj=c(0.52,0.5))
+tiplabels(pch=22, bg=traits[['c']], adj=c(0.54,0.5))
+
+```
+# Option I. Phytools
+We'll use phytools threshBayes function. I will rely heavily on Liam Revell's tutorial for this, so all credit goes to him. His tutorial can be found here: http://www.phytools.org/eqg/Exercise_6.2/
+
+```{r}
+#First, we'll start with two continuous traits. For some reason this is especially slow in threshBayes, and you normally wouldn't use this software for two continuous traits anyways. We're only going to do so for comparison sake.
+ngen <- 10000
+X <- as.matrix(traits[,c('A', 'C')])
+mod.AC <- threshBayes(tree, X, types=c("continuous", "continuous"), ngen=ngen, plot=FALSE, control=list(sample=1))
+mcmc.AC <- mcmc(mod.AC$par)
+par(mfrow=c(3,2), mar=c(4,2,2,0))
+plot(mcmc.AC)
+```
+
+
+```{r}
+## Second, let's run one continuous trait (A) and one discrete trait (c):
+X <- ???
+mod.Ac <- ???
+mcmc.Ac <- ???
+par(mfrow=c(3,2), mar=c(4,2,2,0))
+plot(mcmc.Ac)
+```
+
+Now, change run again with both traits discrete: 
+
+```{r}
+## Second, let's run one continuous trait (a) and one discrete trait (c):
+X <- ???
+mod.ac <- ???
+mcmc.ac <- ???
+par(mfrow=c(3,2), mar=c(4,2,2,0))
+plot(mcmc.ac)
+```
+
+In all cases, the correlations should be the same. What happens? What is the result of 
+discretization on our estimate of the correlation?
+
+```{r}
+
+par(mfrow=c(1,2))
+postburnin <- floor(0.5*ngen):nrow(mcmc.AC)
+plot(density(mcmc.AC[postburnin,'r']), type='n', main="Posterior for correlation", xlab= "Correlation", xlim=c(-1,1))
+lines(density(mcmc.AC[postburnin,'r']), col="blue")
+lines(density(mcmc.Ac[postburnin,'r']), col="violet")
+lines(density(mcmc.ac[postburnin,'r']), col="red")
+abline(v=covAC, lty=2)
+
+plot(0,0, type="n", main="Trace", xlab= "Generation", ylab="Correlation", ylim=c(-1,1), xlim=c(0, length(postburnin)))
+lines(mcmc.AC[postburnin,'r'], col="blue")
+lines(mcmc.Ac[postburnin,'r'], col="violet")
+lines(mcmc.ac[postburnin,'r'], col="red")
+abline(h=covAC, lty=2)
+
+
+```
+
+# Option II. MCMCglmmRAM
+
+Jarrod Hadfield has developed an efficient algorithm for estimating the threshold model using 
+GLMM's. This is essentially the same as our animal model from quantitative genetics
+What is the comparative analog to additive genetic variance? To a pedigree? 
+Look at the prior (maybe go back to Pat Carter's tutorial on MCMCglmm). What assumption is being
+made about residual variation? If you are running windows, you may need Rtools (https://cran.r-project.org/bin/windows/Rtools/) and if 
+you are running Mac, you will need Xcode (https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/).
+
+```{r}
+
+# Make sure the file is in your working directory
+install.packages("./MCMCglmmRAM_2.24.tar.gz", repos=NULL, type="source")
+library(MCMCglmmRAM)
+
+```
+
+The data frame must have a column named "animal" and it MUST BE A FACTOR (not character).
+
+```{r}
+traits$animal <- factor(tree$tip.label)
+traits
+```
+
+Now we are going to set our prior on the model. The R structure is the set to be essentially 0, because we are assuming no environmental effects. 
+We then put in inverse-Wishart distribution on the G-structure, which will control our liabilities. 
+
+First, we will estimate covariances between our continuous traits. 
+```{r}
+prior1 <- list(R=list(V=diag(2)*1e-15, fix=1), G=list(G1=list(V=diag(2), nu=0.002)))
+mglmm.AC <- MCMCglmm(cbind(A, C)~trait-1, random=~us(trait):animal, rcov=~us(trait):units,
+                     pedigree=tree, reduced=TRUE, data=traits, prior=prior1, 
+                     pr=TRUE, pl=TRUE, family=c("gaussian", "gaussian"), thin=1)
+summary(mglmm.AC)
+
+```
+
+
+Now let's estimate the correlation for the continuous version of 'A' and the discrete version of 'c'. Note the changes from the previous code in the comments:
+```{r}
+
+prior2 <- list(R=list(V=diag(2)*1e-15, fix=1), G=list(G1=list(V=diag(2), nu=0.002, fix=2))) # We set fix=2 to fix the lower submatrix starting at row 2
+mglmm.Ac <- MCMCglmm(cbind(A, c)~trait-1, random=~us(trait):animal, rcov=~us(trait):units,
+                     pedigree=tree, reduced=TRUE, data=traits, prior=prior2, 
+                     pr=TRUE, pl=TRUE, family=c("gaussian","threshold"), thin=1) #We set the second trait to a threshold trait.
+summary(mglmm.Ac)
+
+```
+
+Now we do a fully threshold model with two binary traits. We use the helper function "corg" to fix the estimated covariance matrix
+to be a correlation matrix. 
+```{r}
+
+prior3 <- list(R=list(V=diag(2)*1e-15, fix=1), G=list(G1=list(V=diag(2), nu=0.002))) #Fix is no longer needed because we are using the "corg" auxilliary functions below to fix the variances for both traits.
+mglmm.ac <- MCMCglmm(cbind(a, c)~trait-1, random=~corg(trait):animal, rcov=~corg(trait):units, #Note that we use "corg" instead of "us"
+                     pedigree=tree, reduced=TRUE, data=traits, prior=prior3, 
+                     pr=TRUE, pl=TRUE, family=c("threshold", "threshold"), thin=1)
+summary(mglmm.ac)
+
+```
+
+Let's plot out the estimated covariances against their true values:
+```{r}
+
+plot(density(mglmm.AC$VCV[,2]/sqrt(mglmm.AC$VCV[,1]*mglmm.AC$VCV[,4])), type="n", main="", xlim=c(-1.2,1.2), ylab="Density", xlab="Correlation between A and C")
+
+lines(density(mglmm.AC$VCV[,2]/sqrt(mglmm.AC$VCV[,1]*mglmm.AC$VCV[,4])), col="blue")
+lines(density(mglmm.Ac$VCV[,2]/sqrt(mglmm.Ac$VCV[,1]*mglmm.Ac$VCV[,4])), col="violet")
+lines(density(mglmm.ac$VCV[,2]), col="red") #Variances are fixed to 1, so covariance = correlation
+abline(v=covAC, lty=2)
+
+
+```
+
+Notice that we said pr=TRUE and pl=TRUE. This saves the posterior distribution of random effects
+and latent variables, respectively, so that we can recover the estimated liabilities at the nodes.
+First, let's get the liabilities at the tips:
+
+```{r}
+
+postburnin <- floor(0.3*nrow(mglmm.ac$Liab)):nrow(mglmm.ac$Liab)
+a.liab <- apply(mglmm.ac$Liab[postburnin,1:ntaxa], 2, mean)
+c.liab <- apply(mglmm.ac$Liab[postburnin,(ntaxa+1):(2*ntaxa)], 2, mean)
+
+```
+
+Now plot the liabilities against their true values.
+
+```{r}
+
+plot(a.liab, traits$A, pch=21,  bg=traits$a)
+plot(c.liab, traits$C, pch=21,  bg=traits$c)
+
+```
+
+Now get the liabilities at the nodes.
+
+```{r}
+
+a.nodeLiab <- apply(mglmm.ac$Sol[postburnin, 1:tree$Nnode], 2, mean)
+
+```
+
+And we can plot them on the tree:
+
+```{r}
+
+plot(tree, type="fan", show.tip.label=FALSE)
+a.pie <- (a.nodeLiab-min(a.nodeLiab))/diff(range(a.nodeLiab))
+a.pie <- cbind(1-a.pie, a.pie)
+nodelabels(pie=a.pie, piecol = c("white", "black"), cex=0.5)
+tiplabels(pch=21, bg = c("white", "black")[traits$a+1])
+
+```
+
+Let's compare it to a traditional ASR from an Mk model for discrete traits (i.e. what we usually use for discrete and )
+```{r}
+mk.asr <- ace(traits$a, phy=tree, type="discrete")
+
+par(mfrow=c(1,2), mar=c(0,0,3,0))
+plot(tree, type="fan", show.tip.label=FALSE, main="Mk model")
+mk.pie <- mk.asr$lik.anc
+nodelabels(pie=mk.pie, piecol = c("white", "black"), cex=0.5)
+tiplabels(pch=21, bg = c("white", "black")[traits$a+1])
+
+plot(tree, type="fan", show.tip.label=FALSE, main="Threshold Model")
+nodelabels(pie=a.pie, piecol = c("white", "black"), cex=0.5)
+tiplabels(pch=21, bg = c("white", "black")[traits$a+1])
+```
+How are they different? Why might it matter whether you model a trait as a threshold trait, or a traditional discrete trait in a Markov model, like DNA?
+
+
+
