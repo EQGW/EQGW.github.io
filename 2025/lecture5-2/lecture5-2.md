@@ -26,4 +26,4 @@
   * [Felsenstein et al. 2005.](/2025/lecture5-2/Felsenstein2005Threshold1.pdf)
   * [Felsenstein et al. 2012.](/2025/lecture5-2/Felsenstein2012Threshold2.pdf)
   * [Hadfield2015_IncreaseEfficiency.pdf](/2025/lecture5-2/Hadfield2015_IncreaseEfficiency.pdf)
-* [O'Meara. 2012. Review of Comparative methods](/2025/lecture5-2/OMeara2012EvolutionaryInferencesfromPhylogeniesReview.pdf)
+* [O'Meara. 2012. Review of Comparative methods](/papers/OMeara2012EvolutionaryInferencesfromPhylogeniesReview.pdf)
