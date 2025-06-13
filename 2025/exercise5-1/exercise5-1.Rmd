@@ -20,7 +20,7 @@
 #### Tutorial:
 
 -   [Multivariate PCM-Rmd](MVPCM_3.Rmd)
--   [Multivariate PCM-html](MVPCM_3.nb.html)
+-   [Multivariate PCM-html](MVPCM_3.html)
 
 #### Dataset
 
