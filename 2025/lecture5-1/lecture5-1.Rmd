@@ -9,20 +9,18 @@
 </div>
 
 
-<table><tr><td>&larr; <a href="exercise4-2.html">Previous</a></td><td width="772">&nbsp;</td><td> <a href="lecture5-1.html">Next &rarr;</a></td></tr></table>
+<table><tr><td>&larr; <a href="lecture4-4.html">Previous</a></td><td width="772">&nbsp;</td><td> <a href="exercise5-1.html">Next &rarr;</a></td></tr></table>
   
-## Lecture 4-4: Best practices in phylogenetic comparative methods.
+## Lecture 5-1: Multivariate PCMs.
 
 ### Fabio A. Machado
 
-Phylogenetic comparative methods presents multiple potential pitfalls. In this lecture we will discuss some of these pitfalls and how we can minimize them.
-
 #### Lecture projection:
 
--   [ppt version](Best Practices in PCM.pptx)
--   [pdf version](Best Practices in PCM.pdf)
+-   [ppt version](Multivariate_PCM.pptx)
+-   [pdf version](Multivariate_PCM.pdf)
 
-Relevant Papers:
+<!-- Relevant Papers: -->
 <!-- \* [Houle et al. 2017](hansen2017.pdf) -->
 <!-- \* [Holstad et al. 2024](holstad2024.pdf) -->
 <!-- \* [Tsuboi et al. 2024](tsuboi2024.pdf) -->

@@ -1,0 +1,427 @@
+---
+title: "Multivariate Phylogenetic Comparative Methods"
+author: "Evolutionary Quantitative Genetics Workshop"
+date: "`r Sys.Date()`"
+output:
+  html_notebook:
+    toc: yes
+    toc_float: yes
+    toc_depth: 3
+    theme: cosmo
+    highlight: tango
+    code_folding: show
+    fig_width: 8
+    fig_height: 6
+    df_print: paged
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+  html_document:
+    toc: yes
+    toc_depth: '3'
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  fig.align = "center",
+  out.width = "80%"
+)
+# Set seed for reproducibility
+set.seed(42)
+```
+
+## Introduction
+
+In this tutorial, we will investigate the relationship between two traits in a multivariate setting, specifically the co-evolution between ovipositor length in wasps and style length in the flowers they use to oviposit. We will treat the flower style length as part of the wasp's niche, and therefore as a trait of the wasp's biology (which is debatable but useful for this example). This simple two-trait system will help us explore multivariate phylogenetic comparative methods (PCMs).
+
+The **mvSLOUCH** package will be our primary tool, as it allows for a flexible array of multiple evolutionary models. This package uses the **PCMbase** optimization algorithm that is further enhanced by **PCMbaseRcpp**, which significantly increases computation speed. While **mvSLOUCH** will run without **PCMbaseRcpp**, it will be considerably slower. Therefore, ensure that all mentioned packages are installed, even if they are not being explicitly called.
+
+### Key Concepts in Multivariate PCMs
+
+Before diving into the analysis, it's important to understand some key concepts:
+
+1. **Brownian Motion (BM)**: A simple model where traits evolve by random drift with a constant rate
+2. **Ornstein-Uhlenbeck (OU)**: A model that incorporates both random drift and selection toward an optimal value
+3. **Selection Matrix (A)**: In multivariate models, this matrix describes the strength and direction of selection
+4. **Rate Matrix (Σ)**: Describes the rate and correlation of random changes in traits
+
+## Loading Required Packages
+
+First, let's load all the required packages for our analysis:
+
+```{r load-packages}
+# Load core phylogenetic packages
+library(ape)        # For phylogenetic tree manipulation
+library(slouch)     # For univariate OU models
+library(mvSLOUCH)   # For multivariate OU models
+
+# Load data manipulation packages
+library(dplyr)      # For data manipulation
+library(plyr)       # Additional data manipulation tools
+
+# Additional packages for visualization
+library(ggplot2)    # For enhanced plotting
+library(phytools)   # For phylogenetic simulations and tools
+library(ape)        # For basic tree manipulation
+```
+
+## Loading and Exploring the Phylogenetic Tree
+
+Next, we'll load our phylogenetic tree data and examine its basic structure:
+
+```{r load-tree}
+# Load phylogenetic tree
+tree <- read.tree("waspTree.tre")
+print(tree)
+```
+
+The phylogeny contains `r length(tree$tip.label)` species with a total of `r tree$Nnode` internal nodes. Let's visualize this tree to better understand its structure:
+
+```{r plot-tree}
+# Plot the tree with smaller labels for better visibility
+plot(tree, cex = 0.5, main = "Wasp Phylogenetic Tree")
+```
+
+## Loading and Preparing Trait Data
+
+Now we'll import our trait data and prepare it for analysis:
+
+```{r load-traits}
+# Import trait data and convert to matrix format
+Traits <- read.csv("Traits.csv", row.names = 1) %>% as.matrix()
+head(Traits)
+```
+
+The data is stored as a matrix with species names as row names. The first column represents the ovipositor length and the second column represents the style length. Let's perform a quick summary of these traits:
+
+```{r trait-summary}
+# Basic statistics for our traits
+data.frame(
+  Trait = c("Ovipositor_Length", "Style_Length"),
+  Mean = apply(Traits, 2, mean),
+  SD = apply(Traits, 2, sd),
+  Min = apply(Traits, 2, min),
+  Max = apply(Traits, 2, max)
+)
+```
+
+It's crucial to verify that all species in our tree are represented in our trait data, and vice versa:
+
+```{r check-species-match}
+# Check if species names match between tree and trait data
+all_match <- all(rownames(Traits) %in% tree$tip.label, 
+                tree$tip.label %in% rownames(Traits))
+all_match
+```
+
+`r if(all_match){"In this case, all data have been pre-processed to match."} else {"WARNING: The species in the tree and trait data do not match completely!"}`
+
+If you get a "FALSE" in the above logical operation, you should trim your tree and/or dataset to ensure they match each other. There are multiple ways to do this, with the packages **geiger** and **treeplyr** offering helpful functions for this purpose.
+
+### Visualizing Trait Data
+
+Let's visualize the relationship between our two traits:
+
+```{r plot-traits, fig.height=5, fig.width=7}
+# Create a more informative scatter plot
+ggplot(data.frame(Traits), aes(x = PlantStyle, y = PollOvip)) +
+  geom_point() +
+  labs(
+    x = "Ovipositor Length",
+    y = "Style Length",
+    title = "Relationship Between Wasp Ovipositor Length and Flower Style Length"
+  ) +
+  theme_bw()
+```
+
+The plot shows the raw correlation between traits without accounting for phylogenetic relationships. Our subsequent analyses will properly account for the shared evolutionary history.
+
+## Fitting Multivariate Evolutionary Models
+
+With our traits and tree properly aligned, we can now fit various multivariate models to our data.
+
+### Multivariate Brownian Motion Model
+
+Let's start with the simplest model: a multivariate Brownian Motion (BM), which assumes traits evolve by random drift with a constant rate:
+
+```{r bm-model}
+# Fit multivariate Brownian Motion model
+bm_out <- BrownianMotionModel(tree, Traits)
+```
+
+You may notice that the Sxx parameter estimate, which corresponds to the rate matrix of stochastic evolution, is not symmetric. To get the correct result, we need to take the transpose cross-product of that entry:
+
+```{r bm-rate-matrix}
+# Calculate the correct rate matrix by transpose cross-product
+tcrossprod(bm_out$ParamsInModel$Sxx)
+```
+
+This result is also stored in `bm_out$ParamSummary`. The rate matrix tells us about the variance in evolutionary rates for each trait (diagonal elements) and the covariance between traits (off-diagonal elements).
+
+### Multivariate Ornstein-Uhlenbeck Models
+
+Now, let's fit a more complex model, an Ornstein-Uhlenbeck (OU) model. The OU model incorporates both random drift and selection toward an optimal value. In mvSLOUCH, we can specify the shape of the multivariate rate matrix (Σ) and the selection strength matrix (A).
+
+Let's start with a full OU model:
+
+```{r ou-full-model}
+# Fit full OU model with diagonal stochastic matrix
+ou_out <- ouchModel(tree, Traits, Syytype = "Diagonal")
+```
+
+Let's examine the key parameters:
+
+```{r ou-parameters}
+# Selection strength matrix
+ou_out$FinalFound$ParamSummary$expmtA
+# Rate matrix
+ou_out$FinalFound$ParamSummary$StS
+# Optimal trait values
+ou_out$FinalFound$ParamSummary$mPsi.rotated
+```
+
+The selection strength matrix (A) indicates how strongly traits are pulled toward their optimal values. The rate matrix (Syy) describes the rate and pattern of random changes. The optimal values represent the trait values that selection favors.
+
+Now, let's fit additional models that specify different shapes for the A matrix:
+
+```{r ou-variants}
+# Fit OU model with diagonal A matrix (independent trait selection)
+ou_out_d <- ouchModel(tree, Traits, 
+                    Atype = "Diagonal",
+                    Syytype = "Diagonal")
+
+# Fit OU model with lower triangular A matrix
+ou_out_l <- ouchModel(tree, Traits, 
+                    Atype = "LowerTri",
+                    Syytype = "Diagonal")
+
+# Fit OU model with upper triangular A matrix
+ou_out_u <- ouchModel(tree, Traits, 
+                    Atype = "UpperTri",
+                    Syytype = "Diagonal")
+```
+
+These models represent different assumptions about trait evolution:
+
+- **Diagonal A matrix**: Assumes that selection acts independently on each trait
+- **Lower triangular A matrix**: Assumes that trait 2 (style length) influences the trait 1 (ovipositor length)
+- **Upper triangular A matrix**: Assumes that evolution of trait 1 (ovipositor length) influences the evolution of trait 2 (style length)
+
+Style optimum affects
+ovipositor optimum
+
+### Multivariate SLOUCH Model
+
+Finally, let's explore a regression model in which ovipositor length is modeled as a function of style length using the mvSLOUCH approach:
+
+```{r slouch-model}
+# Fit mvSLOUCH model (regression with OU process)
+slouch_out <- mvslouchModel(tree, Traits, 
+                          kY = 1, 
+                          Atype = "DecomposablePositive",
+                          Syytype = "Diagonal",
+                          diagA = NULL)
+```
+
+Let's visualize the relationship between traits with regression lines:
+
+```{r slouch-plot, fig.height=6, fig.width=8}
+# Enhanced plot of the relationship with regression lines
+trait_data <- data.frame(
+  OvipositorLength = Traits[, 1],
+  StyleLength = Traits[, 2]
+)
+
+# Calculate regression lines
+opt_intercept <- slouch_out$FinalFound$ParamSummary$mPsi.rotated
+opt_slope <- slouch_out$FinalFound$ParamSummary$optimal.regression
+evol_slope <- slouch_out$FinalFound$ParamSummary$evolutionary.regression
+
+# Create plot
+ggplot(trait_data, aes(x = StyleLength, y = OvipositorLength)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_abline(intercept = opt_intercept, slope = opt_slope, 
+              color = "blue", size = 1.2) +
+  geom_abline(intercept = opt_intercept, slope = evol_slope, 
+              color = "red", linetype = "dashed", size = 1.2) +
+  labs(
+    x = "Style Length",
+    y = "Ovipositor Length",
+    title = "Relationship Between Traits with Evolutionary Regressions",
+    subtitle = paste("Optimal regression (blue):", round(opt_slope, 3), 
+                    "| Evolutionary regression (red):", round(evol_slope, 3))
+  ) +
+  theme_bw() +
+  annotate("text", x = min(trait_data$StyleLength), 
+          y = max(trait_data$OvipositorLength), 
+          label = "Optimal regression", 
+          color = "blue", hjust = 0, vjust = 1) +
+  annotate("text", x = min(trait_data$StyleLength), 
+          y = max(trait_data$OvipositorLength) - 0.5, 
+          label = "Evolutionary regression", 
+          color = "red", hjust = 0, vjust = 1)
+```
+
+Notice that the optimal regression (solid blue line) and the evolutionary regression (dashed red line) are very close to each other. This similarity suggests that the evolutionary process has had sufficient time to reach the optimal state, or that the strength of selection is strong relative to the phylogenetic signal.
+
+## Adding Phylogenetic Signal to Simulated Data
+
+Let's explore what happens when we add phylogenetic signal to our data:
+
+```{r add-phylo-signal}
+# Set seed for reproducibility
+set.seed(123)
+
+# Create a copy of the original traits
+Traits2 <- Traits
+
+# Add phylogenetic signal to the first trait (ovipositor length)
+Traits2[, 1] <- Traits2[, 1] + phytools::fastBM(tree, sig2 = 0.5)
+
+# Fit mvSLOUCH model with data containing phylogenetic signal
+slouch_out2 <- mvslouchModel(tree, Traits2, 
+                           kY = 1, 
+                           Atype = "DecomposablePositive",
+                           Syytype = "Diagonal",
+                           diagA = NULL)
+
+trait_data2 <- data.frame(
+  OvipositorLength = Traits2[, 1],
+  StyleLength = Traits2[, 2]
+)
+
+opt_intercept <- slouch_out2$FinalFound$ParamSummary$mPsi.rotated
+opt_slope <- slouch_out2$FinalFound$ParamSummary$optimal.regression
+evol_slope <- slouch_out2$FinalFound$ParamSummary$evolutionary.regression
+
+
+ggplot(trait_data2, aes(x = StyleLength, y = OvipositorLength)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_abline(intercept = opt_intercept, slope = opt_slope, 
+              color = "blue", size = 1.2) +
+  geom_abline(intercept = opt_intercept, slope = evol_slope, 
+              color = "red", linetype = "dashed", size = 1.2) +
+  labs(
+    x = "Style Length",
+    y = "Ovipositor Length",
+    title = "Relationship Between Traits with Evolutionary Regressions",
+    subtitle = paste("Optimal regression (blue):", round(opt_slope, 3), 
+                    "| Evolutionary regression (red):", round(evol_slope, 3))
+  ) +
+  theme_bw() +
+  annotate("text", x = min(trait_data$StyleLength), 
+          y = max(trait_data$OvipositorLength), 
+          label = "Optimal regression", 
+          color = "blue", hjust = 0, vjust = 1) +
+  annotate("text", x = min(trait_data$StyleLength), 
+          y = max(trait_data$OvipositorLength) - 0.5, 
+          label = "Evolutionary regression", 
+          color = "red", hjust = 0, vjust = 1)
+
+```
+
+The difference between optimal and evolutionary regression is more pronounced in the modified data. This illustrates how phylogenetic signal can affect our interpretation of trait relationships.
+
+## Model Comparison
+
+Now, let's compare all models using the penalized AICc (Akaike Information Criterion corrected for small sample sizes) to determine which model best fits our data:
+
+```{r model-comparison}
+# Create dataframe for model comparison
+model_comparison <- data.frame(
+  Model = c("BM", "OU_full", "OU_diag", "OU_lowertri", "OU_uppertri", "slOUCH"),
+  AICc = c(bm_out$ParamSummary$aic.c,
+          ou_out$FinalFound$ParamSummary$aic.c,
+          ou_out_d$FinalFound$ParamSummary$aic.c,
+          ou_out_l$FinalFound$ParamSummary$aic.c,
+          ou_out_u$FinalFound$ParamSummary$aic.c,
+          slouch_out$FinalFound$ParamSummary$aic.c)
+)
+
+# Calculate delta AICc and Akaike weights
+model_comparison <- model_comparison %>%
+  arrange(AICc) %>%
+  mutate(
+    Delta_AICc = AICc - min(AICc),
+    Akaike_Weight = exp(-0.5 * Delta_AICc) / sum(exp(-0.5 * Delta_AICc))
+  )
+
+# Format table for better display
+model_comparison
+```
+
+The model with the lowest AICc value provides the best fit to our data, taking into account both goodness-of-fit and model complexity. Akaike weights can be interpreted as the probability that a given model is the best among the set of models considered.
+
+Based on the model comparison results, we can interpret the evolutionary process that shaped the relationship between wasp ovipositor length and flower style length. The best-fitting model suggests `r if(which.min(model_comparison$AICc) == 6){"that there is an adaptive relationship between these traits, with selection driving them toward optimal values."} else if(which.min(model_comparison$AICc) == 1){"that these traits evolve primarily through random drift without strong directional selection."} else {"that there is a complex interplay between drift and selection in the evolution of these traits."}`
+
+## Accounting for Measurement Error
+
+In reality, trait measurements often contain some error. Let's redo our analyses taking measurement error into consideration. We'll assume a measurement error of about 10% of the total variation:
+
+```{r bm-with-error}
+# Calculate approximate error values (10% of trait variance)
+error_values <- c(
+  var(Traits[, 1]) * 0.1,
+  var(Traits[, 2]) * 0.1
+)
+
+# Fit Brownian Motion model with measurement error
+bm_out_e <- BrownianMotionModel(tree, Traits, M.error = error_values)
+
+# Compare BM models with and without error
+bm_comparison <- data.frame(
+  Model = c("BM without error", "BM with error"),
+  AICc = c(bm_out$ParamSummary$aic.c, bm_out_e$ParamSummary$aic.c),
+  LogLik = c(bm_out$ParamSummary$LogLik, bm_out_e$ParamSummary$LogLik)
+)
+
+bm_comparison
+```
+
+Let's also fit OU models with measurement error:
+
+```{r ou-with-error}
+# Fit OU model with measurement error
+ou_out_e <- ouchModel(tree, Traits, 
+                    Syytype = "Diagonal", 
+                    M.error = error_values)
+
+# Compare OU models with and without error
+ou_comparison <- data.frame(
+  Model = c("OU without error", "OU with error"),
+  AICc = c(ou_out$FinalFound$ParamSummary$aic.c, 
+          ou_out_e$FinalFound$ParamSummary$aic.c),
+  LogLik = c(ou_out$FinalFound$ParamSummary$LogLik, 
+            ou_out_e$FinalFound$ParamSummary$LogLik)
+)
+
+ou_comparison
+```
+
+Adding measurement error improves our models. This highlights the importance of accounting for measurement error in phylogenetic comparative analyses. Now try adding error to all other models and observe if your conclusions change.
+
+## Exercise Questions
+
+1. How would you interpret the biological meaning of the selection strength matrix (A) in the OU models?
+
+2. What does it mean when the optimal regression and evolutionary regression are similar or different?
+
+3. Try fitting models where you switch which trait is dependent and which is independent in the SLOUCH model. How does this change your interpretation?
+
+4. How might you incorporate additional traits or environmental variables into these analyses?
+
+5. What are the limitations of these multivariate PCM approaches?
+
+
+## References
+
+1. Bartoszek, K., Pienaar, J., Mostad, P., Andersson, S., & Hansen, T. F. (2012). A phylogenetic comparative method for studying multivariate adaptation. Journal of Theoretical Biology, 314, 204-215.
+
+2. Hansen, T. F., Pienaar, J., & Orzack, S. H. (2008). A comparative method for studying adaptation to a randomly evolving environment. Evolution, 62(8), 1965-1977.
+
+3. Mitov, V., & Bartoszek, K. (2021). PCMBase: A framework for phylogenetic comparative methods. Methods in Ecology and Evolution, 12(11), 2314-2329.
