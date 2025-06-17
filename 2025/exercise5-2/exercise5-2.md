@@ -1,3 +1,4 @@
+
 # Evolutionary Quantitative Genetics Workshop #
 
 |        |        |        |    |
@@ -9,7 +10,7 @@
 </div>
 
 
-<table><tr><td>&larr; <a href="2025/lecture5-2/lecture5-2.html">Previous</a></td><td width="772">&nbsp;</td><td> We're Done?!? &rarr;</td></tr></table>
+<table><tr><td>&larr; <a href="2025/lecture5-2/lecture5-2.html">Previous</a></td><td width="772">&nbsp;</td><td> We're Done!? </td></tr></table>
   
 ## Exercise 5-2: Discrete models, BBMV & Threshold models.
 
