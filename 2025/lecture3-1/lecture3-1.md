@@ -10,7 +10,7 @@
 <img src="/media/SWVirginiaMtns.jpg" alt="[Southwest Virginia mountains]">
 </div>
 
-<table><tr><td><a href="exercise2-2/exercise2-2.html">&larr; Previous</a></td><td width="772">&nbsp;</td><td> <a href="lecture3-2/lecture3-2.html">Next &rarr;</a></td></tr></table>
+<table><tr><td><a href="../exercise2-2/exercise2-2.html">&larr; Previous</a></td><td width="772">&nbsp;</td><td> <a href="../lecture3-2/lecture3-2.html">Next &rarr;</a></td></tr></table>
 
   
 
