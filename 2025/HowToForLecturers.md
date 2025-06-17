@@ -81,39 +81,3 @@ You probably want to link to PDF or PPT files of slides, to files of R exercises
 
 Note that your changes will appear in the workshop web pages, but only after a delay of perhaps 15 minutes.
 
-# WARNING -- The next two sections are obsolete and will be revised soon.  All files will go into the Github repository, not Google Drive #
-
-## Posting files at Google Drive to be linked to from the EQGW Github webpage ##
-
-Files such as lecture projections (PPT or PDF), or supplementary documents, or R exercises, or audio recordings, are not to be posted in the workshop Github repository.  Instead, you need to put them in the Google Drive area for the  fhleqg  account, which is a gmail account (a Google account).  If you are a lecturer in the Workshop you have been added, under one of your email addresses, to the list of people who can put files into the Google Drive folder for this year's workshop (it has a folder name which is the year number, such as "2022").  To put such a file there:
-
-1. Go to your Google Drive account and log in, with the username of yours that we gave permission to share folders with the  fhleqg@gmail.com  Google account.
-2. After you have chosen the Google Drive icon, on the left side of the window you will find a menu item "Shared with me".
-3. Select it.  A list of folders or files that have been recently shared with you will appear.
-4. Find the one with the year number for EQGW, such as "2022".
-5. Select it.  A set of folders should appear with names such as "lecture3-2".
-6. Find the one for your lecture and open it.  If none appears, choose New Folder and make one.
-7. Now an area will appear in which you can drag-and-drop any files that you want to store there.
-8. Put the files you want to store there.
-9. You can change its name once it is there, if you want.
-
-
-
-## Getting the link for one of those files ##
-
-There is still the matter of getting the address of the file, and posting a link to it on the appropriate lecture or exercise web page.
-
-1. Make sure you are logged in to your own Google Drive page using the account of yours that we gave permission to access files at the EQGW Github site.
-2. Make sure you have chosen "Shared with me" from the column of choices on the left side of the Google Drive area.
-3. Make sure you have chosen the year and the folder for the appropriate lecture. 
-4. You want to have a link that will enable anyone to view that file.
-5. Right-click or Crtl-click on the file name.
-6. A menu will open.  Choose “Get link”. Select it.
-7. When a box open asking about access to the file, choose the setting that states that “Anyone on the internet with this link can view” the file.
-8. Leave the permission as "Viewer", do not change it.
-9. Above this there will be a green long complicated URL address.  Select "Copy link" which is to its right.  A black box will appear to verify that it has done that.
-10. Now, perhaps in another window, get to the page in the EQGW repository for that lecture.
-11. Make sure you have chosen the Edit mode (the little pencil icon in the upper-right of the page).
-12. At the appropriate place on the page, put in the text you want to appear, and the link.  If the text is "This is the PDF" and the link is symbolized here by HORRIBLYLONGLINK then what you type and paste in on the page is
- &nbsp; \[This is the PDF\](HORRIBLYLONGLINK)  &nbsp;&nbsp;Make sure to type the correct square and curved parentheses in the correct places.
-14. Once you have completed pasting in that link and typing that closing curved parenthesis, don’t forget to select the green button for "Commit changes" for that webpage after that.
